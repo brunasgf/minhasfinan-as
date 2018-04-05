@@ -55,3 +55,11 @@ table {
     -moz-box-shadow: 2px 3px 10px -1px rgba(156,156,156,0.66);
     box-shadow: 2px 3px 10px -1px rgba(156,156,156,0.66);
 }
+
+.has-label {
+	margin-top: 20px;
+}
+
+.btn {
+	line-height: 1;
+}
