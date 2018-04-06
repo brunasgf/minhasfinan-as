@@ -24,6 +24,7 @@
     "angular": "^1.6.9",
     "bootstrap": "^4.0.0",
     "echarts": "^4.0.4",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "font-awesome": "^4.7.0"
   }
 }

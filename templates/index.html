@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt_br" ng-app="minhasFinancas">
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Bruna Silva, Luiz Jesus">
@@ -7,6 +7,7 @@
 		<link href="./financasModule/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="./financasModule/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet">
 		<link href="./financasModule/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet">
+		<link href="./financasModule/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="./css/main.css" rel="stylesheet">
 
 		<script src="./app-release.js"></script>
@@ -20,7 +21,15 @@
 		</nav>
 		<div class="container-fluid">
 			<div class="box-container">
-				<div>
+				<div class="row">
+					<div class="col-6">
+						<h1 class="main-title">Gastos</h1>
+					</div>
+
+					<div class="col-6">
+						<h1 class="main-title">Investimentos</h1>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-2 form-group">
 						<label>Nome</label>
@@ -49,40 +58,48 @@
 
 				<div class="row">
 					<div class="col-6">
-						<h4>Gastos Cadastrados</h4>
+						<h4 class="sub-title">Gastos Cadastrados</h4>
 						<table class="table table-hover table-striped table-sm">
 							<thead>
 								<tr>
 									<th>Nome</th>
 									<th>Valor</th>
-									<th>Ação</th>
+									<th class="text-center">Ação</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td></td>
 									<td></td>
-									<td></td>
+									<td class="text-center">
+										<button class="btn btn-danger btn-small">
+											<i class="fa fa-trash"></i>
+										</button>
+									</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 
 					<div class="col-6">
-							<h4>Gastos Cadastrados</h4>
+							<h4 class="sub-title">Investimentos Cadastrados</h4>
 							<table class="table table-hover table-striped table-sm">
 								<thead>
 									<tr>
 										<th>Nome</th>
 										<th>Valor</th>
-										<th>Ação</th>
+										<th class="text-center">Ação</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td></td>
 										<td></td>
-										<td></td>										
+										<td class="text-center">
+											<button class="btn btn-danger btn-small">
+												<i class="fa fa-trash"></i>
+											</button>
+										</td>								
 									</tr>
 								</tbody>
 							</table>

@@ -114187,6 +114187,12 @@ exports.dispose = dispose;
 exports.getInstance = getInstance;
 exports.registerPainter = registerPainter;
 },{"./Handler":401,"./Painter":403,"./Storage":404,"./animation/Animation":405,"./core/env":428,"./core/guid":430,"./core/util":434,"./dom/HandlerProxy":436}],486:[function(require,module,exports){
+
+},{}],487:[function(require,module,exports){
 const Echarts = require('../../node_modules/echarts/index')
+
 const Angular = require('../../node_modules/angular/index')
-},{"../../node_modules/angular/index":2,"../../node_modules/echarts/index":3}]},{},[486]);
+const app = angular.module('minhasFinancas', [])
+
+const controllers = require("./controllers/")
+},{"../../node_modules/angular/index":2,"../../node_modules/echarts/index":3,"./controllers/":486}]},{},[487]);

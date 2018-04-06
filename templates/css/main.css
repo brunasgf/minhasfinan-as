@@ -1,17 +1,25 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+fieldset, form, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+label{
+	margin-bottom: 3%;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -57,9 +65,26 @@ table {
 }
 
 .has-label {
-	margin-top: 20px;
+	margin-top: 27px;
 }
 
 .btn {
 	line-height: 1;
+}
+
+.btn-small {
+	padding: 2px 15px 4px;
+}
+
+.sub-title{
+	font-size: 20px;
+    letter-spacing: -1px;
+	color: #3483d3;
+}
+
+.main-title{
+	font-size: 29px;
+    letter-spacing: -2px;
+    color: #3c7dbe;
+    font-weight: 300;
 }
