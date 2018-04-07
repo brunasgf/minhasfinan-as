@@ -1,13 +1,4 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-
-},{}],2:[function(require,module,exports){
-const Echarts = require('../../node_modules/echarts/index')
-
-const Angular = require('../../node_modules/angular/index')
-const app = angular.module('minhasFinancas', [])
-
-const controllers = require("./controllers/")
-},{"../../node_modules/angular/index":4,"../../node_modules/echarts/index":5,"./controllers/":1}],3:[function(require,module,exports){
 /**
  * @license AngularJS v1.6.9
  * (c) 2010-2018 Google, Inc. http://angularjs.org
@@ -34367,11 +34358,11 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],4:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":3}],5:[function(require,module,exports){
+},{"./angular":1}],3:[function(require,module,exports){
 var _echarts = require("./lib/echarts");
 
 (function () {
@@ -34477,7 +34468,7 @@ require("./lib/component/toolbox");
 require("zrender/lib/vml/vml");
 
 require("zrender/lib/svg/svg");
-},{"./lib/chart/bar":11,"./lib/chart/boxplot":19,"./lib/chart/candlestick":24,"./lib/chart/custom":30,"./lib/chart/effectScatter":31,"./lib/chart/funnel":34,"./lib/chart/gauge":38,"./lib/chart/graph":42,"./lib/chart/heatmap":57,"./lib/chart/line":80,"./lib/chart/lines":86,"./lib/chart/map":91,"./lib/chart/parallel":98,"./lib/chart/pictorialBar":102,"./lib/chart/pie":103,"./lib/chart/radar":108,"./lib/chart/sankey":113,"./lib/chart/scatter":118,"./lib/chart/sunburst":121,"./lib/chart/themeRiver":127,"./lib/chart/tree":132,"./lib/chart/treemap":141,"./lib/component/axisPointer":150,"./lib/component/brush":172,"./lib/component/calendar":179,"./lib/component/dataZoom":181,"./lib/component/dataset":198,"./lib/component/geo":200,"./lib/component/graphic":202,"./lib/component/grid":203,"./lib/component/legendScroll":217,"./lib/component/markArea":225,"./lib/component/markLine":226,"./lib/component/markPoint":227,"./lib/component/parallel":237,"./lib/component/polar":239,"./lib/component/singleAxis":243,"./lib/component/timeline":244,"./lib/component/title":253,"./lib/component/toolbox":254,"./lib/component/tooltip":264,"./lib/component/visualMap":268,"./lib/echarts":344,"./lib/export":345,"zrender/lib/svg/svg":479,"zrender/lib/vml/vml":486}],6:[function(require,module,exports){
+},{"./lib/chart/bar":9,"./lib/chart/boxplot":17,"./lib/chart/candlestick":22,"./lib/chart/custom":28,"./lib/chart/effectScatter":29,"./lib/chart/funnel":32,"./lib/chart/gauge":36,"./lib/chart/graph":40,"./lib/chart/heatmap":55,"./lib/chart/line":78,"./lib/chart/lines":84,"./lib/chart/map":89,"./lib/chart/parallel":96,"./lib/chart/pictorialBar":100,"./lib/chart/pie":101,"./lib/chart/radar":106,"./lib/chart/sankey":111,"./lib/chart/scatter":116,"./lib/chart/sunburst":119,"./lib/chart/themeRiver":125,"./lib/chart/tree":130,"./lib/chart/treemap":139,"./lib/component/axisPointer":148,"./lib/component/brush":170,"./lib/component/calendar":177,"./lib/component/dataZoom":179,"./lib/component/dataset":196,"./lib/component/geo":198,"./lib/component/graphic":200,"./lib/component/grid":201,"./lib/component/legendScroll":215,"./lib/component/markArea":223,"./lib/component/markLine":224,"./lib/component/markPoint":225,"./lib/component/parallel":235,"./lib/component/polar":237,"./lib/component/singleAxis":241,"./lib/component/timeline":242,"./lib/component/title":251,"./lib/component/toolbox":252,"./lib/component/tooltip":262,"./lib/component/visualMap":266,"./lib/echarts":342,"./lib/export":343,"zrender/lib/svg/svg":477,"zrender/lib/vml/vml":484}],4:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var coordinateSystemCreators = {};
@@ -34516,7 +34507,7 @@ CoordinateSystemManager.get = function (type) {
 
 var _default = CoordinateSystemManager;
 module.exports = _default;
-},{"zrender/lib/core/util":436}],7:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],5:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var echartsAPIList = ['getDom', 'getZr', 'getWidth', 'getHeight', 'getDevicePixelRatio', 'dispatchAction', 'isDisposed', 'on', 'off', 'getDataURL', 'getConnectedDataURL', 'getModel', 'getOption', 'getViewOfComponentModel', 'getViewOfSeriesModel']; // And `getCoordinateSystems` and `getComponentByElement` will be injected in echarts.js
@@ -34529,7 +34520,7 @@ function ExtensionAPI(chartInstance) {
 
 var _default = ExtensionAPI;
 module.exports = _default;
-},{"zrender/lib/core/util":436}],8:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],6:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -34570,7 +34561,7 @@ function _default(seriesType, actionInfos) {
 }
 
 module.exports = _default;
-},{"../echarts":344,"zrender/lib/core/util":436}],9:[function(require,module,exports){
+},{"../echarts":342,"zrender/lib/core/util":434}],7:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -34617,7 +34608,7 @@ echarts.registerAction({
     }
   });
 });
-},{"../echarts":344,"./roamHelper":10,"zrender/lib/core/util":436}],10:[function(require,module,exports){
+},{"../echarts":342,"./roamHelper":8,"zrender/lib/core/util":434}],8:[function(require,module,exports){
 /**
  * @param {module:echarts/coord/View} view
  * @param {Object} payload
@@ -34665,7 +34656,7 @@ function updateCenterAndZoom(view, payload, zoomLimit) {
 }
 
 exports.updateCenterAndZoom = updateCenterAndZoom;
-},{}],11:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -34691,7 +34682,7 @@ echarts.registerVisual(function (ecModel) {
     data.setVisual('legendSymbol', 'roundRect');
   });
 });
-},{"../component/gridSimple":204,"../coord/cartesian/Grid":296,"../echarts":344,"../layout/barGrid":348,"./bar/BarSeries":12,"./bar/BarView":13,"zrender/lib/core/util":436}],12:[function(require,module,exports){
+},{"../component/gridSimple":202,"../coord/cartesian/Grid":294,"../echarts":342,"../layout/barGrid":346,"./bar/BarSeries":10,"./bar/BarView":11,"zrender/lib/core/util":434}],10:[function(require,module,exports){
 var BaseBarSeries = require("./BaseBarSeries");
 
 var _default = BaseBarSeries.extend({
@@ -34701,7 +34692,7 @@ var _default = BaseBarSeries.extend({
 });
 
 module.exports = _default;
-},{"./BaseBarSeries":14}],13:[function(require,module,exports){
+},{"./BaseBarSeries":12}],11:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -34946,7 +34937,7 @@ function getLineWidth(itemModel, rawLayout) {
 }
 
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../../model/Model":354,"../../util/graphic":387,"./barItemStyle":17,"./helper":18,"zrender/lib/core/util":436}],14:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../../model/Model":352,"../../util/graphic":385,"./barItemStyle":15,"./helper":16,"zrender/lib/core/util":434}],12:[function(require,module,exports){
 var SeriesModel = require("../../model/Series");
 
 var createListFromArray = require("../helper/createListFromArray");
@@ -35004,7 +34995,7 @@ var _default = SeriesModel.extend({
 });
 
 module.exports = _default;
-},{"../../model/Series":356,"../helper/createListFromArray":74}],15:[function(require,module,exports){
+},{"../../model/Series":354,"../helper/createListFromArray":72}],13:[function(require,module,exports){
 var BaseBarSeries = require("./BaseBarSeries");
 
 var PictorialBarSeries = BaseBarSeries.extend({
@@ -35050,7 +35041,7 @@ var PictorialBarSeries = BaseBarSeries.extend({
 });
 var _default = PictorialBarSeries;
 module.exports = _default;
-},{"./BaseBarSeries":14}],16:[function(require,module,exports){
+},{"./BaseBarSeries":12}],14:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -35689,7 +35680,7 @@ function toIntTimes(times) {
 
 var _default = BarView;
 module.exports = _default;
-},{"../../echarts":344,"../../util/graphic":387,"../../util/number":390,"../../util/symbol":391,"./helper":18,"zrender/lib/core/util":436}],17:[function(require,module,exports){
+},{"../../echarts":342,"../../util/graphic":385,"../../util/number":388,"../../util/symbol":389,"./helper":16,"zrender/lib/core/util":434}],15:[function(require,module,exports){
 var makeStyleMapper = require("../../model/mixin/makeStyleMapper");
 
 var getBarItemStyle = makeStyleMapper([['fill', 'color'], ['stroke', 'borderColor'], ['lineWidth', 'borderWidth'], // Compatitable with 2
@@ -35707,7 +35698,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"../../model/mixin/makeStyleMapper":364}],18:[function(require,module,exports){
+},{"../../model/mixin/makeStyleMapper":362}],16:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var _labelHelper = require("../helper/labelHelper");
@@ -35735,7 +35726,7 @@ function fixPosition(style, labelPositionOutside) {
 }
 
 exports.setLabel = setLabel;
-},{"../../util/graphic":387,"../helper/labelHelper":77}],19:[function(require,module,exports){
+},{"../../util/graphic":385,"../helper/labelHelper":75}],17:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./boxplot/BoxplotSeries");
@@ -35748,7 +35739,7 @@ var boxplotLayout = require("./boxplot/boxplotLayout");
 
 echarts.registerVisual(boxplotVisual);
 echarts.registerLayout(boxplotLayout);
-},{"../echarts":344,"./boxplot/BoxplotSeries":20,"./boxplot/BoxplotView":21,"./boxplot/boxplotLayout":22,"./boxplot/boxplotVisual":23}],20:[function(require,module,exports){
+},{"../echarts":342,"./boxplot/BoxplotSeries":18,"./boxplot/BoxplotView":19,"./boxplot/boxplotLayout":20,"./boxplot/boxplotVisual":21}],18:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var SeriesModel = require("../../model/Series");
@@ -35813,7 +35804,7 @@ var BoxplotSeries = SeriesModel.extend({
 zrUtil.mixin(BoxplotSeries, seriesModelMixin, true);
 var _default = BoxplotSeries;
 module.exports = _default;
-},{"../../model/Series":356,"../helper/whiskerBoxCommon":79,"zrender/lib/core/util":436}],21:[function(require,module,exports){
+},{"../../model/Series":354,"../helper/whiskerBoxCommon":77,"zrender/lib/core/util":434}],19:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var ChartView = require("../../view/Chart");
@@ -35855,7 +35846,7 @@ function updateStyle(itemGroup, data, idx) {
 
 var _default = BoxplotView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../view/Chart":393,"../helper/whiskerBoxCommon":79,"zrender/lib/core/util":436}],22:[function(require,module,exports){
+},{"../../util/graphic":385,"../../view/Chart":391,"../helper/whiskerBoxCommon":77,"zrender/lib/core/util":434}],20:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var _number = require("../../util/number");
@@ -36033,7 +36024,7 @@ function layoutSingleSeries(seriesModel, offset, boxWidth) {
 }
 
 module.exports = _default;
-},{"../../util/number":390,"zrender/lib/core/util":436}],23:[function(require,module,exports){
+},{"../../util/number":388,"zrender/lib/core/util":434}],21:[function(require,module,exports){
 var borderColorQuery = ['itemStyle', 'borderColor'];
 
 function _default(ecModel, api) {
@@ -36060,7 +36051,7 @@ function _default(ecModel, api) {
 }
 
 module.exports = _default;
-},{}],24:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./candlestick/CandlestickSeries");
@@ -36076,7 +36067,7 @@ var candlestickLayout = require("./candlestick/candlestickLayout");
 echarts.registerPreprocessor(preprocessor);
 echarts.registerVisual(candlestickVisual);
 echarts.registerLayout(candlestickLayout);
-},{"../echarts":344,"./candlestick/CandlestickSeries":25,"./candlestick/CandlestickView":26,"./candlestick/candlestickLayout":27,"./candlestick/candlestickVisual":28,"./candlestick/preprocessor":29}],25:[function(require,module,exports){
+},{"../echarts":342,"./candlestick/CandlestickSeries":23,"./candlestick/CandlestickView":24,"./candlestick/candlestickLayout":25,"./candlestick/candlestickVisual":26,"./candlestick/preprocessor":27}],23:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var SeriesModel = require("../../model/Series");
@@ -36153,7 +36144,7 @@ var CandlestickSeries = SeriesModel.extend({
 zrUtil.mixin(CandlestickSeries, seriesModelMixin, true);
 var _default = CandlestickSeries;
 module.exports = _default;
-},{"../../model/Series":356,"../helper/whiskerBoxCommon":79,"zrender/lib/core/util":436}],26:[function(require,module,exports){
+},{"../../model/Series":354,"../helper/whiskerBoxCommon":77,"zrender/lib/core/util":434}],24:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var ChartView = require("../../view/Chart");
@@ -36196,7 +36187,7 @@ function updateStyle(itemGroup, data, idx) {
 
 var _default = CandlestickView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../view/Chart":393,"../helper/whiskerBoxCommon":79,"zrender/lib/core/util":436}],27:[function(require,module,exports){
+},{"../../util/graphic":385,"../../view/Chart":391,"../helper/whiskerBoxCommon":77,"zrender/lib/core/util":434}],25:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var _number = require("../../util/number");
@@ -36328,7 +36319,7 @@ function calculateCandleWidth(seriesModel, data) {
 }
 
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/number":390,"zrender/lib/core/util":436}],28:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/number":388,"zrender/lib/core/util":434}],26:[function(require,module,exports){
 var positiveBorderColorQuery = ['itemStyle', 'borderColor'];
 var negativeBorderColorQuery = ['itemStyle', 'borderColor0'];
 var positiveColorQuery = ['itemStyle', 'color'];
@@ -36355,7 +36346,7 @@ function _default(ecModel, api) {
 }
 
 module.exports = _default;
-},{}],29:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 function _default(option) {
@@ -36372,7 +36363,7 @@ function _default(option) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],30:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],28:[function(require,module,exports){
 var _config = require("../config");
 
 var __DEV__ = _config.__DEV__;
@@ -36867,7 +36858,7 @@ function processRemove(oldIndex) {
   var child = context.oldChildren[oldIndex];
   child && context.group.remove(child);
 }
-},{"../config":282,"../coord/calendar/prepareCustom":291,"../coord/cartesian/prepareCustom":298,"../coord/geo/prepareCustom":308,"../coord/polar/prepareCustom":321,"../coord/single/prepareCustom":328,"../data/DataDiffer":330,"../echarts":344,"../layout/barGrid":348,"../util/graphic":387,"./helper/createListFromArray":74,"./helper/labelHelper":77,"zrender/lib/core/util":436}],31:[function(require,module,exports){
+},{"../config":280,"../coord/calendar/prepareCustom":289,"../coord/cartesian/prepareCustom":296,"../coord/geo/prepareCustom":306,"../coord/polar/prepareCustom":319,"../coord/single/prepareCustom":326,"../data/DataDiffer":328,"../echarts":342,"../layout/barGrid":346,"../util/graphic":385,"./helper/createListFromArray":72,"./helper/labelHelper":75,"zrender/lib/core/util":434}],29:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./effectScatter/EffectScatterSeries");
@@ -36880,7 +36871,7 @@ var layoutPoints = require("../layout/points");
 
 echarts.registerVisual(visualSymbol('effectScatter', 'circle'));
 echarts.registerLayout(layoutPoints('effectScatter'));
-},{"../echarts":344,"../layout/points":350,"../visual/symbol":399,"./effectScatter/EffectScatterSeries":32,"./effectScatter/EffectScatterView":33}],32:[function(require,module,exports){
+},{"../echarts":342,"../layout/points":348,"../visual/symbol":397,"./effectScatter/EffectScatterSeries":30,"./effectScatter/EffectScatterView":31}],30:[function(require,module,exports){
 var createListFromArray = require("../helper/createListFromArray");
 
 var SeriesModel = require("../../model/Series");
@@ -36930,7 +36921,7 @@ var _default = SeriesModel.extend({
 });
 
 module.exports = _default;
-},{"../../model/Series":356,"../helper/createListFromArray":74}],33:[function(require,module,exports){
+},{"../../model/Series":354,"../helper/createListFromArray":72}],31:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var SymbolDraw = require("../helper/SymbolDraw");
@@ -36981,7 +36972,7 @@ var _default = echarts.extendChartView({
 });
 
 module.exports = _default;
-},{"../../echarts":344,"../../layout/points":350,"../helper/EffectSymbol":63,"../helper/SymbolDraw":71,"zrender/lib/core/matrix":434}],34:[function(require,module,exports){
+},{"../../echarts":342,"../../layout/points":348,"../helper/EffectSymbol":61,"../helper/SymbolDraw":69,"zrender/lib/core/matrix":432}],32:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./funnel/FunnelSeries");
@@ -36997,7 +36988,7 @@ var dataFilter = require("../processor/dataFilter");
 echarts.registerVisual(dataColor('funnel'));
 echarts.registerLayout(funnelLayout);
 echarts.registerProcessor(dataFilter('funnel'));
-},{"../echarts":344,"../processor/dataFilter":369,"../visual/dataColor":397,"./funnel/FunnelSeries":35,"./funnel/FunnelView":36,"./funnel/funnelLayout":37}],35:[function(require,module,exports){
+},{"../echarts":342,"../processor/dataFilter":367,"../visual/dataColor":395,"./funnel/FunnelSeries":33,"./funnel/FunnelView":34,"./funnel/funnelLayout":35}],33:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var createListSimply = require("../helper/createListSimply");
@@ -37090,7 +37081,7 @@ var FunnelSeries = echarts.extendSeriesModel({
 });
 var _default = FunnelSeries;
 module.exports = _default;
-},{"../../echarts":344,"../../util/model":389,"../helper/createListSimply":75}],36:[function(require,module,exports){
+},{"../../echarts":342,"../../util/model":387,"../helper/createListSimply":73}],34:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -37256,7 +37247,7 @@ var FunnelView = ChartView.extend({
 });
 var _default = FunnelView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../view/Chart":393,"zrender/lib/core/util":436}],37:[function(require,module,exports){
+},{"../../util/graphic":385,"../../view/Chart":391,"zrender/lib/core/util":434}],35:[function(require,module,exports){
 var layout = require("../../util/layout");
 
 var _number = require("../../util/number");
@@ -37437,11 +37428,11 @@ function _default(ecModel, api, payload) {
 }
 
 module.exports = _default;
-},{"../../util/layout":388,"../../util/number":390}],38:[function(require,module,exports){
+},{"../../util/layout":386,"../../util/number":388}],36:[function(require,module,exports){
 require("./gauge/GaugeSeries");
 
 require("./gauge/GaugeView");
-},{"./gauge/GaugeSeries":39,"./gauge/GaugeView":40}],39:[function(require,module,exports){
+},{"./gauge/GaugeSeries":37,"./gauge/GaugeView":38}],37:[function(require,module,exports){
 var createListSimply = require("../helper/createListSimply");
 
 var SeriesModel = require("../../model/Series");
@@ -37556,7 +37547,7 @@ var GaugeSeries = SeriesModel.extend({
 });
 var _default = GaugeSeries;
 module.exports = _default;
-},{"../../model/Series":356,"../helper/createListSimply":75,"zrender/lib/core/util":436}],40:[function(require,module,exports){
+},{"../../model/Series":354,"../helper/createListSimply":73,"zrender/lib/core/util":434}],38:[function(require,module,exports){
 var PointerPath = require("./PointerPath");
 
 var graphic = require("../../util/graphic");
@@ -37895,7 +37886,7 @@ var GaugeView = ChartView.extend({
 });
 var _default = GaugeView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/number":390,"../../view/Chart":393,"./PointerPath":41}],41:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/number":388,"../../view/Chart":391,"./PointerPath":39}],39:[function(require,module,exports){
 var Path = require("zrender/lib/graphic/Path");
 
 var _default = Path.extend({
@@ -37926,7 +37917,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"zrender/lib/graphic/Path":445}],42:[function(require,module,exports){
+},{"zrender/lib/graphic/Path":443}],40:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./graph/GraphSeries");
@@ -37962,7 +37953,7 @@ echarts.registerLayout(forceLayout); // Graph view coordinate system
 echarts.registerCoordinateSystem('graphView', {
   create: createView
 });
-},{"../echarts":344,"../visual/symbol":399,"./graph/GraphSeries":43,"./graph/GraphView":44,"./graph/categoryFilter":46,"./graph/categoryVisual":47,"./graph/circularLayout":48,"./graph/createView":50,"./graph/edgeVisual":51,"./graph/forceLayout":53,"./graph/graphAction":54,"./graph/simpleLayout":55}],43:[function(require,module,exports){
+},{"../echarts":342,"../visual/symbol":397,"./graph/GraphSeries":41,"./graph/GraphView":42,"./graph/categoryFilter":44,"./graph/categoryVisual":45,"./graph/circularLayout":46,"./graph/createView":48,"./graph/edgeVisual":49,"./graph/forceLayout":51,"./graph/graphAction":52,"./graph/simpleLayout":53}],41:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var List = require("../../data/List");
@@ -38190,7 +38181,7 @@ var GraphSeries = echarts.extendSeriesModel({
 });
 var _default = GraphSeries;
 module.exports = _default;
-},{"../../data/List":332,"../../echarts":344,"../../model/Model":354,"../../util/format":386,"../../util/model":389,"../helper/createGraphFromNodeEdge":73,"zrender/lib/core/util":436}],44:[function(require,module,exports){
+},{"../../data/List":330,"../../echarts":342,"../../model/Model":352,"../../util/format":384,"../../util/model":387,"../helper/createGraphFromNodeEdge":71,"zrender/lib/core/util":434}],42:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -38546,7 +38537,7 @@ var _default = echarts.extendChartView({
 });
 
 module.exports = _default;
-},{"../../component/helper/RoamController":208,"../../component/helper/cursorHelper":210,"../../component/helper/roamHelper":213,"../../echarts":344,"../../util/graphic":387,"../helper/LineDraw":67,"../helper/SymbolDraw":71,"./adjustEdge":45,"zrender/lib/core/util":436}],45:[function(require,module,exports){
+},{"../../component/helper/RoamController":206,"../../component/helper/cursorHelper":208,"../../component/helper/roamHelper":211,"../../echarts":342,"../../util/graphic":385,"../helper/LineDraw":65,"../helper/SymbolDraw":69,"./adjustEdge":43,"zrender/lib/core/util":434}],43:[function(require,module,exports){
 var curveTool = require("zrender/lib/core/curve");
 
 var vec2 = require("zrender/lib/core/vector");
@@ -38708,7 +38699,7 @@ function _default(graph, scale) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/curve":429,"zrender/lib/core/vector":437}],46:[function(require,module,exports){
+},{"zrender/lib/core/curve":427,"zrender/lib/core/vector":435}],44:[function(require,module,exports){
 function _default(ecModel) {
   var legendModels = ecModel.findComponents({
     mainType: 'legend'
@@ -38746,7 +38737,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{}],47:[function(require,module,exports){
+},{}],45:[function(require,module,exports){
 function _default(ecModel) {
   var paletteScope = {};
   ecModel.eachSeriesByType('graph', function (seriesModel) {
@@ -38782,7 +38773,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{}],48:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 var _circularLayoutHelper = require("./circularLayoutHelper");
 
 var circularLayout = _circularLayoutHelper.circularLayout;
@@ -38796,7 +38787,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{"./circularLayoutHelper":49}],49:[function(require,module,exports){
+},{"./circularLayoutHelper":47}],47:[function(require,module,exports){
 var vec2 = require("zrender/lib/core/vector");
 
 function circularLayout(seriesModel) {
@@ -38843,7 +38834,7 @@ function circularLayout(seriesModel) {
 }
 
 exports.circularLayout = circularLayout;
-},{"zrender/lib/core/vector":437}],50:[function(require,module,exports){
+},{"zrender/lib/core/vector":435}],48:[function(require,module,exports){
 var View = require("../../coord/View");
 
 var _layout = require("../../util/layout");
@@ -38914,7 +38905,7 @@ function _default(ecModel, api) {
 }
 
 module.exports = _default;
-},{"../../coord/View":284,"../../util/layout":388,"zrender/lib/core/bbox":428}],51:[function(require,module,exports){
+},{"../../coord/View":282,"../../util/layout":386,"zrender/lib/core/bbox":426}],49:[function(require,module,exports){
 function normalize(a) {
   if (!(a instanceof Array)) {
     a = [a, a];
@@ -38967,7 +38958,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{}],52:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 var vec2 = require("zrender/lib/core/vector");
 
 var scaleAndAdd = vec2.scaleAndAdd; // function adjacentNode(n, e) {
@@ -39106,7 +39097,7 @@ function forceLayout(nodes, edges, opts) {
 }
 
 exports.forceLayout = forceLayout;
-},{"zrender/lib/core/vector":437}],53:[function(require,module,exports){
+},{"zrender/lib/core/vector":435}],51:[function(require,module,exports){
 var _forceHelper = require("./forceHelper");
 
 var forceLayout = _forceHelper.forceLayout;
@@ -39261,7 +39252,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{"../../util/number":390,"./circularLayoutHelper":49,"./forceHelper":52,"./simpleLayoutHelper":56,"zrender/lib/core/util":436,"zrender/lib/core/vector":437}],54:[function(require,module,exports){
+},{"../../util/number":388,"./circularLayoutHelper":47,"./forceHelper":50,"./simpleLayoutHelper":54,"zrender/lib/core/util":434,"zrender/lib/core/vector":435}],52:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var _roamHelper = require("../../action/roamHelper");
@@ -39318,7 +39309,7 @@ echarts.registerAction({
   event: 'unfocusNodeAdjacency',
   update: 'series.graph:unfocusNodeAdjacency'
 }, function () {});
-},{"../../action/roamHelper":10,"../../echarts":344}],55:[function(require,module,exports){
+},{"../../action/roamHelper":8,"../../echarts":342}],53:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var each = _util.each;
@@ -39370,7 +39361,7 @@ function _default(ecModel, api) {
 }
 
 module.exports = _default;
-},{"./simpleLayoutHelper":56,"zrender/lib/core/util":436}],56:[function(require,module,exports){
+},{"./simpleLayoutHelper":54,"zrender/lib/core/util":434}],54:[function(require,module,exports){
 var vec2 = require("zrender/lib/core/vector");
 
 function simpleLayout(seriesModel) {
@@ -39405,11 +39396,11 @@ function simpleLayoutEdge(graph) {
 
 exports.simpleLayout = simpleLayout;
 exports.simpleLayoutEdge = simpleLayoutEdge;
-},{"zrender/lib/core/vector":437}],57:[function(require,module,exports){
+},{"zrender/lib/core/vector":435}],55:[function(require,module,exports){
 require("./heatmap/HeatmapSeries");
 
 require("./heatmap/HeatmapView");
-},{"./heatmap/HeatmapSeries":59,"./heatmap/HeatmapView":60}],58:[function(require,module,exports){
+},{"./heatmap/HeatmapSeries":57,"./heatmap/HeatmapView":58}],56:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 /**
@@ -39558,7 +39549,7 @@ Heatmap.prototype = {
 };
 var _default = Heatmap;
 module.exports = _default;
-},{"zrender/lib/core/util":436}],59:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],57:[function(require,module,exports){
 var SeriesModel = require("../../model/Series");
 
 var createListFromArray = require("../helper/createListFromArray");
@@ -39597,7 +39588,7 @@ var _default = SeriesModel.extend({
 });
 
 module.exports = _default;
-},{"../../CoordinateSystem":6,"../../model/Series":356,"../helper/createListFromArray":74}],60:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"../../model/Series":354,"../helper/createListFromArray":72}],58:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -39841,7 +39832,7 @@ var _default = echarts.extendChartView({
 });
 
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../../util/graphic":387,"./HeatmapLayer":58,"zrender/lib/core/util":436}],61:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../../util/graphic":385,"./HeatmapLayer":56,"zrender/lib/core/util":434}],59:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var Line = require("./Line");
@@ -40017,7 +40008,7 @@ effectLineProto.updateLayout = function (lineData, idx) {
 zrUtil.inherits(EffectLine, graphic.Group);
 var _default = EffectLine;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/symbol":391,"./Line":66,"zrender/lib/core/curve":429,"zrender/lib/core/util":436,"zrender/lib/core/vector":437}],62:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/symbol":389,"./Line":64,"zrender/lib/core/curve":427,"zrender/lib/core/util":434,"zrender/lib/core/vector":435}],60:[function(require,module,exports){
 var Polyline = require("./Polyline");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -40128,7 +40119,7 @@ effectPolylineProto.updateSymbolPosition = function (symbol) {
 zrUtil.inherits(EffectPolyline, EffectLine);
 var _default = EffectPolyline;
 module.exports = _default;
-},{"./EffectLine":61,"./Polyline":69,"zrender/lib/core/util":436,"zrender/lib/core/vector":437}],63:[function(require,module,exports){
+},{"./EffectLine":59,"./Polyline":67,"zrender/lib/core/util":434,"zrender/lib/core/vector":435}],61:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var _symbol = require("../../util/symbol");
@@ -40353,7 +40344,7 @@ effectSymbolProto.fadeOut = function (cb) {
 zrUtil.inherits(EffectSymbol, Group);
 var _default = EffectSymbol;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/number":390,"../../util/symbol":391,"./Symbol":70,"zrender/lib/core/util":436}],64:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/number":388,"../../util/symbol":389,"./Symbol":68,"zrender/lib/core/util":434}],62:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var IncrementalDisplayable = require("zrender/lib/graphic/IncrementalDisplayable");
@@ -40589,7 +40580,7 @@ largeLineProto._clearIncremental = function () {
 
 var _default = LargeLineDraw;
 module.exports = _default;
-},{"../../util/graphic":387,"zrender/lib/contain/line":415,"zrender/lib/contain/quadratic":418,"zrender/lib/graphic/IncrementalDisplayable":443}],65:[function(require,module,exports){
+},{"../../util/graphic":385,"zrender/lib/contain/line":413,"zrender/lib/contain/quadratic":416,"zrender/lib/graphic/IncrementalDisplayable":441}],63:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var _symbol = require("../../util/symbol");
@@ -40839,7 +40830,7 @@ largeSymbolProto._clearIncremental = function () {
 
 var _default = LargeSymbolDraw;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/symbol":391,"zrender/lib/graphic/IncrementalDisplayable":443}],66:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/symbol":389,"zrender/lib/graphic/IncrementalDisplayable":441}],64:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var vector = require("zrender/lib/core/vector");
@@ -41193,7 +41184,7 @@ lineProto.setLinePoints = function (points) {
 zrUtil.inherits(Line, graphic.Group);
 var _default = Line;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/number":390,"../../util/symbol":391,"./LinePath":68,"zrender/lib/core/util":436,"zrender/lib/core/vector":437}],67:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/number":388,"../../util/symbol":389,"./LinePath":66,"zrender/lib/core/util":434,"zrender/lib/core/vector":435}],65:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var LineGroup = require("./Line");
@@ -41339,7 +41330,7 @@ function lineNeedsDraw(pts) {
 
 var _default = LineDraw;
 module.exports = _default;
-},{"../../util/graphic":387,"./Line":66}],68:[function(require,module,exports){
+},{"../../util/graphic":385,"./Line":64}],66:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var vec2 = require("zrender/lib/core/vector");
@@ -41383,7 +41374,7 @@ var _default = graphic.extendShape({
 });
 
 module.exports = _default;
-},{"../../util/graphic":387,"zrender/lib/core/vector":437}],69:[function(require,module,exports){
+},{"../../util/graphic":385,"zrender/lib/core/vector":435}],67:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -41460,7 +41451,7 @@ polylineProto.updateLayout = function (lineData, idx) {
 zrUtil.inherits(Polyline, graphic.Group);
 var _default = Polyline;
 module.exports = _default;
-},{"../../util/graphic":387,"zrender/lib/core/util":436}],70:[function(require,module,exports){
+},{"../../util/graphic":385,"zrender/lib/core/util":434}],68:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var _symbol = require("../../util/symbol");
@@ -41785,7 +41776,7 @@ symbolProto.fadeOut = function (cb, opt) {
 zrUtil.inherits(SymbolClz, graphic.Group);
 var _default = SymbolClz;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/number":390,"../../util/symbol":391,"./labelHelper":77,"zrender/lib/core/util":436}],71:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/number":388,"../../util/symbol":389,"./labelHelper":75,"zrender/lib/core/util":434}],69:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var SymbolClz = require("./Symbol");
@@ -41970,7 +41961,7 @@ function makeSeriesScope(data) {
 
 var _default = SymbolDraw;
 module.exports = _default;
-},{"../../util/graphic":387,"./Symbol":70,"zrender/lib/core/util":436}],72:[function(require,module,exports){
+},{"../../util/graphic":385,"./Symbol":68,"zrender/lib/core/util":434}],70:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../../util/graphic");
@@ -42193,7 +42184,7 @@ whiskerBoxDrawProto.remove = function () {
 
 var _default = WhiskerBoxDraw;
 module.exports = _default;
-},{"../../util/graphic":387,"zrender/lib/core/util":436,"zrender/lib/graphic/Path":445}],73:[function(require,module,exports){
+},{"../../util/graphic":385,"zrender/lib/core/util":434,"zrender/lib/graphic/Path":443}],71:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var List = require("../../data/List");
@@ -42272,7 +42263,7 @@ function _default(nodes, edges, seriesModel, directed, beforeLink) {
 }
 
 module.exports = _default;
-},{"../../CoordinateSystem":6,"../../data/Graph":331,"../../data/List":332,"../../data/helper/createDimensions":337,"../../data/helper/linkList":341,"./createListFromArray":74,"zrender/lib/core/util":436}],74:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"../../data/Graph":329,"../../data/List":330,"../../data/helper/createDimensions":335,"../../data/helper/linkList":339,"./createListFromArray":72,"zrender/lib/core/util":434}],72:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var List = require("../../data/List");
@@ -42400,7 +42391,7 @@ function firstDataNotNull(data) {
 
 var _default = createListFromArray;
 module.exports = _default;
-},{"../../CoordinateSystem":6,"../../data/List":332,"../../data/Source":334,"../../data/helper/createDimensions":337,"../../data/helper/dataStackHelper":339,"../../data/helper/dimensionHelper":340,"../../data/helper/sourceType":343,"../../model/referHelper":366,"../../util/model":389,"zrender/lib/core/util":436}],75:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"../../data/List":330,"../../data/Source":332,"../../data/helper/createDimensions":335,"../../data/helper/dataStackHelper":337,"../../data/helper/dimensionHelper":338,"../../data/helper/sourceType":341,"../../model/referHelper":364,"../../util/model":387,"zrender/lib/core/util":434}],73:[function(require,module,exports){
 var createDimensions = require("../../data/helper/createDimensions");
 
 var List = require("../../data/List");
@@ -42438,7 +42429,7 @@ function _default(seriesModel, opt, nameList) {
 }
 
 module.exports = _default;
-},{"../../data/List":332,"../../data/helper/createDimensions":337,"zrender/lib/core/util":436}],76:[function(require,module,exports){
+},{"../../data/List":330,"../../data/helper/createDimensions":335,"zrender/lib/core/util":434}],74:[function(require,module,exports){
 var _model = require("../../util/model");
 
 var makeInner = _model.makeInner;
@@ -42460,7 +42451,7 @@ function _default() {
 }
 
 module.exports = _default;
-},{"../../util/model":389}],77:[function(require,module,exports){
+},{"../../util/model":387}],75:[function(require,module,exports){
 var _dataProvider = require("../../data/helper/dataProvider");
 
 var retrieveRawValue = _dataProvider.retrieveRawValue;
@@ -42489,7 +42480,7 @@ function getDefaultLabel(data, dataIndex) {
 }
 
 exports.getDefaultLabel = getDefaultLabel;
-},{"../../data/helper/dataProvider":338}],78:[function(require,module,exports){
+},{"../../data/helper/dataProvider":336}],76:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 function retrieveTargetInfo(payload, validPayloadTypes, seriesModel) {
@@ -42552,7 +42543,7 @@ exports.retrieveTargetInfo = retrieveTargetInfo;
 exports.getPathToRoot = getPathToRoot;
 exports.aboveViewRoot = aboveViewRoot;
 exports.wrapTreePathInfo = wrapTreePathInfo;
-},{"zrender/lib/core/util":436}],79:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],77:[function(require,module,exports){
 var createListSimply = require("../helper/createListSimply");
 
 var WhiskerBoxDraw = require("../helper/WhiskerBoxDraw");
@@ -42680,7 +42671,7 @@ var viewMixin = {
 };
 exports.seriesModelMixin = seriesModelMixin;
 exports.viewMixin = viewMixin;
-},{"../../data/helper/dimensionHelper":340,"../helper/WhiskerBoxDraw":72,"../helper/createListSimply":75,"zrender/lib/core/util":436}],80:[function(require,module,exports){
+},{"../../data/helper/dimensionHelper":338,"../helper/WhiskerBoxDraw":70,"../helper/createListSimply":73,"zrender/lib/core/util":434}],78:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./line/LineSeries");
@@ -42700,7 +42691,7 @@ echarts.registerVisual(visualSymbol('line', 'circle', 'line'));
 echarts.registerLayout(layoutPoints('line')); // Down sample after filter
 
 echarts.registerProcessor(echarts.PRIORITY.PROCESSOR.STATISTIC, dataSample('line'));
-},{"../component/gridSimple":204,"../echarts":344,"../layout/points":350,"../processor/dataSample":370,"../visual/symbol":399,"./line/LineSeries":81,"./line/LineView":82}],81:[function(require,module,exports){
+},{"../component/gridSimple":202,"../echarts":342,"../layout/points":348,"../processor/dataSample":368,"../visual/symbol":397,"./line/LineSeries":79,"./line/LineView":80}],79:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -42773,7 +42764,7 @@ var _default = SeriesModel.extend({
 });
 
 module.exports = _default;
-},{"../../config":282,"../../model/Series":356,"../helper/createListFromArray":74}],82:[function(require,module,exports){
+},{"../../config":280,"../../model/Series":354,"../helper/createListFromArray":72}],80:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -43437,7 +43428,7 @@ var _default = ChartView.extend({
 });
 
 module.exports = _default;
-},{"../../config":282,"../../util/graphic":387,"../../util/model":389,"../../view/Chart":393,"../helper/Symbol":70,"../helper/SymbolDraw":71,"./helper":83,"./lineAnimationDiff":84,"./poly":85,"zrender/lib/core/util":436}],83:[function(require,module,exports){
+},{"../../config":280,"../../util/graphic":385,"../../util/model":387,"../../view/Chart":391,"../helper/Symbol":68,"../helper/SymbolDraw":69,"./helper":81,"./lineAnimationDiff":82,"./poly":83,"zrender/lib/core/util":434}],81:[function(require,module,exports){
 var _dataStackHelper = require("../../data/helper/dataStackHelper");
 
 var isDimensionStacked = _dataStackHelper.isDimensionStacked;
@@ -43520,7 +43511,7 @@ function getStackedOnPoint(dataCoordInfo, coordSys, data, idx) {
 
 exports.prepareDataCoordInfo = prepareDataCoordInfo;
 exports.getStackedOnPoint = getStackedOnPoint;
-},{"../../data/helper/dataStackHelper":339,"zrender/lib/core/util":436}],84:[function(require,module,exports){
+},{"../../data/helper/dataStackHelper":337,"zrender/lib/core/util":434}],82:[function(require,module,exports){
 var _helper = require("./helper");
 
 var prepareDataCoordInfo = _helper.prepareDataCoordInfo;
@@ -43674,7 +43665,7 @@ function _default(oldData, newData, oldStackedOnPoints, newStackedOnPoints, oldC
 }
 
 module.exports = _default;
-},{"./helper":83}],85:[function(require,module,exports){
+},{"./helper":81}],83:[function(require,module,exports){
 var Path = require("zrender/lib/graphic/Path");
 
 var vec2 = require("zrender/lib/core/vector");
@@ -44010,7 +44001,7 @@ var Polygon = Path.extend({
 });
 exports.Polyline = Polyline;
 exports.Polygon = Polygon;
-},{"zrender/lib/core/vector":437,"zrender/lib/graphic/Path":445,"zrender/lib/graphic/helper/fixClipWithShadow":450}],86:[function(require,module,exports){
+},{"zrender/lib/core/vector":435,"zrender/lib/graphic/Path":443,"zrender/lib/graphic/helper/fixClipWithShadow":448}],84:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./lines/LinesSeries");
@@ -44023,7 +44014,7 @@ var linesVisual = require("./lines/linesVisual");
 
 echarts.registerLayout(linesLayout);
 echarts.registerVisual(linesVisual);
-},{"../echarts":344,"./lines/LinesSeries":87,"./lines/LinesView":88,"./lines/linesLayout":89,"./lines/linesVisual":90}],87:[function(require,module,exports){
+},{"../echarts":342,"./lines/LinesSeries":85,"./lines/LinesView":86,"./lines/linesLayout":87,"./lines/linesVisual":88}],85:[function(require,module,exports){
 (function (global){
 var _config = require("../../config");
 
@@ -44314,7 +44305,7 @@ var LinesSeries = SeriesModel.extend({
 var _default = LinesSeries;
 module.exports = _default;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../../CoordinateSystem":6,"../../config":282,"../../data/List":332,"../../model/Series":356,"../../util/format":386,"zrender/lib/core/util":436}],88:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"../../config":280,"../../data/List":330,"../../model/Series":354,"../../util/format":384,"zrender/lib/core/util":434}],86:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -44462,7 +44453,7 @@ var _default = echarts.extendChartView({
 });
 
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../helper/EffectLine":61,"../helper/EffectPolyline":62,"../helper/LargeLineDraw":64,"../helper/Line":66,"../helper/LineDraw":67,"../helper/Polyline":69,"./linesLayout":89}],89:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../helper/EffectLine":59,"../helper/EffectPolyline":60,"../helper/LargeLineDraw":62,"../helper/Line":64,"../helper/LineDraw":65,"../helper/Polyline":67,"./linesLayout":87}],87:[function(require,module,exports){
 var createRenderPlanner = require("../helper/createRenderPlanner");
 
 var _default = {
@@ -44541,7 +44532,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"../helper/createRenderPlanner":76}],90:[function(require,module,exports){
+},{"../helper/createRenderPlanner":74}],88:[function(require,module,exports){
 function normalize(a) {
   if (!(a instanceof Array)) {
     a = [a, a];
@@ -44581,7 +44572,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{}],91:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./map/MapSeries");
@@ -44619,7 +44610,7 @@ createDataSelectAction('map', [{
   event: 'mapunselected',
   method: 'unSelect'
 }]);
-},{"../action/createDataSelectAction":8,"../action/geoRoam":9,"../coord/geo/geoCreator":306,"../echarts":344,"./map/MapSeries":92,"./map/MapView":93,"./map/backwardCompat":94,"./map/mapDataStatistic":95,"./map/mapSymbolLayout":96,"./map/mapVisual":97}],92:[function(require,module,exports){
+},{"../action/createDataSelectAction":6,"../action/geoRoam":7,"../coord/geo/geoCreator":304,"../echarts":342,"./map/MapSeries":90,"./map/MapView":91,"./map/backwardCompat":92,"./map/mapDataStatistic":93,"./map/mapSymbolLayout":94,"./map/mapVisual":95}],90:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var createListSimply = require("../helper/createListSimply");
@@ -44833,7 +44824,7 @@ var MapSeries = SeriesModel.extend({
 zrUtil.mixin(MapSeries, dataSelectableMixin);
 var _default = MapSeries;
 module.exports = _default;
-},{"../../component/helper/selectableMixin":214,"../../coord/geo/geoCreator":306,"../../data/helper/dataProvider":338,"../../model/Series":356,"../../util/format":386,"../helper/createListSimply":75,"zrender/lib/core/util":436}],93:[function(require,module,exports){
+},{"../../component/helper/selectableMixin":212,"../../coord/geo/geoCreator":304,"../../data/helper/dataProvider":336,"../../model/Series":354,"../../util/format":384,"../helper/createListSimply":73,"zrender/lib/core/util":434}],91:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -44970,7 +44961,7 @@ var _default = echarts.extendChartView({
 });
 
 module.exports = _default;
-},{"../../component/helper/MapDraw":207,"../../echarts":344,"../../util/graphic":387,"zrender/lib/core/util":436}],94:[function(require,module,exports){
+},{"../../component/helper/MapDraw":205,"../../echarts":342,"../../util/graphic":385,"zrender/lib/core/util":434}],92:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 function _default(option) {
@@ -44987,7 +44978,7 @@ function _default(option) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],95:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],93:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 // FIXME 公用？
@@ -45066,7 +45057,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],96:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],94:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 function _default(ecModel) {
@@ -45117,7 +45108,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],97:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],95:[function(require,module,exports){
 function _default(ecModel) {
   ecModel.eachSeriesByType('map', function (seriesModel) {
     var colorList = seriesModel.get('color');
@@ -45132,7 +45123,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{}],98:[function(require,module,exports){
+},{}],96:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("../component/parallel");
@@ -45144,7 +45135,7 @@ require("./parallel/ParallelView");
 var parallelVisual = require("./parallel/parallelVisual");
 
 echarts.registerVisual(parallelVisual);
-},{"../component/parallel":237,"../echarts":344,"./parallel/ParallelSeries":99,"./parallel/ParallelView":100,"./parallel/parallelVisual":101}],99:[function(require,module,exports){
+},{"../component/parallel":235,"../echarts":342,"./parallel/ParallelSeries":97,"./parallel/ParallelView":98,"./parallel/parallelVisual":99}],97:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var each = _util.each;
@@ -45245,7 +45236,7 @@ function convertDimNameToNumber(dimName) {
 }
 
 module.exports = _default;
-},{"../../model/Series":356,"../helper/createListFromArray":74,"zrender/lib/core/util":436}],100:[function(require,module,exports){
+},{"../../model/Series":354,"../helper/createListFromArray":72,"zrender/lib/core/util":434}],98:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -45468,7 +45459,7 @@ function isEmptyValue(val, axisType) {
 
 var _default = ParallelView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../view/Chart":393,"zrender/lib/core/util":436}],101:[function(require,module,exports){
+},{"../../util/graphic":385,"../../view/Chart":391,"zrender/lib/core/util":434}],99:[function(require,module,exports){
 var opacityAccessPath = ['lineStyle', 'normal', 'opacity'];
 
 function _default(ecModel) {
@@ -45503,7 +45494,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{}],102:[function(require,module,exports){
+},{}],100:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -45525,7 +45516,7 @@ require("../component/gridSimple");
 // In case developer forget to include grid component
 echarts.registerLayout(zrUtil.curry(layout, 'pictorialBar'));
 echarts.registerVisual(visualSymbol('pictorialBar', 'roundRect'));
-},{"../component/gridSimple":204,"../coord/cartesian/Grid":296,"../echarts":344,"../layout/barGrid":348,"../visual/symbol":399,"./bar/PictorialBarSeries":15,"./bar/PictorialBarView":16,"zrender/lib/core/util":436}],103:[function(require,module,exports){
+},{"../component/gridSimple":202,"../coord/cartesian/Grid":294,"../echarts":342,"../layout/barGrid":346,"../visual/symbol":397,"./bar/PictorialBarSeries":13,"./bar/PictorialBarView":14,"zrender/lib/core/util":434}],101:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -45558,7 +45549,7 @@ createDataSelectAction('pie', [{
 echarts.registerVisual(dataColor('pie'));
 echarts.registerLayout(zrUtil.curry(pieLayout, 'pie'));
 echarts.registerProcessor(dataFilter('pie'));
-},{"../action/createDataSelectAction":8,"../echarts":344,"../processor/dataFilter":369,"../visual/dataColor":397,"./pie/PieSeries":104,"./pie/PieView":105,"./pie/pieLayout":107,"zrender/lib/core/util":436}],104:[function(require,module,exports){
+},{"../action/createDataSelectAction":6,"../echarts":342,"../processor/dataFilter":367,"../visual/dataColor":395,"./pie/PieSeries":102,"./pie/PieView":103,"./pie/pieLayout":105,"zrender/lib/core/util":434}],102:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var createListSimply = require("../helper/createListSimply");
@@ -45698,7 +45689,7 @@ var PieSeries = echarts.extendSeriesModel({
 zrUtil.mixin(PieSeries, dataSelectableMixin);
 var _default = PieSeries;
 module.exports = _default;
-},{"../../component/helper/selectableMixin":214,"../../data/helper/dataProvider":338,"../../echarts":344,"../../util/model":389,"../../util/number":390,"../helper/createListSimply":75,"zrender/lib/core/util":436}],105:[function(require,module,exports){
+},{"../../component/helper/selectableMixin":212,"../../data/helper/dataProvider":336,"../../echarts":342,"../../util/model":387,"../../util/number":388,"../helper/createListSimply":73,"zrender/lib/core/util":434}],103:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../../util/graphic");
@@ -46012,7 +46003,7 @@ var PieView = ChartView.extend({
 });
 var _default = PieView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../view/Chart":393,"zrender/lib/core/util":436}],106:[function(require,module,exports){
+},{"../../util/graphic":385,"../../view/Chart":391,"zrender/lib/core/util":434}],104:[function(require,module,exports){
 var textContain = require("zrender/lib/contain/text");
 
 // FIXME emphasis label position is not same with normal label position
@@ -46224,7 +46215,7 @@ function _default(seriesModel, r, viewWidth, viewHeight) {
 }
 
 module.exports = _default;
-},{"zrender/lib/contain/text":419}],107:[function(require,module,exports){
+},{"zrender/lib/contain/text":417}],105:[function(require,module,exports){
 var _number = require("../../util/number");
 
 var parsePercent = _number.parsePercent;
@@ -46358,7 +46349,7 @@ function _default(seriesType, ecModel, api, payload) {
 }
 
 module.exports = _default;
-},{"../../util/number":390,"./labelLayout":106,"zrender/lib/core/util":436}],108:[function(require,module,exports){
+},{"../../util/number":388,"./labelLayout":104,"zrender/lib/core/util":434}],106:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("../component/radar");
@@ -46383,7 +46374,7 @@ echarts.registerVisual(visualSymbol('radar', 'circle'));
 echarts.registerLayout(radarLayout);
 echarts.registerProcessor(dataFilter('radar'));
 echarts.registerPreprocessor(backwardCompat);
-},{"../component/radar":240,"../echarts":344,"../processor/dataFilter":369,"../visual/dataColor":397,"../visual/symbol":399,"./radar/RadarSeries":109,"./radar/RadarView":110,"./radar/backwardCompat":111,"./radar/radarLayout":112}],109:[function(require,module,exports){
+},{"../component/radar":238,"../echarts":342,"../processor/dataFilter":367,"../visual/dataColor":395,"../visual/symbol":397,"./radar/RadarSeries":107,"./radar/RadarView":108,"./radar/backwardCompat":109,"./radar/radarLayout":110}],107:[function(require,module,exports){
 var SeriesModel = require("../../model/Series");
 
 var createListSimply = require("../helper/createListSimply");
@@ -46444,7 +46435,7 @@ var RadarSeries = SeriesModel.extend({
 });
 var _default = RadarSeries;
 module.exports = _default;
-},{"../../model/Series":356,"../../util/format":386,"../helper/createListSimply":75,"zrender/lib/core/util":436}],110:[function(require,module,exports){
+},{"../../model/Series":354,"../../util/format":384,"../helper/createListSimply":73,"zrender/lib/core/util":434}],108:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var graphic = require("../../util/graphic");
@@ -46628,7 +46619,7 @@ var _default = echarts.extendChartView({
 });
 
 module.exports = _default;
-},{"../../echarts":344,"../../util/graphic":387,"../../util/symbol":391,"zrender/lib/core/util":436}],111:[function(require,module,exports){
+},{"../../echarts":342,"../../util/graphic":385,"../../util/symbol":389,"zrender/lib/core/util":434}],109:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 // Backward compat for radar chart in 2
@@ -46669,7 +46660,7 @@ function _default(option) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],112:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],110:[function(require,module,exports){
 function _default(ecModel) {
   ecModel.eachSeriesByType('radar', function (seriesModel) {
     var data = seriesModel.getData();
@@ -46700,7 +46691,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{}],113:[function(require,module,exports){
+},{}],111:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./sankey/SankeySeries");
@@ -46713,7 +46704,7 @@ var sankeyVisual = require("./sankey/sankeyVisual");
 
 echarts.registerLayout(sankeyLayout);
 echarts.registerVisual(sankeyVisual);
-},{"../echarts":344,"./sankey/SankeySeries":114,"./sankey/SankeyView":115,"./sankey/sankeyLayout":116,"./sankey/sankeyVisual":117}],114:[function(require,module,exports){
+},{"../echarts":342,"./sankey/SankeySeries":112,"./sankey/SankeyView":113,"./sankey/sankeyLayout":114,"./sankey/sankeyVisual":115}],112:[function(require,module,exports){
 var SeriesModel = require("../../model/Series");
 
 var createGraphFromNodeEdge = require("../helper/createGraphFromNodeEdge");
@@ -46828,7 +46819,7 @@ var SankeySeries = SeriesModel.extend({
 });
 var _default = SankeySeries;
 module.exports = _default;
-},{"../../model/Series":356,"../../util/format":386,"../helper/createGraphFromNodeEdge":73}],115:[function(require,module,exports){
+},{"../../model/Series":354,"../../util/format":384,"../helper/createGraphFromNodeEdge":71}],113:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var echarts = require("../../echarts");
@@ -46982,7 +46973,7 @@ function createGridClipShape(rect, seriesModel, cb) {
 }
 
 module.exports = _default;
-},{"../../echarts":344,"../../util/graphic":387}],116:[function(require,module,exports){
+},{"../../echarts":342,"../../util/graphic":385}],114:[function(require,module,exports){
 var layout = require("../../util/layout");
 
 var nest = require("../../util/array/nest");
@@ -47383,7 +47374,7 @@ function getEdgeValue(edge) {
 }
 
 module.exports = _default;
-},{"../../util/array/nest":383,"../../util/layout":388,"zrender/lib/core/util":436}],117:[function(require,module,exports){
+},{"../../util/array/nest":381,"../../util/layout":386,"zrender/lib/core/util":434}],115:[function(require,module,exports){
 var VisualMapping = require("../../visual/VisualMapping");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -47422,7 +47413,7 @@ function _default(ecModel, payload) {
 }
 
 module.exports = _default;
-},{"../../visual/VisualMapping":395,"zrender/lib/core/util":436}],118:[function(require,module,exports){
+},{"../../visual/VisualMapping":393,"zrender/lib/core/util":434}],116:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./scatter/ScatterSeries");
@@ -47456,7 +47447,7 @@ echarts.registerLayout(layoutPoints('scatter')); // echarts.registerProcessor(fu
 //         data.selectRange(range);
 //     });
 // });
-},{"../component/gridSimple":204,"../echarts":344,"../layout/points":350,"../visual/symbol":399,"./scatter/ScatterSeries":119,"./scatter/ScatterView":120}],119:[function(require,module,exports){
+},{"../component/gridSimple":202,"../echarts":342,"../layout/points":348,"../visual/symbol":397,"./scatter/ScatterSeries":117,"./scatter/ScatterView":118}],117:[function(require,module,exports){
 var createListFromArray = require("../helper/createListFromArray");
 
 var SeriesModel = require("../../model/Series");
@@ -47526,7 +47517,7 @@ var _default = SeriesModel.extend({
 });
 
 module.exports = _default;
-},{"../../model/Series":356,"../helper/createListFromArray":74}],120:[function(require,module,exports){
+},{"../../model/Series":354,"../helper/createListFromArray":72}],118:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var SymbolDraw = require("../helper/SymbolDraw");
@@ -47602,7 +47593,7 @@ echarts.extendChartView({
   },
   dispose: function () {}
 });
-},{"../../echarts":344,"../../layout/points":350,"../helper/LargeSymbolDraw":65,"../helper/SymbolDraw":71}],121:[function(require,module,exports){
+},{"../../echarts":342,"../../layout/points":348,"../helper/LargeSymbolDraw":63,"../helper/SymbolDraw":69}],119:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -47622,7 +47613,7 @@ var dataFilter = require("../processor/dataFilter");
 echarts.registerVisual(zrUtil.curry(dataColor, 'sunburst'));
 echarts.registerLayout(zrUtil.curry(sunburstLayout, 'sunburst'));
 echarts.registerProcessor(zrUtil.curry(dataFilter, 'sunburst'));
-},{"../echarts":344,"../processor/dataFilter":369,"../visual/dataColor":397,"./sunburst/SunburstSeries":123,"./sunburst/SunburstView":124,"./sunburst/sunburstAction":125,"./sunburst/sunburstLayout":126,"zrender/lib/core/util":436}],122:[function(require,module,exports){
+},{"../echarts":342,"../processor/dataFilter":367,"../visual/dataColor":395,"./sunburst/SunburstSeries":121,"./sunburst/SunburstView":122,"./sunburst/sunburstAction":123,"./sunburst/sunburstLayout":124,"zrender/lib/core/util":434}],120:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../../util/graphic");
@@ -47965,7 +47956,7 @@ function isNodeHighlighted(node, activeNode, policy) {
 }
 
 module.exports = _default;
-},{"../../util/graphic":387,"zrender/lib/core/util":436}],123:[function(require,module,exports){
+},{"../../util/graphic":385,"zrender/lib/core/util":434}],121:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var SeriesModel = require("../../model/Series");
@@ -48130,7 +48121,7 @@ function completeTreeValue(dataNode) {
 }
 
 module.exports = _default;
-},{"../../data/Tree":335,"../../model/Series":356,"../helper/treeHelper":78,"zrender/lib/core/util":436}],124:[function(require,module,exports){
+},{"../../data/Tree":333,"../../model/Series":354,"../helper/treeHelper":76,"zrender/lib/core/util":434}],122:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var ChartView = require("../../view/Chart");
@@ -48336,7 +48327,7 @@ var SunburstView = ChartView.extend({
 });
 var _default = SunburstView;
 module.exports = _default;
-},{"../../data/DataDiffer":330,"../../view/Chart":393,"./SunburstPiece":122,"zrender/lib/core/util":436}],125:[function(require,module,exports){
+},{"../../data/DataDiffer":328,"../../view/Chart":391,"./SunburstPiece":120,"zrender/lib/core/util":434}],123:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var helper = require("../helper/treeHelper");
@@ -48403,7 +48394,7 @@ echarts.registerAction({
     payload.unhighlight = true;
   }
 });
-},{"../../echarts":344,"../helper/treeHelper":78}],126:[function(require,module,exports){
+},{"../../echarts":342,"../helper/treeHelper":76}],124:[function(require,module,exports){
 var _number = require("../../util/number");
 
 var parsePercent = _number.parsePercent;
@@ -48582,7 +48573,7 @@ function sort(children, sortOrder) {
 }
 
 module.exports = _default;
-},{"../../util/number":390,"zrender/lib/core/util":436}],127:[function(require,module,exports){
+},{"../../util/number":388,"zrender/lib/core/util":434}],125:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("../component/singleAxis");
@@ -48600,7 +48591,7 @@ var dataFilter = require("../processor/dataFilter");
 echarts.registerLayout(themeRiverLayout);
 echarts.registerVisual(themeRiverVisual);
 echarts.registerProcessor(dataFilter('themeRiver'));
-},{"../component/singleAxis":243,"../echarts":344,"../processor/dataFilter":369,"./themeRiver/ThemeRiverSeries":128,"./themeRiver/ThemeRiverView":129,"./themeRiver/themeRiverLayout":130,"./themeRiver/themeRiverVisual":131}],128:[function(require,module,exports){
+},{"../component/singleAxis":241,"../echarts":342,"../processor/dataFilter":367,"./themeRiver/ThemeRiverSeries":126,"./themeRiver/ThemeRiverView":127,"./themeRiver/themeRiverLayout":128,"./themeRiver/themeRiverVisual":129}],126:[function(require,module,exports){
 var SeriesModel = require("../../model/Series");
 
 var createDimensions = require("../../data/helper/createDimensions");
@@ -48892,7 +48883,7 @@ var ThemeRiverSeries = SeriesModel.extend({
 });
 var _default = ThemeRiverSeries;
 module.exports = _default;
-},{"../../data/List":332,"../../data/helper/createDimensions":337,"../../data/helper/dimensionHelper":340,"../../model/Series":356,"../../util/array/nest":383,"../../util/format":386,"zrender/lib/core/util":436}],129:[function(require,module,exports){
+},{"../../data/List":330,"../../data/helper/createDimensions":335,"../../data/helper/dimensionHelper":338,"../../model/Series":354,"../../util/array/nest":381,"../../util/format":384,"zrender/lib/core/util":434}],127:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var _poly = require("../line/poly");
@@ -49046,7 +49037,7 @@ function createGridClipShape(rect, seriesModel, cb) {
 }
 
 module.exports = _default;
-},{"../../data/DataDiffer":330,"../../echarts":344,"../../util/graphic":387,"../line/poly":85,"zrender/lib/core/util":436}],130:[function(require,module,exports){
+},{"../../data/DataDiffer":328,"../../echarts":342,"../../util/graphic":385,"../line/poly":83,"zrender/lib/core/util":434}],128:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var numberUtil = require("../../util/number");
@@ -49187,7 +49178,7 @@ function computeBaseline(data) {
 }
 
 module.exports = _default;
-},{"../../util/number":390,"zrender/lib/core/util":436}],131:[function(require,module,exports){
+},{"../../util/number":388,"zrender/lib/core/util":434}],129:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var createHashMap = _util.createHashMap;
@@ -49219,7 +49210,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],132:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],130:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./tree/TreeSeries");
@@ -49237,7 +49228,7 @@ var radialLayout = require("./tree/radialLayout");
 echarts.registerVisual(visualSymbol('tree', 'circle'));
 echarts.registerLayout(orthogonalLayout);
 echarts.registerLayout(radialLayout);
-},{"../echarts":344,"../visual/symbol":399,"./tree/TreeSeries":133,"./tree/TreeView":134,"./tree/orthogonalLayout":137,"./tree/radialLayout":138,"./tree/treeAction":140}],133:[function(require,module,exports){
+},{"../echarts":342,"../visual/symbol":397,"./tree/TreeSeries":131,"./tree/TreeView":132,"./tree/orthogonalLayout":135,"./tree/radialLayout":136,"./tree/treeAction":138}],131:[function(require,module,exports){
 var SeriesModel = require("../../model/Series");
 
 var Tree = require("../../data/Tree");
@@ -49346,7 +49337,7 @@ var _default = SeriesModel.extend({
 });
 
 module.exports = _default;
-},{"../../data/Tree":335,"../../model/Series":356,"../../util/format":386}],134:[function(require,module,exports){
+},{"../../data/Tree":333,"../../model/Series":354,"../../util/format":384}],132:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../../util/graphic");
@@ -49678,7 +49669,7 @@ function getEdgeShape(seriesScope, sourceLayout, targetLayout) {
 }
 
 module.exports = _default;
-},{"../../echarts":344,"../../util/graphic":387,"../helper/Symbol":70,"./layoutHelper":136,"zrender/lib/core/util":436}],135:[function(require,module,exports){
+},{"../../echarts":342,"../../util/graphic":385,"../helper/Symbol":68,"./layoutHelper":134,"zrender/lib/core/util":434}],133:[function(require,module,exports){
 var _traversalHelper = require("./traversalHelper");
 
 var eachAfter = _traversalHelper.eachAfter;
@@ -49787,7 +49778,7 @@ function _default(seriesModel, api) {
 }
 
 module.exports = _default;
-},{"./layoutHelper":136,"./traversalHelper":139}],136:[function(require,module,exports){
+},{"./layoutHelper":134,"./traversalHelper":137}],134:[function(require,module,exports){
 var layout = require("../../util/layout");
 
 /**
@@ -50062,7 +50053,7 @@ exports.secondWalk = secondWalk;
 exports.separation = separation;
 exports.radialCoordinate = radialCoordinate;
 exports.getViewRect = getViewRect;
-},{"../../util/layout":388}],137:[function(require,module,exports){
+},{"../../util/layout":386}],135:[function(require,module,exports){
 var commonLayout = require("./commonLayout");
 
 function _default(ecModel, api) {
@@ -50072,9 +50063,9 @@ function _default(ecModel, api) {
 }
 
 module.exports = _default;
-},{"./commonLayout":135}],138:[function(require,module,exports){
-arguments[4][137][0].apply(exports,arguments)
-},{"./commonLayout":135,"dup":137}],139:[function(require,module,exports){
+},{"./commonLayout":133}],136:[function(require,module,exports){
+arguments[4][135][0].apply(exports,arguments)
+},{"./commonLayout":133,"dup":135}],137:[function(require,module,exports){
 /**
  * Traverse the tree from bottom to top and do something
  * @param  {module:echarts/data/Tree~TreeNode} root  The real root of the tree
@@ -50134,7 +50125,7 @@ function eachBefore(root, callback) {
 
 exports.eachAfter = eachAfter;
 exports.eachBefore = eachBefore;
-},{}],140:[function(require,module,exports){
+},{}],138:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 echarts.registerAction({
@@ -50153,7 +50144,7 @@ echarts.registerAction({
     node.isExpand = !node.isExpand;
   });
 });
-},{"../../echarts":344}],141:[function(require,module,exports){
+},{"../../echarts":342}],139:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./treemap/TreemapSeries");
@@ -50168,7 +50159,7 @@ var treemapLayout = require("./treemap/treemapLayout");
 
 echarts.registerVisual(treemapVisual);
 echarts.registerLayout(treemapLayout);
-},{"../echarts":344,"./treemap/TreemapSeries":143,"./treemap/TreemapView":144,"./treemap/treemapAction":145,"./treemap/treemapLayout":146,"./treemap/treemapVisual":147}],142:[function(require,module,exports){
+},{"../echarts":342,"./treemap/TreemapSeries":141,"./treemap/TreemapView":142,"./treemap/treemapAction":143,"./treemap/treemapLayout":144,"./treemap/treemapVisual":145}],140:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var layout = require("../../util/layout");
@@ -50324,7 +50315,7 @@ function packEventData(el, seriesModel, itemNode) {
 
 var _default = Breadcrumb;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/layout":388,"../helper/treeHelper":78,"zrender/lib/core/util":436}],143:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/layout":386,"../helper/treeHelper":76,"zrender/lib/core/util":434}],141:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var SeriesModel = require("../../model/Series");
@@ -50691,7 +50682,7 @@ function setDefault(levels, ecModel) {
 }
 
 module.exports = _default;
-},{"../../data/Tree":335,"../../model/Model":354,"../../model/Series":356,"../../util/format":386,"../helper/treeHelper":78,"zrender/lib/core/util":436}],144:[function(require,module,exports){
+},{"../../data/Tree":333,"../../model/Model":352,"../../model/Series":354,"../../util/format":384,"../helper/treeHelper":76,"zrender/lib/core/util":434}],142:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -51550,7 +51541,7 @@ function calculateZ(depth, zInLevel) {
 }
 
 module.exports = _default;
-},{"../../component/helper/RoamController":208,"../../data/DataDiffer":330,"../../echarts":344,"../../model/mixin/makeStyleMapper":364,"../../util/animation":382,"../../util/graphic":387,"../helper/treeHelper":78,"./Breadcrumb":142,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/matrix":434,"zrender/lib/core/util":436}],145:[function(require,module,exports){
+},{"../../component/helper/RoamController":206,"../../data/DataDiffer":328,"../../echarts":342,"../../model/mixin/makeStyleMapper":362,"../../util/animation":380,"../../util/graphic":385,"../helper/treeHelper":76,"./Breadcrumb":140,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/matrix":432,"zrender/lib/core/util":434}],143:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var helper = require("../helper/treeHelper");
@@ -51594,7 +51585,7 @@ echarts.registerAction({
     }
   }
 });
-},{"../../echarts":344,"../helper/treeHelper":78}],146:[function(require,module,exports){
+},{"../../echarts":342,"../helper/treeHelper":76}],144:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var BoundingRect = require("zrender/lib/core/BoundingRect");
@@ -52112,7 +52103,7 @@ function getUpperLabelHeight(model) {
 }
 
 module.exports = _default;
-},{"../../util/layout":388,"../../util/number":390,"../helper/treeHelper":78,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/util":436}],147:[function(require,module,exports){
+},{"../../util/layout":386,"../../util/number":388,"../helper/treeHelper":76,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/util":434}],145:[function(require,module,exports){
 var VisualMapping = require("../../visual/VisualMapping");
 
 var zrColor = require("zrender/lib/tool/color");
@@ -52293,15 +52284,15 @@ function mapVisual(nodeModel, visuals, child, index, mapping, seriesModel) {
 }
 
 module.exports = _default;
-},{"../../visual/VisualMapping":395,"zrender/lib/core/util":436,"zrender/lib/tool/color":480}],148:[function(require,module,exports){
+},{"../../visual/VisualMapping":393,"zrender/lib/core/util":434,"zrender/lib/tool/color":478}],146:[function(require,module,exports){
 require("../coord/polar/polarCreator");
 
 require("./axis/AngleAxisView");
-},{"../coord/polar/polarCreator":320,"./axis/AngleAxisView":162}],149:[function(require,module,exports){
+},{"../coord/polar/polarCreator":318,"./axis/AngleAxisView":160}],147:[function(require,module,exports){
 require("../coord/cartesian/AxisModel");
 
 require("./axis/CartesianAxisView");
-},{"../coord/cartesian/AxisModel":293,"./axis/CartesianAxisView":165}],150:[function(require,module,exports){
+},{"../coord/cartesian/AxisModel":291,"./axis/CartesianAxisView":163}],148:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -52345,7 +52336,7 @@ echarts.registerAction({
   event: 'updateAxisPointer',
   update: ':updateAxisPointer'
 }, axisTrigger);
-},{"../echarts":344,"./axisPointer/AxisPointerModel":151,"./axisPointer/AxisPointerView":152,"./axisPointer/CartesianAxisPointer":154,"./axisPointer/axisTrigger":157,"./axisPointer/modelHelper":160,"zrender/lib/core/util":436}],151:[function(require,module,exports){
+},{"../echarts":342,"./axisPointer/AxisPointerModel":149,"./axisPointer/AxisPointerView":150,"./axisPointer/CartesianAxisPointer":152,"./axisPointer/axisTrigger":155,"./axisPointer/modelHelper":158,"zrender/lib/core/util":434}],149:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var AxisPointerModel = echarts.extendComponentModel({
@@ -52432,7 +52423,7 @@ var AxisPointerModel = echarts.extendComponentModel({
 });
 var _default = AxisPointerModel;
 module.exports = _default;
-},{"../../echarts":344}],152:[function(require,module,exports){
+},{"../../echarts":342}],150:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var globalListener = require("./globalListener");
@@ -52475,7 +52466,7 @@ var AxisPointerView = echarts.extendComponentView({
 });
 var _default = AxisPointerView;
 module.exports = _default;
-},{"../../echarts":344,"./globalListener":159}],153:[function(require,module,exports){
+},{"../../echarts":342,"./globalListener":157}],151:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var clazzUtil = require("../../util/clazz");
@@ -52964,7 +52955,7 @@ function updateMandatoryProps(group, axisPointerModel, silent) {
 clazzUtil.enableClassExtend(BaseAxisPointer);
 var _default = BaseAxisPointer;
 module.exports = _default;
-},{"../../util/clazz":384,"../../util/graphic":387,"../../util/model":389,"../../util/throttle":392,"./modelHelper":160,"zrender/lib/core/event":431,"zrender/lib/core/util":436}],154:[function(require,module,exports){
+},{"../../util/clazz":382,"../../util/graphic":385,"../../util/model":387,"../../util/throttle":390,"./modelHelper":158,"zrender/lib/core/event":429,"zrender/lib/core/util":434}],152:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var BaseAxisPointer = require("./BaseAxisPointer");
@@ -53078,7 +53069,7 @@ function getAxisDimIndex(axis) {
 AxisView.registerAxisPointerClass('CartesianAxisPointer', CartesianAxisPointer);
 var _default = CartesianAxisPointer;
 module.exports = _default;
-},{"../../util/graphic":387,"../axis/AxisView":164,"../axis/cartesianAxisHelper":169,"./BaseAxisPointer":153,"./viewHelper":161}],155:[function(require,module,exports){
+},{"../../util/graphic":385,"../axis/AxisView":162,"../axis/cartesianAxisHelper":167,"./BaseAxisPointer":151,"./viewHelper":159}],153:[function(require,module,exports){
 var formatUtil = require("../../util/format");
 
 var BaseAxisPointer = require("./BaseAxisPointer");
@@ -53192,7 +53183,7 @@ var pointerShapeBuilder = {
 AxisView.registerAxisPointerClass('PolarAxisPointer', PolarAxisPointer);
 var _default = PolarAxisPointer;
 module.exports = _default;
-},{"../../util/format":386,"../../util/graphic":387,"../axis/AxisBuilder":163,"../axis/AxisView":164,"./BaseAxisPointer":153,"./viewHelper":161,"zrender/lib/core/matrix":434}],156:[function(require,module,exports){
+},{"../../util/format":384,"../../util/graphic":385,"../axis/AxisBuilder":161,"../axis/AxisView":162,"./BaseAxisPointer":151,"./viewHelper":159,"zrender/lib/core/matrix":432}],154:[function(require,module,exports){
 var graphic = require("../../util/graphic");
 
 var BaseAxisPointer = require("./BaseAxisPointer");
@@ -53302,7 +53293,7 @@ function getGlobalExtent(coordSys, dimIndex) {
 AxisView.registerAxisPointerClass('SingleAxisPointer', SingleAxisPointer);
 var _default = SingleAxisPointer;
 module.exports = _default;
-},{"../../util/graphic":387,"../axis/AxisView":164,"../axis/singleAxisHelper":171,"./BaseAxisPointer":153,"./viewHelper":161}],157:[function(require,module,exports){
+},{"../../util/graphic":385,"../axis/AxisView":162,"../axis/singleAxisHelper":169,"./BaseAxisPointer":151,"./viewHelper":159}],155:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var _model = require("../../util/model");
@@ -53696,7 +53687,7 @@ function illegalPoint(point) {
 }
 
 module.exports = _default;
-},{"../../util/model":389,"./findPointFromSeries":158,"./modelHelper":160,"zrender/lib/core/util":436}],158:[function(require,module,exports){
+},{"../../util/model":387,"./findPointFromSeries":156,"./modelHelper":158,"zrender/lib/core/util":434}],156:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var modelUtil = require("../../util/model");
@@ -53749,7 +53740,7 @@ function _default(finder, ecModel) {
 }
 
 module.exports = _default;
-},{"../../util/model":389,"zrender/lib/core/util":436}],159:[function(require,module,exports){
+},{"../../util/model":387,"zrender/lib/core/util":434}],157:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var env = require("zrender/lib/core/env");
@@ -53873,7 +53864,7 @@ function unregister(key, api) {
 
 exports.register = register;
 exports.unregister = unregister;
-},{"../../util/model":389,"zrender/lib/core/env":430,"zrender/lib/core/util":436}],160:[function(require,module,exports){
+},{"../../util/model":387,"zrender/lib/core/env":428,"zrender/lib/core/util":434}],158:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Model = require("../../model/Model");
@@ -54165,7 +54156,7 @@ exports.fixValue = fixValue;
 exports.getAxisInfo = getAxisInfo;
 exports.getAxisPointerModel = getAxisPointerModel;
 exports.makeKey = makeKey;
-},{"../../model/Model":354,"zrender/lib/core/util":436}],161:[function(require,module,exports){
+},{"../../model/Model":352,"zrender/lib/core/util":434}],159:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../../util/graphic");
@@ -54386,7 +54377,7 @@ exports.buildCartesianSingleLabelElOption = buildCartesianSingleLabelElOption;
 exports.makeLineShape = makeLineShape;
 exports.makeRectShape = makeRectShape;
 exports.makeSectorShape = makeSectorShape;
-},{"../../coord/axisHelper":286,"../../util/format":386,"../../util/graphic":387,"../axis/AxisBuilder":163,"zrender/lib/contain/text":419,"zrender/lib/core/matrix":434,"zrender/lib/core/util":436}],162:[function(require,module,exports){
+},{"../../coord/axisHelper":284,"../../util/format":384,"../../util/graphic":385,"../axis/AxisBuilder":161,"zrender/lib/contain/text":417,"zrender/lib/core/matrix":432,"zrender/lib/core/util":434}],160:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../../util/graphic");
@@ -54597,7 +54588,7 @@ var _default = AxisView.extend({
 });
 
 module.exports = _default;
-},{"../../model/Model":354,"../../util/graphic":387,"./AxisView":164,"zrender/lib/core/util":436}],163:[function(require,module,exports){
+},{"../../model/Model":352,"../../util/graphic":385,"./AxisView":162,"zrender/lib/core/util":434}],161:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var retrieve = _util.retrieve;
@@ -55241,7 +55232,7 @@ function buildAxisLabel(axisBuilder, axisModel, opt) {
 
 var _default = AxisBuilder;
 module.exports = _default;
-},{"../../model/Model":354,"../../util/format":386,"../../util/graphic":387,"../../util/number":390,"../../util/symbol":391,"zrender/lib/core/matrix":434,"zrender/lib/core/util":436,"zrender/lib/core/vector":437}],164:[function(require,module,exports){
+},{"../../model/Model":352,"../../util/format":384,"../../util/graphic":385,"../../util/number":388,"../../util/symbol":389,"zrender/lib/core/matrix":432,"zrender/lib/core/util":434,"zrender/lib/core/vector":435}],162:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -55340,7 +55331,7 @@ AxisView.getAxisPointerClass = function (type) {
 
 var _default = AxisView;
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../axisPointer/modelHelper":160}],165:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../axisPointer/modelHelper":158}],163:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../../util/graphic");
@@ -55541,7 +55532,7 @@ CartesianAxisView.extend({
 CartesianAxisView.extend({
   type: 'yAxis'
 });
-},{"../../util/graphic":387,"./AxisBuilder":163,"./AxisView":164,"./cartesianAxisHelper":169,"zrender/lib/core/util":436}],166:[function(require,module,exports){
+},{"../../util/graphic":385,"./AxisBuilder":161,"./AxisView":162,"./cartesianAxisHelper":167,"zrender/lib/core/util":434}],164:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -55699,7 +55690,7 @@ function getCoordSysModel(axisModel, ecModel) {
 
 var _default = AxisView;
 module.exports = _default;
-},{"../../echarts":344,"../../util/graphic":387,"../helper/BrushController":205,"../helper/brushHelper":209,"./AxisBuilder":163,"zrender/lib/core/util":436}],167:[function(require,module,exports){
+},{"../../echarts":342,"../../util/graphic":385,"../helper/BrushController":203,"../helper/brushHelper":207,"./AxisBuilder":161,"zrender/lib/core/util":434}],165:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../../util/graphic");
@@ -55835,7 +55826,7 @@ function layoutAxis(polar, radiusAxisModel, axisAngle) {
 }
 
 module.exports = _default;
-},{"../../util/graphic":387,"./AxisBuilder":163,"./AxisView":164,"zrender/lib/core/util":436}],168:[function(require,module,exports){
+},{"../../util/graphic":385,"./AxisBuilder":161,"./AxisView":162,"zrender/lib/core/util":434}],166:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var AxisBuilder = require("./AxisBuilder");
@@ -55939,7 +55930,7 @@ var SingleAxisView = AxisView.extend({
 });
 var _default = SingleAxisView;
 module.exports = _default;
-},{"../../util/graphic":387,"./AxisBuilder":163,"./AxisView":164,"./singleAxisHelper":171,"zrender/lib/core/util":436}],169:[function(require,module,exports){
+},{"../../util/graphic":385,"./AxisBuilder":161,"./AxisView":162,"./singleAxisHelper":169,"zrender/lib/core/util":434}],167:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 /**
@@ -56008,7 +55999,7 @@ function layout(gridModel, axisModel, opt) {
 }
 
 exports.layout = layout;
-},{"zrender/lib/core/util":436}],170:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],168:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 /**
@@ -56041,7 +56032,7 @@ echarts.registerAction('parallelAxisExpand', function (payload, ecModel) {
     parallelModel.setAxisExpand(payload);
   });
 });
-},{"../../echarts":344}],171:[function(require,module,exports){
+},{"../../echarts":342}],169:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 /**
@@ -56101,7 +56092,7 @@ function layout(axisModel, opt) {
 }
 
 exports.layout = layout;
-},{"zrender/lib/core/util":436}],172:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],170:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var preprocessor = require("./brush/preprocessor");
@@ -56120,7 +56111,7 @@ require("./toolbox/feature/Brush");
  * Brush component entry
  */
 echarts.registerPreprocessor(preprocessor);
-},{"../echarts":344,"./brush/BrushModel":173,"./brush/BrushView":174,"./brush/brushAction":175,"./brush/preprocessor":176,"./brush/visualEncoding":178,"./toolbox/feature/Brush":258}],173:[function(require,module,exports){
+},{"../echarts":342,"./brush/BrushModel":171,"./brush/BrushView":172,"./brush/brushAction":173,"./brush/preprocessor":174,"./brush/visualEncoding":176,"./toolbox/feature/Brush":256}],171:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -56257,7 +56248,7 @@ function generateBrushOption(option, brushOption) {
 
 var _default = BrushModel;
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../../model/Model":354,"../../visual/visualSolution":401,"zrender/lib/core/util":436}],174:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../../model/Model":352,"../../visual/visualSolution":399,"zrender/lib/core/util":434}],172:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -56350,7 +56341,7 @@ function updateController(brushModel, ecModel, api, payload) {
 }
 
 module.exports = _default;
-},{"../../echarts":344,"../helper/BrushController":205,"zrender/lib/core/util":436}],175:[function(require,module,exports){
+},{"../../echarts":342,"../helper/BrushController":203,"zrender/lib/core/util":434}],173:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 /**
@@ -56401,7 +56392,7 @@ echarts.registerAction({
   event: 'brushSelected',
   update: 'none'
 }, function () {});
-},{"../../echarts":344}],176:[function(require,module,exports){
+},{"../../echarts":342}],174:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var DEFAULT_TOOLBOX_BTNS = ['rect', 'polygon', 'keep', 'clear'];
@@ -56461,7 +56452,7 @@ function removeDuplicate(arr) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],177:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],175:[function(require,module,exports){
 var polygonContain = require("zrender/lib/contain/polygon");
 
 var BoundingRect = require("zrender/lib/core/BoundingRect");
@@ -56583,7 +56574,7 @@ function determinant(v1, v2, v3, v4) {
 
 var _default = selector;
 module.exports = _default;
-},{"zrender/lib/contain/polygon":417,"zrender/lib/core/BoundingRect":423}],178:[function(require,module,exports){
+},{"zrender/lib/contain/polygon":415,"zrender/lib/core/BoundingRect":421}],176:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -56863,13 +56854,13 @@ var boundingRectBuilders = {
 function getBoundingRectFromMinMax(minMax) {
   return new BoundingRect(minMax[0][0], minMax[1][0], minMax[0][1] - minMax[0][0], minMax[1][1] - minMax[1][0]);
 }
-},{"../../echarts":344,"../../util/throttle":392,"../../visual/visualSolution":401,"../helper/BrushTargetManager":206,"./selector":177,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/util":436}],179:[function(require,module,exports){
+},{"../../echarts":342,"../../util/throttle":390,"../../visual/visualSolution":399,"../helper/BrushTargetManager":204,"./selector":175,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/util":434}],177:[function(require,module,exports){
 require("../coord/calendar/Calendar");
 
 require("../coord/calendar/CalendarModel");
 
 require("./calendar/CalendarView");
-},{"../coord/calendar/Calendar":289,"../coord/calendar/CalendarModel":290,"./calendar/CalendarView":180}],180:[function(require,module,exports){
+},{"../coord/calendar/Calendar":287,"../coord/calendar/CalendarModel":288,"./calendar/CalendarView":178}],178:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -57283,7 +57274,7 @@ var _default = echarts.extendComponentView({
 });
 
 module.exports = _default;
-},{"../../echarts":344,"../../util/format":386,"../../util/graphic":387,"../../util/number":390,"zrender/lib/core/util":436}],181:[function(require,module,exports){
+},{"../../echarts":342,"../../util/format":384,"../../util/graphic":385,"../../util/number":388,"zrender/lib/core/util":434}],179:[function(require,module,exports){
 require("./dataZoom/typeDefaulter");
 
 require("./dataZoom/DataZoomModel");
@@ -57301,7 +57292,7 @@ require("./dataZoom/InsideZoomView");
 require("./dataZoom/dataZoomProcessor");
 
 require("./dataZoom/dataZoomAction");
-},{"./dataZoom/DataZoomModel":184,"./dataZoom/DataZoomView":185,"./dataZoom/InsideZoomModel":186,"./dataZoom/InsideZoomView":187,"./dataZoom/SliderZoomModel":190,"./dataZoom/SliderZoomView":191,"./dataZoom/dataZoomAction":192,"./dataZoom/dataZoomProcessor":193,"./dataZoom/typeDefaulter":197}],182:[function(require,module,exports){
+},{"./dataZoom/DataZoomModel":182,"./dataZoom/DataZoomView":183,"./dataZoom/InsideZoomModel":184,"./dataZoom/InsideZoomView":185,"./dataZoom/SliderZoomModel":188,"./dataZoom/SliderZoomView":189,"./dataZoom/dataZoomAction":190,"./dataZoom/dataZoomProcessor":191,"./dataZoom/typeDefaulter":195}],180:[function(require,module,exports){
 require("./dataZoom/typeDefaulter");
 
 require("./dataZoom/DataZoomModel");
@@ -57315,7 +57306,7 @@ require("./dataZoom/SelectZoomView");
 require("./dataZoom/dataZoomProcessor");
 
 require("./dataZoom/dataZoomAction");
-},{"./dataZoom/DataZoomModel":184,"./dataZoom/DataZoomView":185,"./dataZoom/SelectZoomModel":188,"./dataZoom/SelectZoomView":189,"./dataZoom/dataZoomAction":192,"./dataZoom/dataZoomProcessor":193,"./dataZoom/typeDefaulter":197}],183:[function(require,module,exports){
+},{"./dataZoom/DataZoomModel":182,"./dataZoom/DataZoomView":183,"./dataZoom/SelectZoomModel":186,"./dataZoom/SelectZoomView":187,"./dataZoom/dataZoomAction":190,"./dataZoom/dataZoomProcessor":191,"./dataZoom/typeDefaulter":195}],181:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var numberUtil = require("../../util/number");
@@ -57772,7 +57763,7 @@ function setMinMaxSpan(axisProxy) {
 
 var _default = AxisProxy;
 module.exports = _default;
-},{"../../util/number":390,"./helper":194,"zrender/lib/core/util":436}],184:[function(require,module,exports){
+},{"../../util/number":388,"./helper":192,"zrender/lib/core/util":434}],182:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -58302,7 +58293,7 @@ function updateRangeUse(dataZoomModel, rawOption) {
 
 var _default = DataZoomModel;
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../../util/model":389,"./AxisProxy":183,"./helper":194,"zrender/lib/core/env":430,"zrender/lib/core/util":436}],185:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../../util/model":387,"./AxisProxy":181,"./helper":192,"zrender/lib/core/env":428,"zrender/lib/core/util":434}],183:[function(require,module,exports){
 var ComponentView = require("../../view/Component");
 
 var _default = ComponentView.extend({
@@ -58370,7 +58361,7 @@ var _default = ComponentView.extend({
 });
 
 module.exports = _default;
-},{"../../view/Component":394}],186:[function(require,module,exports){
+},{"../../view/Component":392}],184:[function(require,module,exports){
 var DataZoomModel = require("./DataZoomModel");
 
 var _default = DataZoomModel.extend({
@@ -58393,7 +58384,7 @@ var _default = DataZoomModel.extend({
 });
 
 module.exports = _default;
-},{"./DataZoomModel":184}],187:[function(require,module,exports){
+},{"./DataZoomModel":182}],185:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var DataZoomView = require("./DataZoomView");
@@ -58587,7 +58578,7 @@ var getDirectionInfo = {
 };
 var _default = InsideZoomView;
 module.exports = _default;
-},{"../helper/sliderMove":215,"./DataZoomView":185,"./roams":196,"zrender/lib/core/util":436}],188:[function(require,module,exports){
+},{"../helper/sliderMove":213,"./DataZoomView":183,"./roams":194,"zrender/lib/core/util":434}],186:[function(require,module,exports){
 var DataZoomModel = require("./DataZoomModel");
 
 var _default = DataZoomModel.extend({
@@ -58595,7 +58586,7 @@ var _default = DataZoomModel.extend({
 });
 
 module.exports = _default;
-},{"./DataZoomModel":184}],189:[function(require,module,exports){
+},{"./DataZoomModel":182}],187:[function(require,module,exports){
 var DataZoomView = require("./DataZoomView");
 
 var _default = DataZoomView.extend({
@@ -58603,7 +58594,7 @@ var _default = DataZoomView.extend({
 });
 
 module.exports = _default;
-},{"./DataZoomView":185}],190:[function(require,module,exports){
+},{"./DataZoomView":183}],188:[function(require,module,exports){
 var DataZoomModel = require("./DataZoomModel");
 
 var SliderZoomModel = DataZoomModel.extend({
@@ -58674,7 +58665,7 @@ var SliderZoomModel = DataZoomModel.extend({
 });
 var _default = SliderZoomModel;
 module.exports = _default;
-},{"./DataZoomModel":184}],191:[function(require,module,exports){
+},{"./DataZoomModel":182}],189:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var eventTool = require("zrender/lib/core/event");
@@ -59387,7 +59378,7 @@ function getCursor(orient) {
 
 var _default = SliderZoomView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/layout":388,"../../util/number":390,"../../util/throttle":392,"../helper/sliderMove":215,"./DataZoomView":185,"zrender/lib/core/event":431,"zrender/lib/core/util":436}],192:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/layout":386,"../../util/number":388,"../../util/throttle":390,"../helper/sliderMove":213,"./DataZoomView":183,"zrender/lib/core/event":429,"zrender/lib/core/util":434}],190:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -59414,7 +59405,7 @@ echarts.registerAction('dataZoom', function (payload, ecModel) {
     });
   });
 });
-},{"../../echarts":344,"./helper":194,"zrender/lib/core/util":436}],193:[function(require,module,exports){
+},{"../../echarts":342,"./helper":192,"zrender/lib/core/util":434}],191:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var _util = require("zrender/lib/core/util");
@@ -59479,7 +59470,7 @@ echarts.registerProcessor({
     });
   }
 });
-},{"../../echarts":344,"zrender/lib/core/util":436}],194:[function(require,module,exports){
+},{"../../echarts":342,"zrender/lib/core/util":434}],192:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var formatUtil = require("../../util/format");
@@ -59615,7 +59606,7 @@ exports.isCoordSupported = isCoordSupported;
 exports.createNameEach = createNameEach;
 exports.eachAxisDim = eachAxisDim;
 exports.createLinkedNodesFinder = createLinkedNodesFinder;
-},{"../../util/format":386,"zrender/lib/core/util":436}],195:[function(require,module,exports){
+},{"../../util/format":384,"zrender/lib/core/util":434}],193:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var each = zrUtil.each;
@@ -59723,7 +59714,7 @@ exports.push = push;
 exports.pop = pop;
 exports.clear = clear;
 exports.count = count;
-},{"zrender/lib/core/util":436}],196:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],194:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var RoamController = require("../../component/helper/RoamController");
@@ -59934,14 +59925,14 @@ exports.register = register;
 exports.unregister = unregister;
 exports.shouldRecordRange = shouldRecordRange;
 exports.generateCoordId = generateCoordId;
-},{"../../component/helper/RoamController":208,"../../util/throttle":392,"zrender/lib/core/util":436}],197:[function(require,module,exports){
+},{"../../component/helper/RoamController":206,"../../util/throttle":390,"zrender/lib/core/util":434}],195:[function(require,module,exports){
 var Component = require("../../model/Component");
 
 Component.registerSubTypeDefaulter('dataZoom', function () {
   // Default 'slider' when no type specified.
   return 'slider';
 });
-},{"../../model/Component":352}],198:[function(require,module,exports){
+},{"../../model/Component":350}],196:[function(require,module,exports){
 require("./dataset/DatasetModel");
 
 var echarts = require("../echarts");
@@ -59949,7 +59940,7 @@ var echarts = require("../echarts");
 echarts.extendComponentView({
   type: 'dataset'
 });
-},{"../echarts":344,"./dataset/DatasetModel":199}],199:[function(require,module,exports){
+},{"../echarts":342,"./dataset/DatasetModel":197}],197:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var _sourceHelper = require("../../data/helper/sourceHelper");
@@ -59979,7 +59970,7 @@ var DatasetModel = echarts.extendComponentModel({
 });
 var _default = DatasetModel;
 module.exports = _default;
-},{"../../data/helper/sourceHelper":342,"../../data/helper/sourceType":343,"../../echarts":344}],200:[function(require,module,exports){
+},{"../../data/helper/sourceHelper":340,"../../data/helper/sourceType":341,"../../echarts":342}],198:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -60025,7 +60016,7 @@ makeAction('unSelect', {
   type: 'geoUnSelect',
   event: 'geounselected'
 });
-},{"../action/geoRoam":9,"../coord/geo/GeoModel":300,"../coord/geo/geoCreator":306,"../echarts":344,"./geo/GeoView":201,"zrender/lib/core/util":436}],201:[function(require,module,exports){
+},{"../action/geoRoam":7,"../coord/geo/GeoModel":298,"../coord/geo/geoCreator":304,"../echarts":342,"./geo/GeoView":199,"zrender/lib/core/util":434}],199:[function(require,module,exports){
 var MapDraw = require("../helper/MapDraw");
 
 var echarts = require("../../echarts");
@@ -60059,7 +60050,7 @@ var _default = echarts.extendComponentView({
 });
 
 module.exports = _default;
-},{"../../echarts":344,"../helper/MapDraw":207}],202:[function(require,module,exports){
+},{"../../echarts":342,"../helper/MapDraw":205}],200:[function(require,module,exports){
 var _config = require("../config");
 
 var __DEV__ = _config.__DEV__;
@@ -60506,13 +60497,13 @@ function setLayoutInfoToExist(existItem, newElOption) {
     existItem.height == null && (existItem.height = newElOption.height = 0);
   }
 }
-},{"../config":282,"../echarts":344,"../util/graphic":387,"../util/layout":388,"../util/model":389,"zrender/lib/core/util":436}],203:[function(require,module,exports){
+},{"../config":280,"../echarts":342,"../util/graphic":385,"../util/layout":386,"../util/model":387,"zrender/lib/core/util":434}],201:[function(require,module,exports){
 require("./gridSimple");
 
 require("./axisPointer/CartesianAxisPointer");
 
 require("./axisPointer");
-},{"./axisPointer":150,"./axisPointer/CartesianAxisPointer":154,"./gridSimple":204}],204:[function(require,module,exports){
+},{"./axisPointer":148,"./axisPointer/CartesianAxisPointer":152,"./gridSimple":202}],202:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -60547,7 +60538,7 @@ echarts.registerPreprocessor(function (option) {
     option.grid = {};
   }
 });
-},{"../coord/cartesian/Grid":296,"../echarts":344,"../util/graphic":387,"./axis":149,"zrender/lib/core/util":436}],205:[function(require,module,exports){
+},{"../coord/cartesian/Grid":294,"../echarts":342,"../util/graphic":385,"./axis":147,"zrender/lib/core/util":434}],203:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -61415,7 +61406,7 @@ function getLineRenderer(xyIndex) {
 
 var _default = BrushController;
 module.exports = _default;
-},{"../../config":282,"../../data/DataDiffer":330,"../../util/graphic":387,"./interactionMutex":211,"zrender/lib/core/util":436,"zrender/lib/mixin/Eventful":470}],206:[function(require,module,exports){
+},{"../../config":280,"../../data/DataDiffer":328,"../../util/graphic":385,"./interactionMutex":209,"zrender/lib/core/util":434,"zrender/lib/mixin/Eventful":468}],204:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -61796,7 +61787,7 @@ function getSize(xyMinMax) {
 
 var _default = BrushTargetManager;
 module.exports = _default;
-},{"../../config":282,"../../util/graphic":387,"../../util/model":389,"./brushHelper":209,"zrender/lib/core/util":436}],207:[function(require,module,exports){
+},{"../../config":280,"../../util/graphic":385,"../../util/model":387,"./brushHelper":207,"zrender/lib/core/util":434}],205:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var RoamController = require("./RoamController");
@@ -62129,7 +62120,7 @@ MapDraw.prototype = {
 };
 var _default = MapDraw;
 module.exports = _default;
-},{"../../component/helper/cursorHelper":210,"../../component/helper/roamHelper":213,"../../util/graphic":387,"./RoamController":208,"zrender/lib/core/util":436}],208:[function(require,module,exports){
+},{"../../component/helper/cursorHelper":208,"../../component/helper/roamHelper":211,"../../util/graphic":385,"./RoamController":206,"zrender/lib/core/util":434}],206:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Eventful = require("zrender/lib/mixin/Eventful");
@@ -62316,7 +62307,7 @@ function checkKeyBinding(roamController, prop, e) {
 
 var _default = RoamController;
 module.exports = _default;
-},{"./interactionMutex":211,"zrender/lib/core/event":431,"zrender/lib/core/util":436,"zrender/lib/mixin/Eventful":470}],209:[function(require,module,exports){
+},{"./interactionMutex":209,"zrender/lib/core/event":429,"zrender/lib/core/util":434,"zrender/lib/mixin/Eventful":468}],207:[function(require,module,exports){
 var BoundingRect = require("zrender/lib/core/BoundingRect");
 
 var _cursorHelper = require("./cursorHelper");
@@ -62357,7 +62348,7 @@ function normalizeRect(rect) {
 exports.makeRectPanelClipPath = makeRectPanelClipPath;
 exports.makeLinearBrushOtherExtent = makeLinearBrushOtherExtent;
 exports.makeRectIsTargetByCursor = makeRectIsTargetByCursor;
-},{"../../util/graphic":387,"./cursorHelper":210,"zrender/lib/core/BoundingRect":423}],210:[function(require,module,exports){
+},{"../../util/graphic":385,"./cursorHelper":208,"zrender/lib/core/BoundingRect":421}],208:[function(require,module,exports){
 var IRRELEVANT_EXCLUDES = {
   'axisPointer': 1,
   'tooltip': 1,
@@ -62376,7 +62367,7 @@ function onIrrelevantElement(e, api, targetCoordSysModel) {
 }
 
 exports.onIrrelevantElement = onIrrelevantElement;
-},{}],211:[function(require,module,exports){
+},{}],209:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var ATTR = '\0_ec_interaction_mutex';
@@ -62419,7 +62410,7 @@ echarts.registerAction({
 exports.take = take;
 exports.release = release;
 exports.isTaken = isTaken;
-},{"../../echarts":344}],212:[function(require,module,exports){
+},{"../../echarts":342}],210:[function(require,module,exports){
 var _layout = require("../../util/layout");
 
 var getLayoutRect = _layout.getLayoutRect;
@@ -62474,7 +62465,7 @@ function makeBackground(rect, componentModel) {
 
 exports.layout = layout;
 exports.makeBackground = makeBackground;
-},{"../../util/format":386,"../../util/graphic":387,"../../util/layout":388}],213:[function(require,module,exports){
+},{"../../util/format":384,"../../util/graphic":385,"../../util/layout":386}],211:[function(require,module,exports){
 /**
  * For geo and graph.
  *
@@ -62524,7 +62515,7 @@ function updateViewOnZoom(controllerHost, zoomDelta, zoomX, zoomY) {
 
 exports.updateViewOnPan = updateViewOnPan;
 exports.updateViewOnZoom = updateViewOnZoom;
-},{}],214:[function(require,module,exports){
+},{}],212:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 /**
@@ -62610,7 +62601,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"zrender/lib/core/util":436}],215:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],213:[function(require,module,exports){
 /**
  * Calculate slider move result.
  * Usage:
@@ -62692,7 +62683,7 @@ function restrict(value, extend) {
 }
 
 module.exports = _default;
-},{}],216:[function(require,module,exports){
+},{}],214:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./legend/LegendModel");
@@ -62712,7 +62703,7 @@ Component.registerSubTypeDefaulter('legend', function () {
   // Default 'plain' when no type specified.
   return 'plain';
 });
-},{"../echarts":344,"../model/Component":352,"./legend/LegendModel":218,"./legend/LegendView":219,"./legend/legendAction":222,"./legend/legendFilter":223}],217:[function(require,module,exports){
+},{"../echarts":342,"../model/Component":350,"./legend/LegendModel":216,"./legend/LegendView":217,"./legend/legendAction":220,"./legend/legendFilter":221}],215:[function(require,module,exports){
 require("./legend");
 
 require("./legend/ScrollableLegendModel");
@@ -62720,7 +62711,7 @@ require("./legend/ScrollableLegendModel");
 require("./legend/ScrollableLegendView");
 
 require("./legend/scrollableLegendAction");
-},{"./legend":216,"./legend/ScrollableLegendModel":220,"./legend/ScrollableLegendView":221,"./legend/scrollableLegendAction":224}],218:[function(require,module,exports){
+},{"./legend":214,"./legend/ScrollableLegendModel":218,"./legend/ScrollableLegendView":219,"./legend/scrollableLegendAction":222}],216:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -62937,7 +62928,7 @@ var LegendModel = echarts.extendComponentModel({
 });
 var _default = LegendModel;
 module.exports = _default;
-},{"../../echarts":344,"../../model/Model":354,"../../util/model":389,"zrender/lib/core/util":436}],219:[function(require,module,exports){
+},{"../../echarts":342,"../../model/Model":352,"../../util/model":387,"zrender/lib/core/util":434}],217:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -63229,7 +63220,7 @@ function dispatchDownplayAction(seriesModel, dataName, api) {
 }
 
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../../util/graphic":387,"../../util/layout":388,"../../util/symbol":391,"../helper/listComponent":212,"zrender/lib/core/util":436}],220:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../../util/graphic":385,"../../util/layout":386,"../../util/symbol":389,"../helper/listComponent":210,"zrender/lib/core/util":434}],218:[function(require,module,exports){
 var LegendModel = require("./LegendModel");
 
 var _layout = require("../../util/layout");
@@ -63306,7 +63297,7 @@ function mergeAndNormalizeLayoutParams(legendModel, target, raw) {
 
 var _default = ScrollableLegendModel;
 module.exports = _default;
-},{"../../util/layout":388,"./LegendModel":218}],221:[function(require,module,exports){
+},{"../../util/layout":386,"./LegendModel":216}],219:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../../util/graphic");
@@ -63641,7 +63632,7 @@ var ScrollableLegendView = LegendView.extend({
 });
 var _default = ScrollableLegendView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/layout":388,"./LegendView":219,"zrender/lib/core/util":436}],222:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/layout":386,"./LegendView":217,"zrender/lib/core/util":434}],220:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -63713,7 +63704,7 @@ echarts.registerAction('legendSelect', 'legendselected', zrUtil.curry(legendSele
  */
 
 echarts.registerAction('legendUnSelect', 'legendunselected', zrUtil.curry(legendSelectActionHandler, 'unSelect'));
-},{"../../echarts":344,"zrender/lib/core/util":436}],223:[function(require,module,exports){
+},{"../../echarts":342,"zrender/lib/core/util":434}],221:[function(require,module,exports){
 function _default(ecModel) {
   var legendModels = ecModel.findComponents({
     mainType: 'legend'
@@ -63735,7 +63726,7 @@ function _default(ecModel) {
 }
 
 module.exports = _default;
-},{}],224:[function(require,module,exports){
+},{}],222:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 /**
@@ -63754,7 +63745,7 @@ echarts.registerAction('legendScroll', 'legendscroll', function (payload, ecMode
     legendModel.setScrollDataIndex(scrollDataIndex);
   });
 });
-},{"../../echarts":344}],225:[function(require,module,exports){
+},{"../../echarts":342}],223:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./marker/MarkAreaModel");
@@ -63765,7 +63756,7 @@ echarts.registerPreprocessor(function (opt) {
   // Make sure markArea component is enabled
   opt.markArea = opt.markArea || {};
 });
-},{"../echarts":344,"./marker/MarkAreaModel":228,"./marker/MarkAreaView":229}],226:[function(require,module,exports){
+},{"../echarts":342,"./marker/MarkAreaModel":226,"./marker/MarkAreaView":227}],224:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./marker/MarkLineModel");
@@ -63776,7 +63767,7 @@ echarts.registerPreprocessor(function (opt) {
   // Make sure markLine component is enabled
   opt.markLine = opt.markLine || {};
 });
-},{"../echarts":344,"./marker/MarkLineModel":230,"./marker/MarkLineView":231}],227:[function(require,module,exports){
+},{"../echarts":342,"./marker/MarkLineModel":228,"./marker/MarkLineView":229}],225:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./marker/MarkPointModel");
@@ -63788,7 +63779,7 @@ echarts.registerPreprocessor(function (opt) {
   // Make sure markPoint component is enabled
   opt.markPoint = opt.markPoint || {};
 });
-},{"../echarts":344,"./marker/MarkPointModel":232,"./marker/MarkPointView":233}],228:[function(require,module,exports){
+},{"../echarts":342,"./marker/MarkPointModel":230,"./marker/MarkPointView":231}],226:[function(require,module,exports){
 var MarkerModel = require("./MarkerModel");
 
 var _default = MarkerModel.extend({
@@ -63822,7 +63813,7 @@ var _default = MarkerModel.extend({
 });
 
 module.exports = _default;
-},{"./MarkerModel":234}],229:[function(require,module,exports){
+},{"./MarkerModel":232}],227:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var colorUtil = require("zrender/lib/tool/color");
@@ -64104,7 +64095,7 @@ function createList(coordSys, seriesModel, maModel) {
   areaData.hasItemOption = true;
   return areaData;
 }
-},{"../../data/List":332,"../../util/graphic":387,"../../util/number":390,"./MarkerView":235,"./markerHelper":236,"zrender/lib/core/util":436,"zrender/lib/tool/color":480}],230:[function(require,module,exports){
+},{"../../data/List":330,"../../util/graphic":385,"../../util/number":388,"./MarkerView":233,"./markerHelper":234,"zrender/lib/core/util":434,"zrender/lib/tool/color":478}],228:[function(require,module,exports){
 var MarkerModel = require("./MarkerModel");
 
 var _default = MarkerModel.extend({
@@ -64139,7 +64130,7 @@ var _default = MarkerModel.extend({
 });
 
 module.exports = _default;
-},{"./MarkerModel":234}],231:[function(require,module,exports){
+},{"./MarkerModel":232}],229:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var List = require("../../data/List");
@@ -64466,7 +64457,7 @@ function createList(coordSys, seriesModel, mlModel) {
 }
 
 module.exports = _default;
-},{"../../chart/helper/LineDraw":67,"../../data/List":332,"../../util/number":390,"./MarkerView":235,"./markerHelper":236,"zrender/lib/core/util":436}],232:[function(require,module,exports){
+},{"../../chart/helper/LineDraw":65,"../../data/List":330,"../../util/number":388,"./MarkerView":233,"./markerHelper":234,"zrender/lib/core/util":434}],230:[function(require,module,exports){
 var MarkerModel = require("./MarkerModel");
 
 var _default = MarkerModel.extend({
@@ -64497,7 +64488,7 @@ var _default = MarkerModel.extend({
 });
 
 module.exports = _default;
-},{"./MarkerModel":234}],233:[function(require,module,exports){
+},{"./MarkerModel":232}],231:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var SymbolDraw = require("../../chart/helper/SymbolDraw");
@@ -64643,7 +64634,7 @@ function createList(coordSys, seriesModel, mpModel) {
 }
 
 module.exports = _default;
-},{"../../chart/helper/SymbolDraw":71,"../../data/List":332,"../../util/number":390,"./MarkerView":235,"./markerHelper":236,"zrender/lib/core/util":436}],234:[function(require,module,exports){
+},{"../../chart/helper/SymbolDraw":69,"../../data/List":330,"../../util/number":388,"./MarkerView":233,"./markerHelper":234,"zrender/lib/core/util":434}],232:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -64771,7 +64762,7 @@ var MarkerModel = echarts.extendComponentModel({
 zrUtil.mixin(MarkerModel, dataFormatMixin);
 var _default = MarkerModel;
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../../model/mixin/dataFormat":361,"../../util/format":386,"../../util/model":389,"zrender/lib/core/env":430,"zrender/lib/core/util":436}],235:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../../model/mixin/dataFormat":359,"../../util/format":384,"../../util/model":387,"zrender/lib/core/env":428,"zrender/lib/core/util":434}],233:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -64804,7 +64795,7 @@ var _default = echarts.extendComponentView({
 });
 
 module.exports = _default;
-},{"../../echarts":344,"zrender/lib/core/util":436}],236:[function(require,module,exports){
+},{"../../echarts":342,"zrender/lib/core/util":434}],234:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var numberUtil = require("../../util/number");
@@ -65012,7 +65003,7 @@ exports.getAxisInfo = getAxisInfo;
 exports.dataFilter = dataFilter;
 exports.dimValueGetter = dimValueGetter;
 exports.numCalculate = numCalculate;
-},{"../../data/helper/dataStackHelper":339,"../../util/number":390,"zrender/lib/core/util":436}],237:[function(require,module,exports){
+},{"../../data/helper/dataStackHelper":337,"../../util/number":388,"zrender/lib/core/util":434}],235:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -65116,13 +65107,13 @@ function checkTrigger(view, triggerOn) {
 }
 
 echarts.registerPreprocessor(parallelPreprocessor);
-},{"../coord/parallel/ParallelModel":312,"../coord/parallel/parallelCreator":313,"../coord/parallel/parallelPreprocessor":314,"../echarts":344,"../util/throttle":392,"./parallelAxis":238,"zrender/lib/core/util":436}],238:[function(require,module,exports){
+},{"../coord/parallel/ParallelModel":310,"../coord/parallel/parallelCreator":311,"../coord/parallel/parallelPreprocessor":312,"../echarts":342,"../util/throttle":390,"./parallelAxis":236,"zrender/lib/core/util":434}],236:[function(require,module,exports){
 require("../coord/parallel/parallelCreator");
 
 require("./axis/parallelAxisAction");
 
 require("./axis/ParallelAxisView");
-},{"../coord/parallel/parallelCreator":313,"./axis/ParallelAxisView":166,"./axis/parallelAxisAction":170}],239:[function(require,module,exports){
+},{"../coord/parallel/parallelCreator":311,"./axis/ParallelAxisView":164,"./axis/parallelAxisAction":168}],237:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -65145,13 +65136,13 @@ echarts.registerLayout(zrUtil.curry(barPolar, 'bar')); // Polar view
 echarts.extendComponentView({
   type: 'polar'
 });
-},{"../coord/polar/polarCreator":320,"../echarts":344,"../layout/barPolar":349,"./angleAxis":148,"./axisPointer":150,"./axisPointer/PolarAxisPointer":155,"./radiusAxis":242,"zrender/lib/core/util":436}],240:[function(require,module,exports){
+},{"../coord/polar/polarCreator":318,"../echarts":342,"../layout/barPolar":347,"./angleAxis":146,"./axisPointer":148,"./axisPointer/PolarAxisPointer":153,"./radiusAxis":240,"zrender/lib/core/util":434}],238:[function(require,module,exports){
 require("../coord/radar/Radar");
 
 require("../coord/radar/RadarModel");
 
 require("./radar/RadarView");
-},{"../coord/radar/Radar":323,"../coord/radar/RadarModel":324,"./radar/RadarView":241}],241:[function(require,module,exports){
+},{"../coord/radar/Radar":321,"../coord/radar/RadarModel":322,"./radar/RadarView":239}],239:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -65322,11 +65313,11 @@ var _default = echarts.extendComponentView({
 });
 
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../../util/graphic":387,"../axis/AxisBuilder":163,"zrender/lib/core/util":436}],242:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../../util/graphic":385,"../axis/AxisBuilder":161,"zrender/lib/core/util":434}],240:[function(require,module,exports){
 require("../coord/polar/polarCreator");
 
 require("./axis/RadiusAxisView");
-},{"../coord/polar/polarCreator":320,"./axis/RadiusAxisView":167}],243:[function(require,module,exports){
+},{"../coord/polar/polarCreator":318,"./axis/RadiusAxisView":165}],241:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("../coord/single/singleCreator");
@@ -65342,7 +65333,7 @@ require("./axisPointer/SingleAxisPointer");
 echarts.extendComponentView({
   type: 'single'
 });
-},{"../coord/single/AxisModel":325,"../coord/single/singleCreator":329,"../echarts":344,"./axis/SingleAxisView":168,"./axisPointer":150,"./axisPointer/SingleAxisPointer":156}],244:[function(require,module,exports){
+},{"../coord/single/AxisModel":323,"../coord/single/singleCreator":327,"../echarts":342,"./axis/SingleAxisView":166,"./axisPointer":148,"./axisPointer/SingleAxisPointer":154}],242:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var preprocessor = require("./timeline/preprocessor");
@@ -65359,7 +65350,7 @@ require("./timeline/SliderTimelineView");
  * DataZoom component entry
  */
 echarts.registerPreprocessor(preprocessor);
-},{"../echarts":344,"./timeline/SliderTimelineModel":245,"./timeline/SliderTimelineView":246,"./timeline/preprocessor":250,"./timeline/timelineAction":251,"./timeline/typeDefaulter":252}],245:[function(require,module,exports){
+},{"../echarts":342,"./timeline/SliderTimelineModel":243,"./timeline/SliderTimelineView":244,"./timeline/preprocessor":248,"./timeline/timelineAction":249,"./timeline/typeDefaulter":250}],243:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var TimelineModel = require("./TimelineModel");
@@ -65464,7 +65455,7 @@ var SliderTimelineModel = TimelineModel.extend({
 zrUtil.mixin(SliderTimelineModel, dataFormatMixin);
 var _default = SliderTimelineModel;
 module.exports = _default;
-},{"../../model/mixin/dataFormat":361,"./TimelineModel":248,"zrender/lib/core/util":436}],246:[function(require,module,exports){
+},{"../../model/mixin/dataFormat":359,"./TimelineModel":246,"zrender/lib/core/util":434}],244:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var BoundingRect = require("zrender/lib/core/BoundingRect");
@@ -66088,7 +66079,7 @@ function pointerMoveTo(pointer, dataIndex, axis, timelineModel, noAnimation) {
 }
 
 module.exports = _default;
-},{"../../coord/axisHelper":286,"../../util/format":386,"../../util/graphic":387,"../../util/layout":388,"../../util/number":390,"../../util/symbol":391,"./TimelineAxis":247,"./TimelineView":249,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/matrix":434,"zrender/lib/core/util":436}],247:[function(require,module,exports){
+},{"../../coord/axisHelper":284,"../../util/format":384,"../../util/graphic":385,"../../util/layout":386,"../../util/number":388,"../../util/symbol":389,"./TimelineAxis":245,"./TimelineView":247,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/matrix":432,"zrender/lib/core/util":434}],245:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Axis = require("../../coord/Axis");
@@ -66173,7 +66164,7 @@ TimelineAxis.prototype = {
 zrUtil.inherits(TimelineAxis, Axis);
 var _default = TimelineAxis;
 module.exports = _default;
-},{"../../coord/Axis":283,"../../coord/axisHelper":286,"zrender/lib/core/util":436}],248:[function(require,module,exports){
+},{"../../coord/Axis":281,"../../coord/axisHelper":284,"zrender/lib/core/util":434}],246:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var ComponentModel = require("../../model/Component");
@@ -66357,7 +66348,7 @@ var TimelineModel = ComponentModel.extend({
 });
 var _default = TimelineModel;
 module.exports = _default;
-},{"../../data/List":332,"../../model/Component":352,"../../util/model":389,"zrender/lib/core/util":436}],249:[function(require,module,exports){
+},{"../../data/List":330,"../../model/Component":350,"../../util/model":387,"zrender/lib/core/util":434}],247:[function(require,module,exports){
 var ComponentView = require("../../view/Component");
 
 var _default = ComponentView.extend({
@@ -66365,7 +66356,7 @@ var _default = ComponentView.extend({
 });
 
 module.exports = _default;
-},{"../../view/Component":394}],250:[function(require,module,exports){
+},{"../../view/Component":392}],248:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 function _default(option) {
@@ -66452,7 +66443,7 @@ function has(obj, attr) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],251:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],249:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -66489,14 +66480,14 @@ echarts.registerAction({
     timelineModel.setPlayState(payload.playState);
   }
 });
-},{"../../echarts":344,"zrender/lib/core/util":436}],252:[function(require,module,exports){
+},{"../../echarts":342,"zrender/lib/core/util":434}],250:[function(require,module,exports){
 var Component = require("../../model/Component");
 
 Component.registerSubTypeDefaulter('timeline', function () {
   // Only slider now.
   return 'slider';
 });
-},{"../../model/Component":352}],253:[function(require,module,exports){
+},{"../../model/Component":350}],251:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var graphic = require("../util/graphic");
@@ -66688,7 +66679,7 @@ echarts.extendComponentView({
     group.add(rect);
   }
 });
-},{"../echarts":344,"../util/graphic":387,"../util/layout":388}],254:[function(require,module,exports){
+},{"../echarts":342,"../util/graphic":385,"../util/layout":386}],252:[function(require,module,exports){
 require("./toolbox/ToolboxModel");
 
 require("./toolbox/ToolboxView");
@@ -66702,7 +66693,7 @@ require("./toolbox/feature/DataView");
 require("./toolbox/feature/DataZoom");
 
 require("./toolbox/feature/Restore");
-},{"./toolbox/ToolboxModel":255,"./toolbox/ToolboxView":256,"./toolbox/feature/DataView":259,"./toolbox/feature/DataZoom":260,"./toolbox/feature/MagicType":261,"./toolbox/feature/Restore":262,"./toolbox/feature/SaveAsImage":263}],255:[function(require,module,exports){
+},{"./toolbox/ToolboxModel":253,"./toolbox/ToolboxView":254,"./toolbox/feature/DataView":257,"./toolbox/feature/DataZoom":258,"./toolbox/feature/MagicType":259,"./toolbox/feature/Restore":260,"./toolbox/feature/SaveAsImage":261}],253:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -66754,7 +66745,7 @@ var ToolboxModel = echarts.extendComponentModel({
 });
 var _default = ToolboxModel;
 module.exports = _default;
-},{"../../echarts":344,"./featureManager":257,"zrender/lib/core/util":436}],256:[function(require,module,exports){
+},{"../../echarts":342,"./featureManager":255,"zrender/lib/core/util":434}],254:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -66979,7 +66970,7 @@ function isUserFeatureName(featureName) {
 }
 
 module.exports = _default;
-},{"../../data/DataDiffer":330,"../../echarts":344,"../../model/Model":354,"../../util/graphic":387,"../helper/listComponent":212,"./featureManager":257,"zrender/lib/contain/text":419,"zrender/lib/core/util":436}],257:[function(require,module,exports){
+},{"../../data/DataDiffer":328,"../../echarts":342,"../../model/Model":352,"../../util/graphic":385,"../helper/listComponent":210,"./featureManager":255,"zrender/lib/contain/text":417,"zrender/lib/core/util":434}],255:[function(require,module,exports){
 var features = {};
 
 function register(name, ctor) {
@@ -66992,7 +66983,7 @@ function get(name) {
 
 exports.register = register;
 exports.get = get;
-},{}],258:[function(require,module,exports){
+},{}],256:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var featureManager = require("../featureManager");
@@ -67102,7 +67093,7 @@ proto.onclick = function (ecModel, api, type) {
 featureManager.register('brush', Brush);
 var _default = Brush;
 module.exports = _default;
-},{"../../../lang":347,"../featureManager":257,"zrender/lib/core/util":436}],259:[function(require,module,exports){
+},{"../../../lang":345,"../featureManager":255,"zrender/lib/core/util":434}],257:[function(require,module,exports){
 var echarts = require("../../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -67576,7 +67567,7 @@ echarts.registerAction({
 });
 var _default = DataView;
 module.exports = _default;
-},{"../../../echarts":344,"../../../lang":347,"../featureManager":257,"zrender/lib/core/event":431,"zrender/lib/core/util":436}],260:[function(require,module,exports){
+},{"../../../echarts":342,"../../../lang":345,"../featureManager":255,"zrender/lib/core/event":429,"zrender/lib/core/util":434}],258:[function(require,module,exports){
 var echarts = require("../../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -67862,7 +67853,7 @@ echarts.registerPreprocessor(function (option) {
 });
 var _default = DataZoom;
 module.exports = _default;
-},{"../../../echarts":344,"../../../lang":347,"../../dataZoom/history":195,"../../dataZoomSelect":182,"../../helper/BrushController":205,"../../helper/BrushTargetManager":206,"../../helper/sliderMove":215,"../featureManager":257,"zrender/lib/core/util":436}],261:[function(require,module,exports){
+},{"../../../echarts":342,"../../../lang":345,"../../dataZoom/history":193,"../../dataZoomSelect":180,"../../helper/BrushController":203,"../../helper/BrushTargetManager":204,"../../helper/sliderMove":213,"../featureManager":255,"zrender/lib/core/util":434}],259:[function(require,module,exports){
 var echarts = require("../../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -68033,7 +68024,7 @@ echarts.registerAction({
 featureManager.register('magicType', MagicType);
 var _default = MagicType;
 module.exports = _default;
-},{"../../../echarts":344,"../../../lang":347,"../featureManager":257,"zrender/lib/core/util":436}],262:[function(require,module,exports){
+},{"../../../echarts":342,"../../../lang":345,"../featureManager":255,"zrender/lib/core/util":434}],260:[function(require,module,exports){
 var echarts = require("../../../echarts");
 
 var history = require("../../dataZoom/history");
@@ -68073,7 +68064,7 @@ echarts.registerAction({
 });
 var _default = Restore;
 module.exports = _default;
-},{"../../../echarts":344,"../../../lang":347,"../../dataZoom/history":195,"../featureManager":257}],263:[function(require,module,exports){
+},{"../../../echarts":342,"../../../lang":345,"../../dataZoom/history":193,"../featureManager":255}],261:[function(require,module,exports){
 var env = require("zrender/lib/core/env");
 
 var lang = require("../../../lang");
@@ -68148,7 +68139,7 @@ proto.onclick = function (ecModel, api) {
 featureManager.register('saveAsImage', SaveAsImage);
 var _default = SaveAsImage;
 module.exports = _default;
-},{"../../../lang":347,"../featureManager":257,"zrender/lib/core/env":430}],264:[function(require,module,exports){
+},{"../../../lang":345,"../featureManager":255,"zrender/lib/core/env":428}],262:[function(require,module,exports){
 var echarts = require("../echarts");
 
 require("./axisPointer");
@@ -68179,7 +68170,7 @@ echarts.registerAction({
   update: 'tooltip:manuallyHideTip'
 }, // noop
 function () {});
-},{"../echarts":344,"./axisPointer":150,"./tooltip/TooltipModel":266,"./tooltip/TooltipView":267}],265:[function(require,module,exports){
+},{"../echarts":342,"./axisPointer":148,"./tooltip/TooltipModel":264,"./tooltip/TooltipView":265}],263:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var zrColor = require("zrender/lib/tool/color");
@@ -68412,7 +68403,7 @@ TooltipContent.prototype = {
 };
 var _default = TooltipContent;
 module.exports = _default;
-},{"../../util/format":386,"zrender/lib/core/env":430,"zrender/lib/core/event":431,"zrender/lib/core/util":436,"zrender/lib/tool/color":480}],266:[function(require,module,exports){
+},{"../../util/format":384,"zrender/lib/core/env":428,"zrender/lib/core/event":429,"zrender/lib/core/util":434,"zrender/lib/tool/color":478}],264:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var _default = echarts.extendComponentModel({
@@ -68491,7 +68482,7 @@ var _default = echarts.extendComponentModel({
 });
 
 module.exports = _default;
-},{"../../echarts":344}],267:[function(require,module,exports){
+},{"../../echarts":342}],265:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -69208,11 +69199,11 @@ function isCenterAlign(align) {
 }
 
 module.exports = _default;
-},{"../../coord/axisHelper":286,"../../echarts":344,"../../model/Model":354,"../../util/format":386,"../../util/graphic":387,"../../util/layout":388,"../../util/number":390,"../axisPointer/findPointFromSeries":158,"../axisPointer/globalListener":159,"../axisPointer/viewHelper":161,"./TooltipContent":265,"zrender/lib/core/env":430,"zrender/lib/core/util":436}],268:[function(require,module,exports){
+},{"../../coord/axisHelper":284,"../../echarts":342,"../../model/Model":352,"../../util/format":384,"../../util/graphic":385,"../../util/layout":386,"../../util/number":388,"../axisPointer/findPointFromSeries":156,"../axisPointer/globalListener":157,"../axisPointer/viewHelper":159,"./TooltipContent":263,"zrender/lib/core/env":428,"zrender/lib/core/util":434}],266:[function(require,module,exports){
 require("./visualMapContinuous");
 
 require("./visualMapPiecewise");
-},{"./visualMapContinuous":269,"./visualMapPiecewise":270}],269:[function(require,module,exports){
+},{"./visualMapContinuous":267,"./visualMapPiecewise":268}],267:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var preprocessor = require("./visualMap/preprocessor");
@@ -69231,7 +69222,7 @@ require("./visualMap/visualMapAction");
  * DataZoom component entry
  */
 echarts.registerPreprocessor(preprocessor);
-},{"../echarts":344,"./visualMap/ContinuousModel":271,"./visualMap/ContinuousView":272,"./visualMap/preprocessor":278,"./visualMap/typeDefaulter":279,"./visualMap/visualEncoding":280,"./visualMap/visualMapAction":281}],270:[function(require,module,exports){
+},{"../echarts":342,"./visualMap/ContinuousModel":269,"./visualMap/ContinuousView":270,"./visualMap/preprocessor":276,"./visualMap/typeDefaulter":277,"./visualMap/visualEncoding":278,"./visualMap/visualMapAction":279}],268:[function(require,module,exports){
 var echarts = require("../echarts");
 
 var preprocessor = require("./visualMap/preprocessor");
@@ -69250,7 +69241,7 @@ require("./visualMap/visualMapAction");
  * DataZoom component entry
  */
 echarts.registerPreprocessor(preprocessor);
-},{"../echarts":344,"./visualMap/PiecewiseModel":273,"./visualMap/PiecewiseView":274,"./visualMap/preprocessor":278,"./visualMap/typeDefaulter":279,"./visualMap/visualEncoding":280,"./visualMap/visualMapAction":281}],271:[function(require,module,exports){
+},{"../echarts":342,"./visualMap/PiecewiseModel":271,"./visualMap/PiecewiseView":272,"./visualMap/preprocessor":276,"./visualMap/typeDefaulter":277,"./visualMap/visualEncoding":278,"./visualMap/visualMapAction":279}],269:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var VisualMapModel = require("./VisualMapModel");
@@ -69487,7 +69478,7 @@ function getColorStopValues(visualMapModel, valueState, dataExtent) {
 
 var _default = ContinuousModel;
 module.exports = _default;
-},{"../../util/number":390,"./VisualMapModel":275,"zrender/lib/core/util":436}],272:[function(require,module,exports){
+},{"../../util/number":388,"./VisualMapModel":273,"zrender/lib/core/util":434}],270:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var LinearGradient = require("zrender/lib/graphic/LinearGradient");
@@ -70246,7 +70237,7 @@ function getCursor(orient) {
 
 var _default = ContinuousView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/model":389,"../../util/number":390,"../helper/sliderMove":215,"./VisualMapView":276,"./helper":277,"zrender/lib/core/event":431,"zrender/lib/core/util":436,"zrender/lib/graphic/LinearGradient":444}],273:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/model":387,"../../util/number":388,"../helper/sliderMove":213,"./VisualMapView":274,"./helper":275,"zrender/lib/core/event":429,"zrender/lib/core/util":434,"zrender/lib/graphic/LinearGradient":442}],271:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -70751,7 +70742,7 @@ function normalizeReverse(thisOption, pieceList) {
 
 var _default = PiecewiseModel;
 module.exports = _default;
-},{"../../config":282,"../../util/number":390,"../../visual/VisualMapping":395,"../../visual/visualDefault":400,"./VisualMapModel":275,"zrender/lib/core/util":436}],274:[function(require,module,exports){
+},{"../../config":280,"../../util/number":388,"../../visual/VisualMapping":393,"../../visual/visualDefault":398,"./VisualMapModel":273,"zrender/lib/core/util":434}],272:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var VisualMapView = require("./VisualMapView");
@@ -70953,7 +70944,7 @@ var PiecewiseVisualMapView = VisualMapView.extend({
 });
 var _default = PiecewiseVisualMapView;
 module.exports = _default;
-},{"../../util/graphic":387,"../../util/layout":388,"../../util/symbol":391,"./VisualMapView":276,"./helper":277,"zrender/lib/core/util":436}],275:[function(require,module,exports){
+},{"../../util/graphic":385,"../../util/layout":386,"../../util/symbol":389,"./VisualMapView":274,"./helper":275,"zrender/lib/core/util":434}],273:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -71459,7 +71450,7 @@ var VisualMapModel = echarts.extendComponentModel({
 });
 var _default = VisualMapModel;
 module.exports = _default;
-},{"../../echarts":344,"../../util/model":389,"../../util/number":390,"../../visual/VisualMapping":395,"../../visual/visualDefault":400,"../../visual/visualSolution":401,"zrender/lib/core/env":430,"zrender/lib/core/util":436}],276:[function(require,module,exports){
+},{"../../echarts":342,"../../util/model":387,"../../util/number":388,"../../visual/VisualMapping":393,"../../visual/visualDefault":398,"../../visual/visualSolution":399,"zrender/lib/core/env":428,"zrender/lib/core/util":434}],274:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -71613,7 +71604,7 @@ var _default = echarts.extendComponentView({
 });
 
 module.exports = _default;
-},{"../../echarts":344,"../../util/format":386,"../../util/graphic":387,"../../util/layout":388,"../../visual/VisualMapping":395,"zrender/lib/core/util":436}],277:[function(require,module,exports){
+},{"../../echarts":342,"../../util/format":384,"../../util/graphic":385,"../../util/layout":386,"../../visual/VisualMapping":393,"zrender/lib/core/util":434}],275:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var _layout = require("../../util/layout");
@@ -71672,7 +71663,7 @@ function convertDataIndex(batch) {
 
 exports.getItemAlign = getItemAlign;
 exports.convertDataIndex = convertDataIndex;
-},{"../../util/layout":388,"zrender/lib/core/util":436}],278:[function(require,module,exports){
+},{"../../util/layout":386,"zrender/lib/core/util":434}],276:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var each = zrUtil.each;
@@ -71718,14 +71709,14 @@ function has(obj, name) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],279:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],277:[function(require,module,exports){
 var Component = require("../../model/Component");
 
 Component.registerSubTypeDefaulter('visualMap', function (option) {
   // Compatible with ec2, when splitNumber === 0, continuous visualMap will be used.
   return !option.categories && (!(option.pieces ? option.pieces.length > 0 : option.splitNumber > 0) || option.calculable) ? 'continuous' : 'piecewise';
 });
-},{"../../model/Component":352}],280:[function(require,module,exports){
+},{"../../model/Component":350}],278:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -71802,7 +71793,7 @@ function getColorVisual(seriesModel, visualMapModel, value, valueState) {
     resultVisual[key] = value;
   }
 }
-},{"../../echarts":344,"../../visual/VisualMapping":395,"../../visual/visualSolution":401,"zrender/lib/core/util":436}],281:[function(require,module,exports){
+},{"../../echarts":342,"../../visual/VisualMapping":393,"../../visual/visualSolution":399,"zrender/lib/core/util":434}],279:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var actionInfo = {
@@ -71819,7 +71810,7 @@ echarts.registerAction(actionInfo, function (payload, ecModel) {
     model.setSelected(payload.selected);
   });
 });
-},{"../../echarts":344}],282:[function(require,module,exports){
+},{"../../echarts":342}],280:[function(require,module,exports){
 (function (global){
 // (1) The code `if (__DEV__) ...` can be removed by build tool.
 // (2) If intend to use `__DEV__`, this module should be imported. Use a global
@@ -71842,7 +71833,7 @@ if (typeof dev === 'undefined') {
 var __DEV__ = dev;
 exports.__DEV__ = __DEV__;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],283:[function(require,module,exports){
+},{}],281:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var numberUtil = require("../util/number");
@@ -72107,7 +72098,7 @@ Axis.prototype = {
 };
 var _default = Axis;
 module.exports = _default;
-},{"../util/number":390,"./axisHelper":286,"zrender/lib/core/util":436}],284:[function(require,module,exports){
+},{"../util/number":388,"./axisHelper":284,"zrender/lib/core/util":434}],282:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var vector = require("zrender/lib/core/vector");
@@ -72383,7 +72374,7 @@ function doConvert(methodName, ecModel, finder, value) {
 
 var _default = View;
 module.exports = _default;
-},{"zrender/lib/core/BoundingRect":423,"zrender/lib/core/matrix":434,"zrender/lib/core/util":436,"zrender/lib/core/vector":437,"zrender/lib/mixin/Transformable":471}],285:[function(require,module,exports){
+},{"zrender/lib/core/BoundingRect":421,"zrender/lib/core/matrix":432,"zrender/lib/core/util":434,"zrender/lib/core/vector":435,"zrender/lib/mixin/Transformable":469}],283:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var defaultOption = {
@@ -72545,7 +72536,7 @@ axisDefault.logAxis = zrUtil.defaults({
 }, axisDefault.valueAxis);
 var _default = axisDefault;
 module.exports = _default;
-},{"zrender/lib/core/util":436}],286:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],284:[function(require,module,exports){
 var _config = require("../config");
 
 var __DEV__ = _config.__DEV__;
@@ -72894,7 +72885,7 @@ exports.ifAxisCrossZero = ifAxisCrossZero;
 exports.getAxisLabelInterval = getAxisLabelInterval;
 exports.getFormattedLabels = getFormattedLabels;
 exports.getAxisRawValue = getAxisRawValue;
-},{"../config":282,"../layout/barGrid":348,"../scale/Interval":372,"../scale/Log":373,"../scale/Ordinal":374,"../scale/Scale":375,"../scale/Time":376,"../util/number":390,"zrender/lib/contain/text":419,"zrender/lib/core/util":436}],287:[function(require,module,exports){
+},{"../config":280,"../layout/barGrid":346,"../scale/Interval":370,"../scale/Log":371,"../scale/Ordinal":372,"../scale/Scale":373,"../scale/Time":374,"../util/number":388,"zrender/lib/contain/text":417,"zrender/lib/core/util":434}],285:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var axisHelper = require("./axisHelper");
@@ -72970,7 +72961,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"./axisHelper":286,"zrender/lib/core/util":436}],288:[function(require,module,exports){
+},{"./axisHelper":284,"zrender/lib/core/util":434}],286:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var axisDefault = require("./axisDefault");
@@ -73046,7 +73037,7 @@ function _default(axisName, BaseAxisModelClass, axisTypeDefaulter, extraDefaultO
 }
 
 module.exports = _default;
-},{"../data/OrdinalMeta":333,"../model/Component":352,"../util/layout":388,"./axisDefault":285,"zrender/lib/core/util":436}],289:[function(require,module,exports){
+},{"../data/OrdinalMeta":331,"../model/Component":350,"../util/layout":386,"./axisDefault":283,"zrender/lib/core/util":434}],287:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var layout = require("../../util/layout");
@@ -73437,7 +73428,7 @@ function doConvert(methodName, ecModel, finder, value) {
 CoordinateSystem.register('calendar', Calendar);
 var _default = Calendar;
 module.exports = _default;
-},{"../../CoordinateSystem":6,"../../util/layout":388,"../../util/number":390,"zrender/lib/core/util":436}],290:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"../../util/layout":386,"../../util/number":388,"zrender/lib/core/util":434}],288:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var ComponentModel = require("../../model/Component");
@@ -73562,7 +73553,7 @@ function mergeAndNormalizeLayoutParams(target, raw) {
 
 var _default = CalendarModel;
 module.exports = _default;
-},{"../../model/Component":352,"../../util/layout":388,"zrender/lib/core/util":436}],291:[function(require,module,exports){
+},{"../../model/Component":350,"../../util/layout":386,"zrender/lib/core/util":434}],289:[function(require,module,exports){
 function _default(coordSys) {
   var rect = coordSys.getRect();
   var rangeInfo = coordSys.getRangeInfo();
@@ -73591,7 +73582,7 @@ function _default(coordSys) {
 }
 
 module.exports = _default;
-},{}],292:[function(require,module,exports){
+},{}],290:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Axis = require("../Axis");
@@ -73711,7 +73702,7 @@ Axis2D.prototype = {
 zrUtil.inherits(Axis2D, Axis);
 var _default = Axis2D;
 module.exports = _default;
-},{"../Axis":283,"zrender/lib/core/util":436}],293:[function(require,module,exports){
+},{"../Axis":281,"zrender/lib/core/util":434}],291:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var ComponentModel = require("../../model/Component");
@@ -73781,7 +73772,7 @@ axisModelCreator('x', AxisModel, getAxisType, extraOption);
 axisModelCreator('y', AxisModel, getAxisType, extraOption);
 var _default = AxisModel;
 module.exports = _default;
-},{"../../model/Component":352,"../axisModelCommonMixin":287,"../axisModelCreator":288,"zrender/lib/core/util":436}],294:[function(require,module,exports){
+},{"../../model/Component":350,"../axisModelCommonMixin":285,"../axisModelCreator":286,"zrender/lib/core/util":434}],292:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 /**
@@ -73882,7 +73873,7 @@ Cartesian.prototype = {
 };
 var _default = Cartesian;
 module.exports = _default;
-},{"zrender/lib/core/util":436}],295:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],293:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Cartesian = require("./Cartesian");
@@ -73983,7 +73974,7 @@ Cartesian2D.prototype = {
 zrUtil.inherits(Cartesian2D, Cartesian);
 var _default = Cartesian2D;
 module.exports = _default;
-},{"./Cartesian":294,"zrender/lib/core/util":436}],296:[function(require,module,exports){
+},{"./Cartesian":292,"zrender/lib/core/util":434}],294:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -74580,7 +74571,7 @@ Grid.dimensions = Grid.prototype.dimensions = Cartesian2D.prototype.dimensions;
 CoordinateSystem.register('cartesian2d', Grid);
 var _default = Grid;
 module.exports = _default;
-},{"../../CoordinateSystem":6,"../../config":282,"../../coord/axisHelper":286,"../../util/layout":388,"./Axis2D":292,"./Cartesian2D":295,"./GridModel":297,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/util":436}],297:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"../../config":280,"../../coord/axisHelper":284,"../../util/layout":386,"./Axis2D":290,"./Cartesian2D":293,"./GridModel":295,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/util":434}],295:[function(require,module,exports){
 require("./AxisModel");
 
 var ComponentModel = require("../../model/Component");
@@ -74615,7 +74606,7 @@ var _default = ComponentModel.extend({
 });
 
 module.exports = _default;
-},{"../../model/Component":352,"./AxisModel":293}],298:[function(require,module,exports){
+},{"../../model/Component":350,"./AxisModel":291}],296:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 function dataToCoordSize(dataSize, dataItem) {
@@ -74651,7 +74642,7 @@ function _default(coordSys) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],299:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],297:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var BoundingRect = require("zrender/lib/core/BoundingRect");
@@ -74871,7 +74862,7 @@ function doConvert(methodName, ecModel, finder, value) {
 
 var _default = Geo;
 module.exports = _default;
-},{"../View":284,"./fix/diaoyuIsland":302,"./fix/geoCoord":303,"./fix/nanhai":304,"./fix/textCoord":305,"./parseGeoJson":307,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/util":436}],300:[function(require,module,exports){
+},{"../View":282,"./fix/diaoyuIsland":300,"./fix/geoCoord":301,"./fix/nanhai":302,"./fix/textCoord":303,"./parseGeoJson":305,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/util":434}],298:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var modelUtil = require("../../util/model");
@@ -75000,7 +74991,7 @@ var GeoModel = ComponentModel.extend({
 zrUtil.mixin(GeoModel, selectableMixin);
 var _default = GeoModel;
 module.exports = _default;
-},{"../../component/helper/selectableMixin":214,"../../model/Component":352,"../../model/Model":354,"../../util/model":389,"./geoCreator":306,"zrender/lib/core/util":436}],301:[function(require,module,exports){
+},{"../../component/helper/selectableMixin":212,"../../model/Component":350,"../../model/Model":352,"../../util/model":387,"./geoCreator":304,"zrender/lib/core/util":434}],299:[function(require,module,exports){
 var BoundingRect = require("zrender/lib/core/BoundingRect");
 
 var bbox = require("zrender/lib/core/bbox");
@@ -75164,7 +75155,7 @@ Region.prototype = {
 };
 var _default = Region;
 module.exports = _default;
-},{"zrender/lib/contain/polygon":417,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/bbox":428,"zrender/lib/core/vector":437}],302:[function(require,module,exports){
+},{"zrender/lib/contain/polygon":415,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/bbox":426,"zrender/lib/core/vector":435}],300:[function(require,module,exports){
 // Fix for 钓鱼岛
 // var Region = require('../Region');
 // var zrUtil = require('zrender/src/core/util');
@@ -75185,7 +75176,7 @@ function _default(geo) {
 }
 
 module.exports = _default;
-},{}],303:[function(require,module,exports){
+},{}],301:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var geoCoordMap = {
@@ -75207,7 +75198,7 @@ function _default(geo) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],304:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],302:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Region = require("../Region");
@@ -75237,7 +75228,7 @@ function _default(geo) {
 }
 
 module.exports = _default;
-},{"../Region":301,"zrender/lib/core/util":436}],305:[function(require,module,exports){
+},{"../Region":299,"zrender/lib/core/util":434}],303:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var coordsOffsetMap = {
@@ -75263,7 +75254,7 @@ function _default(geo) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],306:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],304:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -75460,7 +75451,7 @@ var geoCreator = {
 echarts.registerCoordinateSystem('geo', geoCreator);
 var _default = geoCreator;
 module.exports = _default;
-},{"../../config":282,"../../echarts":344,"../../util/layout":388,"../../util/number":390,"./Geo":299,"zrender/lib/core/util":436}],307:[function(require,module,exports){
+},{"../../config":280,"../../echarts":342,"../../util/layout":386,"../../util/number":388,"./Geo":297,"zrender/lib/core/util":434}],305:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Region = require("./Region");
@@ -75576,7 +75567,7 @@ function _default(geoJson) {
 }
 
 module.exports = _default;
-},{"./Region":301,"zrender/lib/core/util":436}],308:[function(require,module,exports){
+},{"./Region":299,"zrender/lib/core/util":434}],306:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 function dataToCoordSize(dataSize, dataItem) {
@@ -75616,7 +75607,7 @@ function _default(coordSys) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],309:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],307:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var ComponentModel = require("../../model/Component");
@@ -75727,7 +75718,7 @@ function getAxisType(axisName, option) {
 axisModelCreator('parallel', AxisModel, getAxisType, defaultOption);
 var _default = AxisModel;
 module.exports = _default;
-},{"../../model/Component":352,"../../model/mixin/makeStyleMapper":364,"../../util/number":390,"../axisModelCommonMixin":287,"../axisModelCreator":288,"zrender/lib/core/util":436}],310:[function(require,module,exports){
+},{"../../model/Component":350,"../../model/mixin/makeStyleMapper":362,"../../util/number":388,"../axisModelCommonMixin":285,"../axisModelCreator":286,"zrender/lib/core/util":434}],308:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var matrix = require("zrender/lib/core/matrix");
@@ -76200,7 +76191,7 @@ function layoutAxisWithExpand(axisIndex, layoutInfo) {
 
 var _default = Parallel;
 module.exports = _default;
-},{"../../component/helper/sliderMove":215,"../../coord/axisHelper":286,"../../util/graphic":387,"../../util/layout":388,"../../util/number":390,"./ParallelAxis":311,"zrender/lib/core/matrix":434,"zrender/lib/core/util":436}],311:[function(require,module,exports){
+},{"../../component/helper/sliderMove":213,"../../coord/axisHelper":284,"../../util/graphic":385,"../../util/layout":386,"../../util/number":388,"./ParallelAxis":309,"zrender/lib/core/matrix":432,"zrender/lib/core/util":434}],309:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Axis = require("../Axis");
@@ -76252,7 +76243,7 @@ ParallelAxis.prototype = {
 zrUtil.inherits(ParallelAxis, Axis);
 var _default = ParallelAxis;
 module.exports = _default;
-},{"../Axis":283,"zrender/lib/core/util":436}],312:[function(require,module,exports){
+},{"../Axis":281,"zrender/lib/core/util":434}],310:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Component = require("../../model/Component");
@@ -76364,7 +76355,7 @@ var _default = Component.extend({
 });
 
 module.exports = _default;
-},{"../../model/Component":352,"./AxisModel":309,"zrender/lib/core/util":436}],313:[function(require,module,exports){
+},{"../../model/Component":350,"./AxisModel":307,"zrender/lib/core/util":434}],311:[function(require,module,exports){
 var Parallel = require("./Parallel");
 
 var CoordinateSystem = require("../../CoordinateSystem");
@@ -76399,7 +76390,7 @@ function create(ecModel, api) {
 CoordinateSystem.register('parallel', {
   create: create
 });
-},{"../../CoordinateSystem":6,"./Parallel":310}],314:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"./Parallel":308}],312:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var modelUtil = require("../../util/model");
@@ -76453,7 +76444,7 @@ function mergeAxisOptionFromParallel(option) {
 }
 
 module.exports = _default;
-},{"../../util/model":389,"zrender/lib/core/util":436}],315:[function(require,module,exports){
+},{"../../util/model":387,"zrender/lib/core/util":434}],313:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Axis = require("../Axis");
@@ -76488,7 +76479,7 @@ AngleAxis.prototype = {
 zrUtil.inherits(AngleAxis, Axis);
 var _default = AngleAxis;
 module.exports = _default;
-},{"../Axis":283,"zrender/lib/core/util":436}],316:[function(require,module,exports){
+},{"../Axis":281,"zrender/lib/core/util":434}],314:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var ComponentModel = require("../../model/Component");
@@ -76542,7 +76533,7 @@ function getAxisType(axisDim, option) {
 
 axisModelCreator('angle', PolarAxisModel, getAxisType, polarAxisDefaultExtendedOption.angle);
 axisModelCreator('radius', PolarAxisModel, getAxisType, polarAxisDefaultExtendedOption.radius);
-},{"../../model/Component":352,"../axisModelCommonMixin":287,"../axisModelCreator":288,"zrender/lib/core/util":436}],317:[function(require,module,exports){
+},{"../../model/Component":350,"../axisModelCommonMixin":285,"../axisModelCreator":286,"zrender/lib/core/util":434}],315:[function(require,module,exports){
 var RadiusAxis = require("./RadiusAxis");
 
 var AngleAxis = require("./AngleAxis");
@@ -76763,7 +76754,7 @@ Polar.prototype = {
 };
 var _default = Polar;
 module.exports = _default;
-},{"./AngleAxis":315,"./RadiusAxis":319}],318:[function(require,module,exports){
+},{"./AngleAxis":313,"./RadiusAxis":317}],316:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 require("./AxisModel");
@@ -76800,7 +76791,7 @@ var _default = echarts.extendComponentModel({
 });
 
 module.exports = _default;
-},{"../../echarts":344,"./AxisModel":316}],319:[function(require,module,exports){
+},{"../../echarts":342,"./AxisModel":314}],317:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Axis = require("../Axis");
@@ -76834,7 +76825,7 @@ RadiusAxis.prototype = {
 zrUtil.inherits(RadiusAxis, Axis);
 var _default = RadiusAxis;
 module.exports = _default;
-},{"../Axis":283,"zrender/lib/core/util":436}],320:[function(require,module,exports){
+},{"../Axis":281,"zrender/lib/core/util":434}],318:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -76967,7 +76958,7 @@ var polarCreator = {
   }
 };
 CoordinateSystem.register('polar', polarCreator);
-},{"../../CoordinateSystem":6,"../../config":282,"../../coord/axisHelper":286,"../../util/number":390,"./Polar":317,"./PolarModel":318,"zrender/lib/core/util":436}],321:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"../../config":280,"../../coord/axisHelper":284,"../../util/number":388,"./Polar":315,"./PolarModel":316,"zrender/lib/core/util":434}],319:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 function dataToCoordSize(dataSize, dataItem) {
@@ -77014,7 +77005,7 @@ function _default(coordSys) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],322:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],320:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Axis = require("../Axis");
@@ -77048,7 +77039,7 @@ function IndicatorAxis(dim, scale, radiusExtent) {
 zrUtil.inherits(IndicatorAxis, Axis);
 var _default = IndicatorAxis;
 module.exports = _default;
-},{"../Axis":283,"zrender/lib/core/util":436}],323:[function(require,module,exports){
+},{"../Axis":281,"zrender/lib/core/util":434}],321:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var IndicatorAxis = require("./IndicatorAxis");
@@ -77281,7 +77272,7 @@ Radar.create = function (ecModel, api) {
 CoordinateSystem.register('radar', Radar);
 var _default = Radar;
 module.exports = _default;
-},{"../../CoordinateSystem":6,"../../scale/Interval":372,"../../util/number":390,"../axisHelper":286,"./IndicatorAxis":322,"zrender/lib/core/util":436}],324:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"../../scale/Interval":370,"../../util/number":388,"../axisHelper":284,"./IndicatorAxis":320,"zrender/lib/core/util":434}],322:[function(require,module,exports){
 var echarts = require("../../echarts");
 
 var zrUtil = require("zrender/lib/core/util");
@@ -77401,7 +77392,7 @@ var RadarModel = echarts.extendComponentModel({
 });
 var _default = RadarModel;
 module.exports = _default;
-},{"../../echarts":344,"../../model/Model":354,"../axisDefault":285,"../axisModelCommonMixin":287,"zrender/lib/core/util":436}],325:[function(require,module,exports){
+},{"../../echarts":342,"../../model/Model":352,"../axisDefault":283,"../axisModelCommonMixin":285,"zrender/lib/core/util":434}],323:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var ComponentModel = require("../../model/Component");
@@ -77480,7 +77471,7 @@ zrUtil.merge(AxisModel.prototype, axisModelCommonMixin);
 axisModelCreator('single', AxisModel, getAxisType, defaultOption);
 var _default = AxisModel;
 module.exports = _default;
-},{"../../model/Component":352,"../axisModelCommonMixin":287,"../axisModelCreator":288,"zrender/lib/core/util":436}],326:[function(require,module,exports){
+},{"../../model/Component":350,"../axisModelCommonMixin":285,"../axisModelCreator":286,"zrender/lib/core/util":434}],324:[function(require,module,exports){
 var SingleAxis = require("./SingleAxis");
 
 var axisHelper = require("../axisHelper");
@@ -77730,7 +77721,7 @@ Single.prototype = {
 };
 var _default = Single;
 module.exports = _default;
-},{"../../util/layout":388,"../axisHelper":286,"./SingleAxis":327,"zrender/lib/core/util":436}],327:[function(require,module,exports){
+},{"../../util/layout":386,"../axisHelper":284,"./SingleAxis":325,"zrender/lib/core/util":434}],325:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Axis = require("../Axis");
@@ -77824,7 +77815,7 @@ SingleAxis.prototype = {
 zrUtil.inherits(SingleAxis, Axis);
 var _default = SingleAxis;
 module.exports = _default;
-},{"../Axis":283,"zrender/lib/core/util":436}],328:[function(require,module,exports){
+},{"../Axis":281,"zrender/lib/core/util":434}],326:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 function dataToCoordSize(dataSize, dataItem) {
@@ -77856,7 +77847,7 @@ function _default(coordSys) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],329:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],327:[function(require,module,exports){
 var Single = require("./Single");
 
 var CoordinateSystem = require("../../CoordinateSystem");
@@ -77898,7 +77889,7 @@ CoordinateSystem.register('single', {
   create: create,
   dimensions: Single.prototype.dimensions
 });
-},{"../../CoordinateSystem":6,"./Single":326}],330:[function(require,module,exports){
+},{"../../CoordinateSystem":4,"./Single":324}],328:[function(require,module,exports){
 function defaultKeyGetter(item) {
   return item;
 }
@@ -78024,7 +78015,7 @@ function initIndexMap(arr, map, keyArr, keyGetterName, dataDiffer) {
 
 var _default = DataDiffer;
 module.exports = _default;
-},{}],331:[function(require,module,exports){
+},{}],329:[function(require,module,exports){
 var _config = require("../config");
 
 var __DEV__ = _config.__DEV__;
@@ -78564,7 +78555,7 @@ enableClassCheck(Node);
 enableClassCheck(Edge);
 var _default = Graph;
 module.exports = _default;
-},{"../config":282,"../util/clazz":384,"zrender/lib/core/util":436}],332:[function(require,module,exports){
+},{"../config":280,"../util/clazz":382,"zrender/lib/core/util":434}],330:[function(require,module,exports){
 (function (global){
 var _config = require("../config");
 
@@ -80457,7 +80448,7 @@ listProto.CHANGABLE_METHODS = ['filterSelf', 'selectRange'];
 var _default = List;
 module.exports = _default;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../config":282,"../model/Model":354,"./DataDiffer":330,"./Source":334,"./helper/dataProvider":338,"./helper/dimensionHelper":340,"zrender/lib/core/util":436}],333:[function(require,module,exports){
+},{"../config":280,"../model/Model":352,"./DataDiffer":328,"./Source":332,"./helper/dataProvider":336,"./helper/dimensionHelper":338,"zrender/lib/core/util":434}],331:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var createHashMap = _util.createHashMap;
@@ -80586,7 +80577,7 @@ function getName(obj) {
 
 var _default = OrdinalMeta;
 module.exports = _default;
-},{"zrender/lib/core/util":436}],334:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],332:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var createHashMap = _util.createHashMap;
@@ -80720,7 +80711,7 @@ Source.seriesDataToSource = function (data) {
 enableClassCheck(Source);
 var _default = Source;
 module.exports = _default;
-},{"../util/clazz":384,"./helper/sourceType":343,"zrender/lib/core/util":436}],335:[function(require,module,exports){
+},{"../util/clazz":382,"./helper/sourceType":341,"zrender/lib/core/util":434}],333:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Model = require("../model/Model");
@@ -81251,7 +81242,7 @@ function addChild(child, node) {
 
 var _default = Tree;
 module.exports = _default;
-},{"../model/Model":354,"./List":332,"./helper/createDimensions":337,"./helper/linkList":341,"zrender/lib/core/util":436}],336:[function(require,module,exports){
+},{"../model/Model":352,"./List":330,"./helper/createDimensions":335,"./helper/linkList":339,"zrender/lib/core/util":434}],334:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var createHashMap = _util.createHashMap;
@@ -81507,7 +81498,7 @@ function genName(name, map, fromZero) {
 
 var _default = completeDimensions;
 module.exports = _default;
-},{"../../util/model":389,"../Source":334,"./dimensionHelper":340,"./sourceHelper":342,"zrender/lib/core/util":436}],337:[function(require,module,exports){
+},{"../../util/model":387,"../Source":332,"./dimensionHelper":338,"./sourceHelper":340,"zrender/lib/core/util":434}],335:[function(require,module,exports){
 var completeDimensions = require("./completeDimensions");
 
 /**
@@ -81538,7 +81529,7 @@ function _default(source, opt) {
 }
 
 module.exports = _default;
-},{"./completeDimensions":336}],338:[function(require,module,exports){
+},{"./completeDimensions":334}],336:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -81879,7 +81870,7 @@ exports.DefaultDataProvider = DefaultDataProvider;
 exports.defaultDimValueGetters = defaultDimValueGetters;
 exports.retrieveRawValue = retrieveRawValue;
 exports.retrieveRawAttr = retrieveRawAttr;
-},{"../../config":282,"../../util/model":389,"../../util/number":390,"../Source":334,"./sourceType":343,"zrender/lib/core/util":436}],339:[function(require,module,exports){
+},{"../../config":280,"../../util/model":387,"../../util/number":388,"../Source":332,"./sourceType":341,"zrender/lib/core/util":434}],337:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var each = _util.each;
@@ -81997,7 +81988,7 @@ function isDimensionStacked(data, stackedDim, stackedByDim) {
 
 exports.enableDataStack = enableDataStack;
 exports.isDimensionStacked = isDimensionStacked;
-},{"zrender/lib/core/util":436}],340:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],338:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var each = _util.each;
@@ -82111,7 +82102,7 @@ function mayLabelDimType(dimType) {
 exports.OTHER_DIMENSIONS = OTHER_DIMENSIONS;
 exports.summarizeDimensions = summarizeDimensions;
 exports.getDimensionTypeByAxis = getDimensionTypeByAxis;
-},{"../../config":282,"zrender/lib/core/util":436}],341:[function(require,module,exports){
+},{"../../config":280,"zrender/lib/core/util":434}],339:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 /**
@@ -82240,7 +82231,7 @@ function linkSingle(data, dataType, mainData, opt) {
 
 var _default = linkList;
 module.exports = _default;
-},{"zrender/lib/core/util":436}],342:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],340:[function(require,module,exports){
 var _config = require("../../config");
 
 var __DEV__ = _config.__DEV__;
@@ -82788,7 +82779,7 @@ exports.getSource = getSource;
 exports.resetSourceDefaulter = resetSourceDefaulter;
 exports.prepareSource = prepareSource;
 exports.guessOrdinal = guessOrdinal;
-},{"../../config":282,"../../model/referHelper":366,"../../util/model":389,"../Source":334,"./sourceType":343,"zrender/lib/core/util":436}],343:[function(require,module,exports){
+},{"../../config":280,"../../model/referHelper":364,"../../util/model":387,"../Source":332,"./sourceType":341,"zrender/lib/core/util":434}],341:[function(require,module,exports){
 // Avoid typo.
 var SOURCE_FORMAT_ORIGINAL = 'original';
 var SOURCE_FORMAT_ARRAY_ROWS = 'arrayRows';
@@ -82807,7 +82798,7 @@ exports.SOURCE_FORMAT_UNKNOWN = SOURCE_FORMAT_UNKNOWN;
 exports.SOURCE_FORMAT_TYPED_ARRAY = SOURCE_FORMAT_TYPED_ARRAY;
 exports.SERIES_LAYOUT_BY_COLUMN = SERIES_LAYOUT_BY_COLUMN;
 exports.SERIES_LAYOUT_BY_ROW = SERIES_LAYOUT_BY_ROW;
-},{}],344:[function(require,module,exports){
+},{}],342:[function(require,module,exports){
 var _config = require("./config");
 
 var __DEV__ = _config.__DEV__;
@@ -84844,7 +84835,7 @@ var ___ec_export = require("./export");
         }
     }
 })();
-},{"./CoordinateSystem":6,"./ExtensionAPI":7,"./config":282,"./export":345,"./loading/default":351,"./model/Component":352,"./model/Global":353,"./model/OptionManager":355,"./model/Series":356,"./preprocessor/backwardCompat":367,"./processor/dataStack":371,"./stream/Scheduler":378,"./theme/dark":380,"./theme/light":381,"./util/graphic":387,"./util/model":389,"./util/throttle":392,"./view/Chart":393,"./view/Component":394,"./visual/aria":396,"./visual/seriesColor":398,"zrender/lib/core/env":430,"zrender/lib/core/timsort":435,"zrender/lib/core/util":436,"zrender/lib/mixin/Eventful":470,"zrender/lib/tool/color":480,"zrender/lib/zrender":487}],345:[function(require,module,exports){
+},{"./CoordinateSystem":4,"./ExtensionAPI":5,"./config":280,"./export":343,"./loading/default":349,"./model/Component":350,"./model/Global":351,"./model/OptionManager":353,"./model/Series":354,"./preprocessor/backwardCompat":365,"./processor/dataStack":369,"./stream/Scheduler":376,"./theme/dark":378,"./theme/light":379,"./util/graphic":385,"./util/model":387,"./util/throttle":390,"./view/Chart":391,"./view/Component":392,"./visual/aria":394,"./visual/seriesColor":396,"zrender/lib/core/env":428,"zrender/lib/core/timsort":433,"zrender/lib/core/util":434,"zrender/lib/mixin/Eventful":468,"zrender/lib/tool/color":478,"zrender/lib/zrender":485}],343:[function(require,module,exports){
 var zrender = require("zrender/lib/zrender");
 
 exports.zrender = zrender;
@@ -84914,7 +84905,7 @@ zrUtil.each(['map', 'each', 'filter', 'indexOf', 'inherits', 'reduce', 'filter',
 });
 exports.parseGeoJson = parseGeoJson;
 exports.util = ecUtil;
-},{"./coord/Axis":283,"./coord/geo/parseGeoJson":307,"./data/List":332,"./helper":346,"./model/Model":354,"./util/format":386,"./util/graphic":387,"./util/number":390,"./util/throttle":392,"zrender/lib/core/env":430,"zrender/lib/core/matrix":434,"zrender/lib/core/util":436,"zrender/lib/core/vector":437,"zrender/lib/tool/color":480,"zrender/lib/zrender":487}],346:[function(require,module,exports){
+},{"./coord/Axis":281,"./coord/geo/parseGeoJson":305,"./data/List":330,"./helper":344,"./model/Model":352,"./util/format":384,"./util/graphic":385,"./util/number":388,"./util/throttle":390,"zrender/lib/core/env":428,"zrender/lib/core/matrix":432,"zrender/lib/core/util":434,"zrender/lib/core/vector":435,"zrender/lib/tool/color":478,"zrender/lib/zrender":485}],344:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var createListFromArray = require("./chart/helper/createListFromArray");
@@ -85018,7 +85009,7 @@ exports.createList = createList;
 exports.dataStack = dataStack;
 exports.createScale = createScale;
 exports.mixinAxisModelCommonMethods = mixinAxisModelCommonMethods;
-},{"./chart/helper/createListFromArray":74,"./coord/axisHelper":286,"./coord/axisModelCommonMixin":287,"./data/helper/completeDimensions":336,"./data/helper/createDimensions":337,"./data/helper/dataStackHelper":339,"./model/Model":354,"./util/layout":388,"./util/symbol":391,"zrender/lib/core/util":436}],347:[function(require,module,exports){
+},{"./chart/helper/createListFromArray":72,"./coord/axisHelper":284,"./coord/axisModelCommonMixin":285,"./data/helper/completeDimensions":334,"./data/helper/createDimensions":335,"./data/helper/dataStackHelper":337,"./model/Model":352,"./util/layout":386,"./util/symbol":389,"zrender/lib/core/util":434}],345:[function(require,module,exports){
 var _default = {
   toolbox: {
     brush: {
@@ -85117,7 +85108,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{}],348:[function(require,module,exports){
+},{}],346:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var _number = require("../util/number");
@@ -85419,7 +85410,7 @@ function layout(seriesType, ecModel, api) {
 exports.getLayoutOnAxis = getLayoutOnAxis;
 exports.calBarWidthAndOffset = calBarWidthAndOffset;
 exports.layout = layout;
-},{"../data/helper/dataStackHelper":339,"../util/number":390,"zrender/lib/core/util":436}],349:[function(require,module,exports){
+},{"../data/helper/dataStackHelper":337,"../util/number":388,"zrender/lib/core/util":434}],347:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var _number = require("../util/number");
@@ -85669,7 +85660,7 @@ function calRadialBar(barSeries, api) {
 
 var _default = barLayoutPolar;
 module.exports = _default;
-},{"../data/helper/dataStackHelper":339,"../util/number":390,"zrender/lib/core/util":436}],350:[function(require,module,exports){
+},{"../data/helper/dataStackHelper":337,"../util/number":388,"zrender/lib/core/util":434}],348:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var map = _util.map;
@@ -85743,7 +85734,7 @@ function _default(seriesType) {
 }
 
 module.exports = _default;
-},{"../chart/helper/createRenderPlanner":76,"../data/helper/dataStackHelper":339,"zrender/lib/core/util":436}],351:[function(require,module,exports){
+},{"../chart/helper/createRenderPlanner":74,"../data/helper/dataStackHelper":337,"zrender/lib/core/util":434}],349:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("../util/graphic");
@@ -85837,7 +85828,7 @@ function _default(api, opts) {
 }
 
 module.exports = _default;
-},{"../util/graphic":387,"zrender/lib/core/util":436}],352:[function(require,module,exports){
+},{"../util/graphic":385,"zrender/lib/core/util":434}],350:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Model = require("./Model");
@@ -86043,7 +86034,7 @@ function getDependencies(componentType) {
 zrUtil.mixin(ComponentModel, boxLayoutMixin);
 var _default = ComponentModel;
 module.exports = _default;
-},{"../util/clazz":384,"../util/component":385,"../util/layout":388,"../util/model":389,"./Model":354,"./mixin/boxLayout":359,"zrender/lib/core/util":436}],353:[function(require,module,exports){
+},{"../util/clazz":382,"../util/component":383,"../util/layout":386,"../util/model":387,"./Model":352,"./mixin/boxLayout":357,"zrender/lib/core/util":434}],351:[function(require,module,exports){
 var _config = require("../config");
 
 var __DEV__ = _config.__DEV__;
@@ -86731,7 +86722,7 @@ function assertSeriesInitialized(ecModel) {}
 mixin(GlobalModel, colorPaletteMixin);
 var _default = GlobalModel;
 module.exports = _default;
-},{"../config":282,"../data/helper/sourceHelper":342,"../util/model":389,"./Component":352,"./Model":354,"./globalDefault":357,"./mixin/colorPalette":360,"zrender/lib/core/util":436}],354:[function(require,module,exports){
+},{"../config":280,"../data/helper/sourceHelper":340,"../util/model":387,"./Component":350,"./Model":352,"./globalDefault":355,"./mixin/colorPalette":358,"zrender/lib/core/util":434}],352:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var env = require("zrender/lib/core/env");
@@ -86931,7 +86922,7 @@ mixin(Model, textStyleMixin);
 mixin(Model, itemStyleMixin);
 var _default = Model;
 module.exports = _default;
-},{"../util/clazz":384,"../util/model":389,"./mixin/areaStyle":358,"./mixin/itemStyle":362,"./mixin/lineStyle":363,"./mixin/textStyle":365,"zrender/lib/core/env":430,"zrender/lib/core/util":436}],355:[function(require,module,exports){
+},{"../util/clazz":382,"../util/model":387,"./mixin/areaStyle":356,"./mixin/itemStyle":360,"./mixin/lineStyle":361,"./mixin/textStyle":363,"zrender/lib/core/env":428,"zrender/lib/core/util":434}],353:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var modelUtil = require("../util/model");
@@ -87346,7 +87337,7 @@ function mergeOption(oldOption, newOption) {
 
 var _default = OptionManager;
 module.exports = _default;
-},{"../util/model":389,"./Component":352,"zrender/lib/core/util":436}],356:[function(require,module,exports){
+},{"../util/model":387,"./Component":350,"zrender/lib/core/util":434}],354:[function(require,module,exports){
 var _config = require("../config");
 
 var __DEV__ = _config.__DEV__;
@@ -87871,7 +87862,7 @@ function getCurrentTask(seriesModel) {
 
 var _default = SeriesModel;
 module.exports = _default;
-},{"../config":282,"../data/helper/dataProvider":338,"../data/helper/sourceHelper":342,"../model/mixin/dataFormat":361,"../stream/task":379,"../util/format":386,"../util/layout":388,"../util/model":389,"./Component":352,"./mixin/colorPalette":360,"zrender/lib/core/env":430,"zrender/lib/core/util":436}],357:[function(require,module,exports){
+},{"../config":280,"../data/helper/dataProvider":336,"../data/helper/sourceHelper":340,"../model/mixin/dataFormat":359,"../stream/task":377,"../util/format":384,"../util/layout":386,"../util/model":387,"./Component":350,"./mixin/colorPalette":358,"zrender/lib/core/env":428,"zrender/lib/core/util":434}],355:[function(require,module,exports){
 var platform = ''; // Navigator not exists in node
 
 if (typeof navigator !== 'undefined') {
@@ -87923,7 +87914,7 @@ var _default = {
   useUTC: false
 };
 module.exports = _default;
-},{}],358:[function(require,module,exports){
+},{}],356:[function(require,module,exports){
 var makeStyleMapper = require("./makeStyleMapper");
 
 var getAreaStyle = makeStyleMapper([['fill', 'color'], ['shadowBlur'], ['shadowOffsetX'], ['shadowOffsetY'], ['opacity'], ['shadowColor']]);
@@ -87933,7 +87924,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"./makeStyleMapper":364}],359:[function(require,module,exports){
+},{"./makeStyleMapper":362}],357:[function(require,module,exports){
 var _default = {
   getBoxLayoutParams: function () {
     return {
@@ -87947,7 +87938,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{}],360:[function(require,module,exports){
+},{}],358:[function(require,module,exports){
 var _model = require("../../util/model");
 
 var makeInner = _model.makeInner;
@@ -88010,7 +88001,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"../../util/model":389}],361:[function(require,module,exports){
+},{"../../util/model":387}],359:[function(require,module,exports){
 var _dataProvider = require("../../data/helper/dataProvider");
 
 var retrieveRawValue = _dataProvider.retrieveRawValue;
@@ -88115,7 +88106,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"../../data/helper/dataProvider":338,"../../util/format":386}],362:[function(require,module,exports){
+},{"../../data/helper/dataProvider":336,"../../util/format":384}],360:[function(require,module,exports){
 var makeStyleMapper = require("./makeStyleMapper");
 
 var getItemStyle = makeStyleMapper([['fill', 'color'], ['stroke', 'borderColor'], ['lineWidth', 'borderWidth'], ['opacity'], ['shadowBlur'], ['shadowOffsetX'], ['shadowOffsetY'], ['shadowColor'], ['textPosition'], ['textAlign']]);
@@ -88132,7 +88123,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"./makeStyleMapper":364}],363:[function(require,module,exports){
+},{"./makeStyleMapper":362}],361:[function(require,module,exports){
 var makeStyleMapper = require("./makeStyleMapper");
 
 var getLineStyle = makeStyleMapper([['lineWidth', 'width'], ['stroke', 'color'], ['opacity'], ['shadowBlur'], ['shadowOffsetX'], ['shadowOffsetY'], ['shadowColor']]);
@@ -88155,7 +88146,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"./makeStyleMapper":364}],364:[function(require,module,exports){
+},{"./makeStyleMapper":362}],362:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 // TODO Parse shadow style
@@ -88190,7 +88181,7 @@ function _default(properties) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],365:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],363:[function(require,module,exports){
 var textContain = require("zrender/lib/contain/text");
 
 var graphicUtil = require("../../util/graphic");
@@ -88224,7 +88215,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"../../util/graphic":387,"zrender/lib/contain/text":419}],366:[function(require,module,exports){
+},{"../../util/graphic":385,"zrender/lib/contain/text":417}],364:[function(require,module,exports){
 var _config = require("../config");
 
 var __DEV__ = _config.__DEV__;
@@ -88348,7 +88339,7 @@ function isCategory(axisModel) {
 }
 
 exports.getCoordSysDefineBySeries = getCoordSysDefineBySeries;
-},{"../config":282,"zrender/lib/core/util":436}],367:[function(require,module,exports){
+},{"../config":280,"zrender/lib/core/util":434}],365:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var each = _util.each;
@@ -88453,7 +88444,7 @@ function _default(option, isTheme) {
 }
 
 module.exports = _default;
-},{"../util/model":389,"./helper/compatStyle":368,"zrender/lib/core/util":436}],368:[function(require,module,exports){
+},{"../util/model":387,"./helper/compatStyle":366,"zrender/lib/core/util":434}],366:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var modelUtil = require("../../util/model");
@@ -88733,7 +88724,7 @@ function _default(option, isTheme) {
 }
 
 module.exports = _default;
-},{"../../util/model":389,"zrender/lib/core/util":436}],369:[function(require,module,exports){
+},{"../../util/model":387,"zrender/lib/core/util":434}],367:[function(require,module,exports){
 function _default(seriesType) {
   return {
     seriesType: seriesType,
@@ -88763,7 +88754,7 @@ function _default(seriesType) {
 }
 
 module.exports = _default;
-},{}],370:[function(require,module,exports){
+},{}],368:[function(require,module,exports){
 var samplers = {
   average: function (frame) {
     var sum = 0;
@@ -88853,7 +88844,7 @@ function _default(seriesType) {
 }
 
 module.exports = _default;
-},{}],371:[function(require,module,exports){
+},{}],369:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var createHashMap = _util.createHashMap;
@@ -88954,7 +88945,7 @@ function calculateStack(stackInfoList) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],372:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],370:[function(require,module,exports){
 var numberUtil = require("../util/number");
 
 var formatUtil = require("../util/format");
@@ -89153,7 +89144,7 @@ IntervalScale.create = function () {
 
 var _default = IntervalScale;
 module.exports = _default;
-},{"../util/format":386,"../util/number":390,"./Scale":375,"./helper":377}],373:[function(require,module,exports){
+},{"../util/format":384,"../util/number":388,"./Scale":373,"./helper":375}],371:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Scale = require("./Scale");
@@ -89320,7 +89311,7 @@ function fixRoundingError(val, originalVal) {
 
 var _default = LogScale;
 module.exports = _default;
-},{"../util/number":390,"./Interval":372,"./Scale":375,"zrender/lib/core/util":436}],374:[function(require,module,exports){
+},{"../util/number":388,"./Interval":370,"./Scale":373,"zrender/lib/core/util":434}],372:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var Scale = require("./Scale");
@@ -89425,7 +89416,7 @@ OrdinalScale.create = function () {
 
 var _default = OrdinalScale;
 module.exports = _default;
-},{"../data/OrdinalMeta":333,"./Scale":375,"zrender/lib/core/util":436}],375:[function(require,module,exports){
+},{"../data/OrdinalMeta":331,"./Scale":373,"zrender/lib/core/util":434}],373:[function(require,module,exports){
 var clazzUtil = require("../util/clazz");
 
 /**
@@ -89590,7 +89581,7 @@ clazzUtil.enableClassManagement(Scale, {
 });
 var _default = Scale;
 module.exports = _default;
-},{"../util/clazz":384}],376:[function(require,module,exports){
+},{"../util/clazz":382}],374:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var numberUtil = require("../util/number");
@@ -89780,7 +89771,7 @@ TimeScale.create = function (model) {
 
 var _default = TimeScale;
 module.exports = _default;
-},{"../util/format":386,"../util/number":390,"./Interval":372,"./helper":377,"zrender/lib/core/util":436}],377:[function(require,module,exports){
+},{"../util/format":384,"../util/number":388,"./Interval":370,"./helper":375,"zrender/lib/core/util":434}],375:[function(require,module,exports){
 var numberUtil = require("../util/number");
 
 /**
@@ -89888,7 +89879,7 @@ exports.intervalScaleNiceTicks = intervalScaleNiceTicks;
 exports.getIntervalPrecision = getIntervalPrecision;
 exports.fixExtent = fixExtent;
 exports.intervalScaleGetTicks = intervalScaleGetTicks;
-},{"../util/number":390}],378:[function(require,module,exports){
+},{"../util/number":388}],376:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var each = _util.each;
@@ -90362,7 +90353,7 @@ function mockMethods(target, Clz) {
 
 var _default = Scheduler;
 module.exports = _default;
-},{"../ExtensionAPI":7,"../model/Global":353,"../util/component":385,"../util/model":389,"./task":379,"zrender/lib/core/util":436}],379:[function(require,module,exports){
+},{"../ExtensionAPI":5,"../model/Global":351,"../util/component":383,"../util/model":387,"./task":377,"zrender/lib/core/util":434}],377:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var assert = _util.assert;
@@ -90595,7 +90586,7 @@ taskProto.setOutputEnd = function (end) {
 
 
 exports.createTask = createTask;
-},{"../config":282,"zrender/lib/core/util":436}],380:[function(require,module,exports){
+},{"../config":280,"zrender/lib/core/util":434}],378:[function(require,module,exports){
 var contrastColor = '#eee';
 
 var axisCommon = function () {
@@ -90727,14 +90718,14 @@ var theme = {
 theme.categoryAxis.splitLine.show = false;
 var _default = theme;
 module.exports = _default;
-},{}],381:[function(require,module,exports){
+},{}],379:[function(require,module,exports){
 var colorAll = ['#37A2DA', '#32C5E9', '#67E0E3', '#9FE6B8', '#FFDB5C', '#ff9f7f', '#fb7293', '#E062AE', '#E690D1', '#e7bcf3', '#9d96f5', '#8378EA', '#96BFFF'];
 var _default = {
   color: colorAll,
   colorLayer: [['#37A2DA', '#ffd85c', '#fd7b5f'], ['#37A2DA', '#67E0E3', '#FFDB5C', '#ff9f7f', '#E062AE', '#9d96f5'], ['#37A2DA', '#32C5E9', '#9FE6B8', '#FFDB5C', '#ff9f7f', '#fb7293', '#e7bcf3', '#8378EA', '#96BFFF'], colorAll]
 };
 module.exports = _default;
-},{}],382:[function(require,module,exports){
+},{}],380:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 /**
@@ -90834,7 +90825,7 @@ function createWrap() {
 }
 
 exports.createWrap = createWrap;
-},{"zrender/lib/core/util":436}],383:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],381:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 /**
@@ -90938,7 +90929,7 @@ function nest() {
 }
 
 module.exports = nest;
-},{"zrender/lib/core/util":436}],384:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],382:[function(require,module,exports){
 var _config = require("../config");
 
 var __DEV__ = _config.__DEV__;
@@ -91182,7 +91173,7 @@ exports.enableClassExtend = enableClassExtend;
 exports.enableClassCheck = enableClassCheck;
 exports.enableClassManagement = enableClassManagement;
 exports.setReadOnly = setReadOnly;
-},{"../config":282,"zrender/lib/core/util":436}],385:[function(require,module,exports){
+},{"../config":280,"zrender/lib/core/util":434}],383:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var _clazz = require("./clazz");
@@ -91363,7 +91354,7 @@ function enableTopologicalTravel(entity, dependencyGetter) {
 exports.getUID = getUID;
 exports.enableSubTypeDefaulter = enableSubTypeDefaulter;
 exports.enableTopologicalTravel = enableTopologicalTravel;
-},{"./clazz":384,"zrender/lib/core/util":436}],386:[function(require,module,exports){
+},{"./clazz":382,"zrender/lib/core/util":434}],384:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var textContain = require("zrender/lib/contain/text");
@@ -91546,7 +91537,7 @@ exports.formatTime = formatTime;
 exports.capitalFirst = capitalFirst;
 exports.truncateText = truncateText;
 exports.getTextRect = getTextRect;
-},{"./number":390,"zrender/lib/contain/text":419,"zrender/lib/core/util":436}],387:[function(require,module,exports){
+},{"./number":388,"zrender/lib/contain/text":417,"zrender/lib/core/util":434}],385:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var pathTool = require("zrender/lib/tool/path");
@@ -92635,7 +92626,7 @@ exports.groupTransition = groupTransition;
 exports.clipPointsByRect = clipPointsByRect;
 exports.clipRectByRect = clipRectByRect;
 exports.createIcon = createIcon;
-},{"zrender/lib/container/Group":422,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/matrix":434,"zrender/lib/core/util":436,"zrender/lib/core/vector":437,"zrender/lib/graphic/CompoundPath":439,"zrender/lib/graphic/Image":442,"zrender/lib/graphic/IncrementalDisplayable":443,"zrender/lib/graphic/LinearGradient":444,"zrender/lib/graphic/Path":445,"zrender/lib/graphic/RadialGradient":447,"zrender/lib/graphic/Text":449,"zrender/lib/graphic/shape/Arc":459,"zrender/lib/graphic/shape/BezierCurve":460,"zrender/lib/graphic/shape/Circle":461,"zrender/lib/graphic/shape/Line":462,"zrender/lib/graphic/shape/Polygon":463,"zrender/lib/graphic/shape/Polyline":464,"zrender/lib/graphic/shape/Rect":465,"zrender/lib/graphic/shape/Ring":466,"zrender/lib/graphic/shape/Sector":467,"zrender/lib/mixin/Transformable":471,"zrender/lib/tool/color":480,"zrender/lib/tool/path":481}],388:[function(require,module,exports){
+},{"zrender/lib/container/Group":420,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/matrix":432,"zrender/lib/core/util":434,"zrender/lib/core/vector":435,"zrender/lib/graphic/CompoundPath":437,"zrender/lib/graphic/Image":440,"zrender/lib/graphic/IncrementalDisplayable":441,"zrender/lib/graphic/LinearGradient":442,"zrender/lib/graphic/Path":443,"zrender/lib/graphic/RadialGradient":445,"zrender/lib/graphic/Text":447,"zrender/lib/graphic/shape/Arc":457,"zrender/lib/graphic/shape/BezierCurve":458,"zrender/lib/graphic/shape/Circle":459,"zrender/lib/graphic/shape/Line":460,"zrender/lib/graphic/shape/Polygon":461,"zrender/lib/graphic/shape/Polyline":462,"zrender/lib/graphic/shape/Rect":463,"zrender/lib/graphic/shape/Ring":464,"zrender/lib/graphic/shape/Sector":465,"zrender/lib/mixin/Transformable":469,"zrender/lib/tool/color":478,"zrender/lib/tool/path":479}],386:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var BoundingRect = require("zrender/lib/core/BoundingRect");
@@ -93121,7 +93112,7 @@ exports.sizeCalculable = sizeCalculable;
 exports.mergeLayoutParam = mergeLayoutParam;
 exports.getLayoutParams = getLayoutParams;
 exports.copyLayoutParams = copyLayoutParams;
-},{"./format":386,"./number":390,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/util":436}],389:[function(require,module,exports){
+},{"./format":384,"./number":388,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/util":434}],387:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var each = zrUtil.each;
@@ -93592,7 +93583,7 @@ exports.makeInner = makeInner;
 exports.parseFinder = parseFinder;
 exports.setAttribute = setAttribute;
 exports.getAttribute = getAttribute;
-},{"zrender/lib/core/util":436}],390:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],388:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var RADIAN_EPSILON = 1e-4;
@@ -94080,7 +94071,7 @@ exports.quantity = quantity;
 exports.nice = nice;
 exports.reformIntervals = reformIntervals;
 exports.isNumeric = isNumeric;
-},{"zrender/lib/core/util":436}],391:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],389:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var graphic = require("./graphic");
@@ -94382,7 +94373,7 @@ function createSymbol(symbolType, x, y, w, h, color, keepAspect) {
 }
 
 exports.createSymbol = createSymbol;
-},{"./graphic":387,"zrender/lib/core/BoundingRect":423,"zrender/lib/core/util":436}],392:[function(require,module,exports){
+},{"./graphic":385,"zrender/lib/core/BoundingRect":421,"zrender/lib/core/util":434}],390:[function(require,module,exports){
 var ORIGIN_METHOD = '\0__throttleOriginMethod';
 var RATE = '\0__throttleRate';
 var THROTTLE_TYPE = '\0__throttleType';
@@ -94531,7 +94522,7 @@ function clear(obj, fnAttr) {
 exports.throttle = throttle;
 exports.createOrUpdate = createOrUpdate;
 exports.clear = clear;
-},{}],393:[function(require,module,exports){
+},{}],391:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var each = _util.each;
@@ -94765,7 +94756,7 @@ var progressMethodMap = {
 };
 var _default = Chart;
 module.exports = _default;
-},{"../chart/helper/createRenderPlanner":76,"../stream/task":379,"../util/clazz":384,"../util/component":385,"../util/model":389,"zrender/lib/container/Group":422,"zrender/lib/core/util":436}],394:[function(require,module,exports){
+},{"../chart/helper/createRenderPlanner":74,"../stream/task":377,"../util/clazz":382,"../util/component":383,"../util/model":387,"zrender/lib/container/Group":420,"zrender/lib/core/util":434}],392:[function(require,module,exports){
 var Group = require("zrender/lib/container/Group");
 
 var componentUtil = require("../util/component");
@@ -94805,7 +94796,7 @@ clazzUtil.enableClassManagement(Component, {
 });
 var _default = Component;
 module.exports = _default;
-},{"../util/clazz":384,"../util/component":385,"zrender/lib/container/Group":422}],395:[function(require,module,exports){
+},{"../util/clazz":382,"../util/component":383,"zrender/lib/container/Group":420}],393:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var zrColor = require("zrender/lib/tool/color");
@@ -95370,7 +95361,7 @@ function littleThan(close, a, b) {
 
 var _default = VisualMapping;
 module.exports = _default;
-},{"../util/number":390,"zrender/lib/core/util":436,"zrender/lib/tool/color":480}],396:[function(require,module,exports){
+},{"../util/number":388,"zrender/lib/core/util":434,"zrender/lib/tool/color":478}],394:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var lang = require("../lang");
@@ -95506,7 +95497,7 @@ function _default(dom, ecModel) {
 }
 
 module.exports = _default;
-},{"../data/helper/dataProvider":338,"../lang":347,"zrender/lib/core/util":436}],397:[function(require,module,exports){
+},{"../data/helper/dataProvider":336,"../lang":345,"zrender/lib/core/util":434}],395:[function(require,module,exports){
 var _util = require("zrender/lib/core/util");
 
 var createHashMap = _util.createHashMap;
@@ -95559,7 +95550,7 @@ function _default(seriesType) {
 }
 
 module.exports = _default;
-},{"zrender/lib/core/util":436}],398:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],396:[function(require,module,exports){
 var Gradient = require("zrender/lib/graphic/Gradient");
 
 var _default = {
@@ -95599,7 +95590,7 @@ var _default = {
   }
 };
 module.exports = _default;
-},{"zrender/lib/graphic/Gradient":441}],399:[function(require,module,exports){
+},{"zrender/lib/graphic/Gradient":439}],397:[function(require,module,exports){
 function _default(seriesType, defaultSymbolType, legendSymbol) {
   // Encoding visual for all series include which is filtered for legend drawing
   return {
@@ -95653,7 +95644,7 @@ function _default(seriesType, defaultSymbolType, legendSymbol) {
 }
 
 module.exports = _default;
-},{}],400:[function(require,module,exports){
+},{}],398:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 /**
@@ -95704,7 +95695,7 @@ var defaultOption = {
 };
 var _default = visualDefault;
 module.exports = _default;
-},{"zrender/lib/core/util":436}],401:[function(require,module,exports){
+},{"zrender/lib/core/util":434}],399:[function(require,module,exports){
 var zrUtil = require("zrender/lib/core/util");
 
 var VisualMapping = require("./VisualMapping");
@@ -95901,7 +95892,7 @@ exports.createVisualMappings = createVisualMappings;
 exports.replaceVisualOption = replaceVisualOption;
 exports.applyVisual = applyVisual;
 exports.incrementalApplyVisual = incrementalApplyVisual;
-},{"./VisualMapping":395,"zrender/lib/core/util":436}],402:[function(require,module,exports){
+},{"./VisualMapping":393,"zrender/lib/core/util":434}],400:[function(require,module,exports){
 var guid = require("./core/guid");
 
 var Eventful = require("./mixin/Eventful");
@@ -96171,7 +96162,7 @@ zrUtil.mixin(Element, Transformable);
 zrUtil.mixin(Element, Eventful);
 var _default = Element;
 module.exports = _default;
-},{"./core/guid":432,"./core/util":436,"./mixin/Animatable":468,"./mixin/Eventful":470,"./mixin/Transformable":471}],403:[function(require,module,exports){
+},{"./core/guid":430,"./core/util":434,"./mixin/Animatable":466,"./mixin/Eventful":468,"./mixin/Transformable":469}],401:[function(require,module,exports){
 var util = require("./core/util");
 
 var vec2 = require("./core/vector");
@@ -96497,7 +96488,7 @@ util.mixin(Handler, Eventful);
 util.mixin(Handler, Draggable);
 var _default = Handler;
 module.exports = _default;
-},{"./core/util":436,"./core/vector":437,"./mixin/Draggable":469,"./mixin/Eventful":470}],404:[function(require,module,exports){
+},{"./core/util":434,"./core/vector":435,"./mixin/Draggable":467,"./mixin/Eventful":468}],402:[function(require,module,exports){
 var util = require("./core/util");
 
 var _config = require("./config");
@@ -96731,7 +96722,7 @@ Layer.prototype = {
 };
 var _default = Layer;
 module.exports = _default;
-},{"./config":412,"./core/util":436,"./graphic/Pattern":446,"./graphic/Style":448}],405:[function(require,module,exports){
+},{"./config":410,"./core/util":434,"./graphic/Pattern":444,"./graphic/Style":446}],403:[function(require,module,exports){
 var _config = require("./config");
 
 var devicePixelRatio = _config.devicePixelRatio;
@@ -97735,7 +97726,7 @@ Painter.prototype = {
 };
 var _default = Painter;
 module.exports = _default;
-},{"./Layer":404,"./animation/requestAnimationFrame":411,"./config":412,"./core/BoundingRect":423,"./core/env":430,"./core/log":433,"./core/timsort":435,"./core/util":436,"./graphic/Image":442}],406:[function(require,module,exports){
+},{"./Layer":402,"./animation/requestAnimationFrame":409,"./config":410,"./core/BoundingRect":421,"./core/env":428,"./core/log":431,"./core/timsort":433,"./core/util":434,"./graphic/Image":440}],404:[function(require,module,exports){
 var util = require("./core/util");
 
 var env = require("./core/env");
@@ -97968,7 +97959,7 @@ Storage.prototype = {
 };
 var _default = Storage;
 module.exports = _default;
-},{"./container/Group":422,"./core/env":430,"./core/timsort":435,"./core/util":436}],407:[function(require,module,exports){
+},{"./container/Group":420,"./core/env":428,"./core/timsort":433,"./core/util":434}],405:[function(require,module,exports){
 var util = require("../core/util");
 
 var _event = require("../core/event");
@@ -98216,7 +98207,7 @@ Animation.prototype = {
 util.mixin(Animation, Dispatcher);
 var _default = Animation;
 module.exports = _default;
-},{"../core/event":431,"../core/util":436,"./Animator":408,"./requestAnimationFrame":411}],408:[function(require,module,exports){
+},{"../core/event":429,"../core/util":434,"./Animator":406,"./requestAnimationFrame":409}],406:[function(require,module,exports){
 var Clip = require("./Clip");
 
 var color = require("../tool/color");
@@ -98861,7 +98852,7 @@ Animator.prototype = {
 };
 var _default = Animator;
 module.exports = _default;
-},{"../core/util":436,"../tool/color":480,"./Clip":409}],409:[function(require,module,exports){
+},{"../core/util":434,"../tool/color":478,"./Clip":407}],407:[function(require,module,exports){
 var easingFuncs = require("./easing");
 
 /**
@@ -98963,7 +98954,7 @@ Clip.prototype = {
 };
 var _default = Clip;
 module.exports = _default;
-},{"./easing":410}],410:[function(require,module,exports){
+},{"./easing":408}],408:[function(require,module,exports){
 /**
  * 缓动代码来自 https://github.com/sole/tween.js/blob/master/src/Tween.js
  * @see http://sole.github.io/tween.js/examples/03_graphs.html
@@ -99342,14 +99333,14 @@ var easing = {
 };
 var _default = easing;
 module.exports = _default;
-},{}],411:[function(require,module,exports){
+},{}],409:[function(require,module,exports){
 var _default = typeof window !== 'undefined' && (window.requestAnimationFrame && window.requestAnimationFrame.bind(window) || // https://github.com/ecomfe/zrender/issues/189#issuecomment-224919809
 window.msRequestAnimationFrame && window.msRequestAnimationFrame.bind(window) || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame) || function (func) {
   setTimeout(func, 16);
 };
 
 module.exports = _default;
-},{}],412:[function(require,module,exports){
+},{}],410:[function(require,module,exports){
 var dpr = 1; // If in browser environment
 
 if (typeof window !== 'undefined') {
@@ -99374,7 +99365,7 @@ var debugMode = 0; // retina 屏幕优化
 var devicePixelRatio = dpr;
 exports.debugMode = debugMode;
 exports.devicePixelRatio = devicePixelRatio;
-},{}],413:[function(require,module,exports){
+},{}],411:[function(require,module,exports){
 var _util = require("./util");
 
 var normalizeRadian = _util.normalizeRadian;
@@ -99435,7 +99426,7 @@ function containStroke(cx, cy, r, startAngle, endAngle, anticlockwise, lineWidth
 }
 
 exports.containStroke = containStroke;
-},{"./util":420}],414:[function(require,module,exports){
+},{"./util":418}],412:[function(require,module,exports){
 var curve = require("../core/curve");
 
 /**
@@ -99469,7 +99460,7 @@ function containStroke(x0, y0, x1, y1, x2, y2, x3, y3, lineWidth, x, y) {
 }
 
 exports.containStroke = containStroke;
-},{"../core/curve":429}],415:[function(require,module,exports){
+},{"../core/curve":427}],413:[function(require,module,exports){
 /**
  * 线段包含判断
  * @param  {number}  x0
@@ -99509,7 +99500,7 @@ function containStroke(x0, y0, x1, y1, lineWidth, x, y) {
 }
 
 exports.containStroke = containStroke;
-},{}],416:[function(require,module,exports){
+},{}],414:[function(require,module,exports){
 var PathProxy = require("../core/PathProxy");
 
 var line = require("./line");
@@ -99905,7 +99896,7 @@ function containStroke(pathData, lineWidth, x, y) {
 
 exports.contain = contain;
 exports.containStroke = containStroke;
-},{"../core/PathProxy":426,"../core/curve":429,"./arc":413,"./cubic":414,"./line":415,"./quadratic":418,"./util":420,"./windingLine":421}],417:[function(require,module,exports){
+},{"../core/PathProxy":424,"../core/curve":427,"./arc":411,"./cubic":412,"./line":413,"./quadratic":416,"./util":418,"./windingLine":419}],415:[function(require,module,exports){
 var windingLine = require("./windingLine");
 
 var EPSILON = 1e-8;
@@ -99939,7 +99930,7 @@ function contain(points, x, y) {
 }
 
 exports.contain = contain;
-},{"./windingLine":421}],418:[function(require,module,exports){
+},{"./windingLine":419}],416:[function(require,module,exports){
 var _curve = require("../core/curve");
 
 var quadraticProjectPoint = _curve.quadraticProjectPoint;
@@ -99973,7 +99964,7 @@ function containStroke(x0, y0, x1, y1, x2, y2, lineWidth, x, y) {
 }
 
 exports.containStroke = containStroke;
-},{"../core/curve":429}],419:[function(require,module,exports){
+},{"../core/curve":427}],417:[function(require,module,exports){
 var BoundingRect = require("../core/BoundingRect");
 
 var imageHelper = require("../graphic/helper/image");
@@ -100663,7 +100654,7 @@ exports.measureText = measureText;
 exports.parsePlainText = parsePlainText;
 exports.parseRichText = parseRichText;
 exports.makeFont = makeFont;
-},{"../core/BoundingRect":423,"../core/util":436,"../graphic/helper/image":452}],420:[function(require,module,exports){
+},{"../core/BoundingRect":421,"../core/util":434,"../graphic/helper/image":450}],418:[function(require,module,exports){
 var PI2 = Math.PI * 2;
 
 function normalizeRadian(angle) {
@@ -100677,7 +100668,7 @@ function normalizeRadian(angle) {
 }
 
 exports.normalizeRadian = normalizeRadian;
-},{}],421:[function(require,module,exports){
+},{}],419:[function(require,module,exports){
 function windingLine(x0, y0, x1, y1, x, y) {
   if (y > y0 && y > y1 || y < y0 && y < y1) {
     return 0;
@@ -100700,7 +100691,7 @@ function windingLine(x0, y0, x1, y1, x, y) {
 }
 
 module.exports = windingLine;
-},{}],422:[function(require,module,exports){
+},{}],420:[function(require,module,exports){
 var zrUtil = require("../core/util");
 
 var Element = require("../Element");
@@ -101013,7 +101004,7 @@ Group.prototype = {
 zrUtil.inherits(Group, Element);
 var _default = Group;
 module.exports = _default;
-},{"../Element":402,"../core/BoundingRect":423,"../core/util":436}],423:[function(require,module,exports){
+},{"../Element":400,"../core/BoundingRect":421,"../core/util":434}],421:[function(require,module,exports){
 var vec2 = require("./vector");
 
 var matrix = require("./matrix");
@@ -101197,7 +101188,7 @@ BoundingRect.create = function (rect) {
 
 var _default = BoundingRect;
 module.exports = _default;
-},{"./matrix":434,"./vector":437}],424:[function(require,module,exports){
+},{"./matrix":432,"./vector":435}],422:[function(require,module,exports){
 var eventUtil = require("./event");
 
 /**
@@ -101297,7 +101288,7 @@ var recognizers = {
 };
 var _default = GestureMgr;
 module.exports = _default;
-},{"./event":431}],425:[function(require,module,exports){
+},{"./event":429}],423:[function(require,module,exports){
 // Simple LRU cache use doubly linked list
 // @module zrender/core/LRU
 
@@ -101500,7 +101491,7 @@ LRUProto.clear = function () {
 
 var _default = LRU;
 module.exports = _default;
-},{}],426:[function(require,module,exports){
+},{}],424:[function(require,module,exports){
 var curve = require("./curve");
 
 var vec2 = require("./vector");
@@ -102264,7 +102255,7 @@ PathProxy.prototype = {
 PathProxy.CMD = CMD;
 var _default = PathProxy;
 module.exports = _default;
-},{"../config":412,"./BoundingRect":423,"./bbox":428,"./curve":429,"./vector":437}],427:[function(require,module,exports){
+},{"../config":410,"./BoundingRect":421,"./bbox":426,"./curve":427,"./vector":435}],425:[function(require,module,exports){
 // Myers' Diff Algorithm
 // Modified from https://github.com/kpdecker/jsdiff/blob/master/src/diff/base.js
 function Diff() {}
@@ -102463,7 +102454,7 @@ function _default(oldArr, newArr, callback) {
 }
 
 module.exports = _default;
-},{}],428:[function(require,module,exports){
+},{}],426:[function(require,module,exports){
 var vec2 = require("./vector");
 
 var curve = require("./curve");
@@ -102685,7 +102676,7 @@ exports.fromLine = fromLine;
 exports.fromCubic = fromCubic;
 exports.fromQuadratic = fromQuadratic;
 exports.fromArc = fromArc;
-},{"./curve":429,"./vector":437}],429:[function(require,module,exports){
+},{"./curve":427,"./vector":435}],427:[function(require,module,exports){
 var _vector = require("./vector");
 
 var v2Create = _vector.create;
@@ -103218,7 +103209,7 @@ exports.quadraticRootAt = quadraticRootAt;
 exports.quadraticExtremum = quadraticExtremum;
 exports.quadraticSubdivide = quadraticSubdivide;
 exports.quadraticProjectPoint = quadraticProjectPoint;
-},{"./vector":437}],430:[function(require,module,exports){
+},{"./vector":435}],428:[function(require,module,exports){
 /**
  * echarts设备环境识别
  *
@@ -103379,7 +103370,7 @@ function detect(ua) {
 
 
 module.exports = _default;
-},{}],431:[function(require,module,exports){
+},{}],429:[function(require,module,exports){
 var Eventful = require("../mixin/Eventful");
 
 exports.Dispatcher = Eventful;
@@ -103555,7 +103546,7 @@ exports.addEventListener = addEventListener;
 exports.removeEventListener = removeEventListener;
 exports.stop = stop;
 exports.notLeftMouse = notLeftMouse;
-},{"../mixin/Eventful":470,"./env":430}],432:[function(require,module,exports){
+},{"../mixin/Eventful":468,"./env":428}],430:[function(require,module,exports){
 /**
  * zrender: 生成唯一id
  *
@@ -103568,7 +103559,7 @@ function _default() {
 }
 
 module.exports = _default;
-},{}],433:[function(require,module,exports){
+},{}],431:[function(require,module,exports){
 var _config = require("../config");
 
 var debugMode = _config.debugMode;
@@ -103591,7 +103582,7 @@ if (debugMode === 1) {
 
 var _default = log;
 module.exports = _default;
-},{"../config":412}],434:[function(require,module,exports){
+},{"../config":410}],432:[function(require,module,exports){
 /**
  * 3x2矩阵操作类
  * @exports zrender/tool/matrix
@@ -103775,7 +103766,7 @@ exports.rotate = rotate;
 exports.scale = scale;
 exports.invert = invert;
 exports.clone = clone;
-},{}],435:[function(require,module,exports){
+},{}],433:[function(require,module,exports){
 // https://github.com/mziccard/node-timsort
 var DEFAULT_MIN_MERGE = 32;
 var DEFAULT_MIN_GALLOPING = 7;
@@ -104440,7 +104431,7 @@ function sort(array, compare, lo, hi) {
 }
 
 module.exports = sort;
-},{}],436:[function(require,module,exports){
+},{}],434:[function(require,module,exports){
 /**
  * @module zrender/core/util
  */
@@ -105173,7 +105164,7 @@ exports.isPrimitive = isPrimitive;
 exports.createHashMap = createHashMap;
 exports.concatArray = concatArray;
 exports.noop = noop;
-},{}],437:[function(require,module,exports){
+},{}],435:[function(require,module,exports){
 var ArrayCtor = typeof Float32Array === 'undefined' ? Array : Float32Array;
 /**
  * 创建一个向量
@@ -105487,7 +105478,7 @@ exports.lerp = lerp;
 exports.applyTransform = applyTransform;
 exports.min = min;
 exports.max = max;
-},{}],438:[function(require,module,exports){
+},{}],436:[function(require,module,exports){
 var _event = require("../core/event");
 
 var addEventListener = _event.addEventListener;
@@ -105821,7 +105812,7 @@ handlerDomProxyProto.setCursor = function (cursorStyle) {
 zrUtil.mixin(HandlerDomProxy, Eventful);
 var _default = HandlerDomProxy;
 module.exports = _default;
-},{"../core/GestureMgr":424,"../core/env":430,"../core/event":431,"../core/util":436,"../mixin/Eventful":470}],439:[function(require,module,exports){
+},{"../core/GestureMgr":422,"../core/env":428,"../core/event":429,"../core/util":434,"../mixin/Eventful":468}],437:[function(require,module,exports){
 var Path = require("./Path");
 
 // CompoundPath to improve performance
@@ -105878,7 +105869,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"./Path":445}],440:[function(require,module,exports){
+},{"./Path":443}],438:[function(require,module,exports){
 var zrUtil = require("../core/util");
 
 var Style = require("./Style");
@@ -106135,7 +106126,7 @@ zrUtil.mixin(Displayable, RectText); // zrUtil.mixin(Displayable, Stateful);
 
 var _default = Displayable;
 module.exports = _default;
-},{"../Element":402,"../core/util":436,"./Style":448,"./mixin/RectText":458}],441:[function(require,module,exports){
+},{"../Element":400,"../core/util":434,"./Style":446,"./mixin/RectText":456}],439:[function(require,module,exports){
 /**
  * @param {Array.<Object>} colorStops
  */
@@ -106154,7 +106145,7 @@ Gradient.prototype = {
 };
 var _default = Gradient;
 module.exports = _default;
-},{}],442:[function(require,module,exports){
+},{}],440:[function(require,module,exports){
 var Displayable = require("./Displayable");
 
 var BoundingRect = require("../core/BoundingRect");
@@ -106247,7 +106238,7 @@ ZImage.prototype = {
 zrUtil.inherits(ZImage, Displayable);
 var _default = ZImage;
 module.exports = _default;
-},{"../core/BoundingRect":423,"../core/util":436,"./Displayable":440,"./helper/image":452}],443:[function(require,module,exports){
+},{"../core/BoundingRect":421,"../core/util":434,"./Displayable":438,"./helper/image":450}],441:[function(require,module,exports){
 var _util = require("../core/util");
 
 var inherits = _util.inherits;
@@ -106395,7 +106386,7 @@ IncrementalDisplayble.prototype.contain = function (x, y) {
 inherits(IncrementalDisplayble, Displayble);
 var _default = IncrementalDisplayble;
 module.exports = _default;
-},{"../core/BoundingRect":423,"../core/util":436,"./Displayable":440}],444:[function(require,module,exports){
+},{"../core/BoundingRect":421,"../core/util":434,"./Displayable":438}],442:[function(require,module,exports){
 var zrUtil = require("../core/util");
 
 var Gradient = require("./Gradient");
@@ -106430,7 +106421,7 @@ LinearGradient.prototype = {
 zrUtil.inherits(LinearGradient, Gradient);
 var _default = LinearGradient;
 module.exports = _default;
-},{"../core/util":436,"./Gradient":441}],445:[function(require,module,exports){
+},{"../core/util":434,"./Gradient":439}],443:[function(require,module,exports){
 var Displayable = require("./Displayable");
 
 var zrUtil = require("../core/util");
@@ -106781,7 +106772,7 @@ Path.extend = function (defaults) {
 zrUtil.inherits(Path, Displayable);
 var _default = Path;
 module.exports = _default;
-},{"../contain/path":416,"../core/PathProxy":426,"../core/util":436,"./Displayable":440,"./Pattern":446}],446:[function(require,module,exports){
+},{"../contain/path":414,"../core/PathProxy":424,"../core/util":434,"./Displayable":438,"./Pattern":444}],444:[function(require,module,exports){
 var Pattern = function (image, repeat) {
   // Should do nothing more in this constructor. Because gradient can be
   // declard by `color: {image: ...}`, where this constructor will not be called.
@@ -106797,7 +106788,7 @@ Pattern.prototype.getCanvasPattern = function (ctx) {
 
 var _default = Pattern;
 module.exports = _default;
-},{}],447:[function(require,module,exports){
+},{}],445:[function(require,module,exports){
 var zrUtil = require("../core/util");
 
 var Gradient = require("./Gradient");
@@ -106830,7 +106821,7 @@ RadialGradient.prototype = {
 zrUtil.inherits(RadialGradient, Gradient);
 var _default = RadialGradient;
 module.exports = _default;
-},{"../core/util":436,"./Gradient":441}],448:[function(require,module,exports){
+},{"../core/util":434,"./Gradient":439}],446:[function(require,module,exports){
 var fixShadow = require("./helper/fixShadow");
 
 var STYLE_COMMON_PROPS = [['shadowBlur', 0], ['shadowOffsetX', 0], ['shadowOffsetY', 0], ['shadowColor', '#000'], ['lineCap', 'butt'], ['lineJoin', 'miter'], ['miterLimit', 10]]; // var SHADOW_PROPS = STYLE_COMMON_PROPS.slice(0, 4);
@@ -107285,7 +107276,7 @@ for (var i = 0; i < STYLE_COMMON_PROPS.length; i++) {
 Style.getGradient = styleProto.getGradient;
 var _default = Style;
 module.exports = _default;
-},{"./helper/fixShadow":451}],449:[function(require,module,exports){
+},{"./helper/fixShadow":449}],447:[function(require,module,exports){
 var Displayable = require("./Displayable");
 
 var zrUtil = require("../core/util");
@@ -107357,7 +107348,7 @@ Text.prototype = {
 zrUtil.inherits(Text, Displayable);
 var _default = Text;
 module.exports = _default;
-},{"../contain/text":419,"../core/util":436,"./Displayable":440,"./helper/text":457}],450:[function(require,module,exports){
+},{"../contain/text":417,"../core/util":434,"./Displayable":438,"./helper/text":455}],448:[function(require,module,exports){
 var env = require("../../core/env");
 
 // Fix weird bug in some version of IE11 (like 11.0.9600.178**),
@@ -107414,7 +107405,7 @@ function _default(orignalBrush) {
 }
 
 module.exports = _default;
-},{"../../core/env":430}],451:[function(require,module,exports){
+},{"../../core/env":428}],449:[function(require,module,exports){
 var SHADOW_PROPS = {
   'shadowBlur': 1,
   'shadowOffsetX': 1,
@@ -107436,7 +107427,7 @@ function _default(ctx, propName, value) {
 }
 
 module.exports = _default;
-},{}],452:[function(require,module,exports){
+},{}],450:[function(require,module,exports){
 var LRU = require("../../core/LRU");
 
 var globalImageCache = new LRU(50);
@@ -107525,7 +107516,7 @@ function isImageReady(image) {
 exports.findExistImage = findExistImage;
 exports.createOrUpdateImage = createOrUpdateImage;
 exports.isImageReady = isImageReady;
-},{"../../core/LRU":425}],453:[function(require,module,exports){
+},{"../../core/LRU":423}],451:[function(require,module,exports){
 var smoothSpline = require("./smoothSpline");
 
 var smoothBezier = require("./smoothBezier");
@@ -107563,7 +107554,7 @@ function buildPath(ctx, shape, closePath) {
 }
 
 exports.buildPath = buildPath;
-},{"./smoothBezier":455,"./smoothSpline":456}],454:[function(require,module,exports){
+},{"./smoothBezier":453,"./smoothSpline":454}],452:[function(require,module,exports){
 function buildPath(ctx, shape) {
   var x = shape.x;
   var y = shape.y;
@@ -107645,7 +107636,7 @@ function buildPath(ctx, shape) {
 }
 
 exports.buildPath = buildPath;
-},{}],455:[function(require,module,exports){
+},{}],453:[function(require,module,exports){
 var _vector = require("../../core/vector");
 
 var v2Min = _vector.min;
@@ -107750,7 +107741,7 @@ function _default(points, smooth, isLoop, constraint) {
 }
 
 module.exports = _default;
-},{"../../core/vector":437}],456:[function(require,module,exports){
+},{"../../core/vector":435}],454:[function(require,module,exports){
 var _vector = require("../../core/vector");
 
 var v2Distance = _vector.distance;
@@ -107819,7 +107810,7 @@ function _default(points, isLoop) {
 }
 
 module.exports = _default;
-},{"../../core/vector":437}],457:[function(require,module,exports){
+},{"../../core/vector":435}],455:[function(require,module,exports){
 var _util = require("../../core/util");
 
 var retrieve2 = _util.retrieve2;
@@ -108253,7 +108244,7 @@ exports.renderText = renderText;
 exports.getStroke = getStroke;
 exports.getFill = getFill;
 exports.needDrawText = needDrawText;
-},{"../../contain/text":419,"../../core/util":436,"./fixShadow":451,"./image":452,"./roundRect":454}],458:[function(require,module,exports){
+},{"../../contain/text":417,"../../core/util":434,"./fixShadow":449,"./image":450,"./roundRect":452}],456:[function(require,module,exports){
 var textHelper = require("../helper/text");
 
 var BoundingRect = require("../../core/BoundingRect");
@@ -108309,7 +108300,7 @@ RectText.prototype = {
 };
 var _default = RectText;
 module.exports = _default;
-},{"../../core/BoundingRect":423,"../helper/text":457}],459:[function(require,module,exports){
+},{"../../core/BoundingRect":421,"../helper/text":455}],457:[function(require,module,exports){
 var Path = require("../Path");
 
 /**
@@ -108345,7 +108336,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"../Path":445}],460:[function(require,module,exports){
+},{"../Path":443}],458:[function(require,module,exports){
 var Path = require("../Path");
 
 var vec2 = require("../../core/vector");
@@ -108459,7 +108450,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"../../core/curve":429,"../../core/vector":437,"../Path":445}],461:[function(require,module,exports){
+},{"../../core/curve":427,"../../core/vector":435,"../Path":443}],459:[function(require,module,exports){
 var Path = require("../Path");
 
 /**
@@ -108492,7 +108483,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"../Path":445}],462:[function(require,module,exports){
+},{"../Path":443}],460:[function(require,module,exports){
 var Path = require("../Path");
 
 /**
@@ -108547,7 +108538,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"../Path":445}],463:[function(require,module,exports){
+},{"../Path":443}],461:[function(require,module,exports){
 var Path = require("../Path");
 
 var polyHelper = require("../helper/poly");
@@ -108569,7 +108560,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"../Path":445,"../helper/poly":453}],464:[function(require,module,exports){
+},{"../Path":443,"../helper/poly":451}],462:[function(require,module,exports){
 var Path = require("../Path");
 
 var polyHelper = require("../helper/poly");
@@ -108594,7 +108585,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"../Path":445,"../helper/poly":453}],465:[function(require,module,exports){
+},{"../Path":443,"../helper/poly":451}],463:[function(require,module,exports){
 var Path = require("../Path");
 
 var roundRectHelper = require("../helper/roundRect");
@@ -108635,7 +108626,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"../Path":445,"../helper/roundRect":454}],466:[function(require,module,exports){
+},{"../Path":443,"../helper/roundRect":452}],464:[function(require,module,exports){
 var Path = require("../Path");
 
 /**
@@ -108662,7 +108653,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"../Path":445}],467:[function(require,module,exports){
+},{"../Path":443}],465:[function(require,module,exports){
 var Path = require("../Path");
 
 var fixClipWithShadow = require("../helper/fixClipWithShadow");
@@ -108707,7 +108698,7 @@ var _default = Path.extend({
 });
 
 module.exports = _default;
-},{"../Path":445,"../helper/fixClipWithShadow":450}],468:[function(require,module,exports){
+},{"../Path":443,"../helper/fixClipWithShadow":448}],466:[function(require,module,exports){
 var Animator = require("../animation/Animator");
 
 var log = require("../core/log");
@@ -108962,7 +108953,7 @@ Animatable.prototype = {
 };
 var _default = Animatable;
 module.exports = _default;
-},{"../animation/Animator":408,"../core/log":433,"../core/util":436}],469:[function(require,module,exports){
+},{"../animation/Animator":406,"../core/log":431,"../core/util":434}],467:[function(require,module,exports){
 // TODO Draggable for group
 // FIXME Draggable on element which has parent rotation or scale
 function Draggable() {
@@ -109042,7 +109033,7 @@ function param(target, e) {
 
 var _default = Draggable;
 module.exports = _default;
-},{}],470:[function(require,module,exports){
+},{}],468:[function(require,module,exports){
 /**
  * 事件扩展
  * @module zrender/mixin/Eventful
@@ -109371,7 +109362,7 @@ Eventful.prototype = {
 
 var _default = Eventful;
 module.exports = _default;
-},{}],471:[function(require,module,exports){
+},{}],469:[function(require,module,exports){
 var matrix = require("../core/matrix");
 
 var vector = require("../core/vector");
@@ -109655,7 +109646,7 @@ Transformable.getLocalTransform = function (target, m) {
 
 var _default = Transformable;
 module.exports = _default;
-},{"../core/matrix":434,"../core/vector":437}],472:[function(require,module,exports){
+},{"../core/matrix":432,"../core/vector":435}],470:[function(require,module,exports){
 var _core = require("./core");
 
 var createElement = _core.createElement;
@@ -110017,7 +110008,7 @@ each(['getLayer', 'insertLayer', 'eachLayer', 'eachBuiltinLayer', 'eachOtherLaye
 });
 var _default = SVGPainter;
 module.exports = _default;
-},{"../core/arrayDiff2":427,"../core/log":433,"../core/util":436,"../graphic/Image":442,"../graphic/Path":445,"../graphic/Text":449,"./core":473,"./graphic":474,"./helper/ClippathManager":475,"./helper/GradientManager":477,"./helper/ShadowManager":478}],473:[function(require,module,exports){
+},{"../core/arrayDiff2":425,"../core/log":431,"../core/util":434,"../graphic/Image":440,"../graphic/Path":443,"../graphic/Text":447,"./core":471,"./graphic":472,"./helper/ClippathManager":473,"./helper/GradientManager":475,"./helper/ShadowManager":476}],471:[function(require,module,exports){
 var svgURI = 'http://www.w3.org/2000/svg';
 
 function createElement(name) {
@@ -110025,7 +110016,7 @@ function createElement(name) {
 }
 
 exports.createElement = createElement;
-},{}],474:[function(require,module,exports){
+},{}],472:[function(require,module,exports){
 var _core = require("./core");
 
 var createElement = _core.createElement;
@@ -110538,7 +110529,7 @@ svgText.brush = function (el) {
 exports.path = svgPath;
 exports.image = svgImage;
 exports.text = svgText;
-},{"../contain/text":419,"../core/BoundingRect":423,"../core/PathProxy":426,"../graphic/Text":449,"../graphic/helper/text":457,"./core":473}],475:[function(require,module,exports){
+},{"../contain/text":417,"../core/BoundingRect":421,"../core/PathProxy":424,"../graphic/Text":447,"../graphic/helper/text":455,"./core":471}],473:[function(require,module,exports){
 var Definable = require("./Definable");
 
 var zrUtil = require("../../core/util");
@@ -110695,7 +110686,7 @@ ClippathManager.prototype.markUsed = function (displayable) {
 
 var _default = ClippathManager;
 module.exports = _default;
-},{"../../core/matrix":434,"../../core/util":436,"./Definable":476}],476:[function(require,module,exports){
+},{"../../core/matrix":432,"../../core/util":434,"./Definable":474}],474:[function(require,module,exports){
 var _core = require("../core");
 
 var createElement = _core.createElement;
@@ -110962,7 +110953,7 @@ Definable.prototype.getSvgElement = function (displayable) {
 
 var _default = Definable;
 module.exports = _default;
-},{"../../core/util":436,"../../graphic/Image":442,"../../graphic/Path":445,"../../graphic/Text":449,"../core":473,"../graphic":474}],477:[function(require,module,exports){
+},{"../../core/util":434,"../../graphic/Image":440,"../../graphic/Path":443,"../../graphic/Text":447,"../core":471,"../graphic":472}],475:[function(require,module,exports){
 var Definable = require("./Definable");
 
 var zrUtil = require("../../core/util");
@@ -111153,7 +111144,7 @@ GradientManager.prototype.markUsed = function (displayable) {
 
 var _default = GradientManager;
 module.exports = _default;
-},{"../../core/log":433,"../../core/util":436,"./Definable":476}],478:[function(require,module,exports){
+},{"../../core/log":431,"../../core/util":434,"./Definable":474}],476:[function(require,module,exports){
 var Definable = require("./Definable");
 
 var zrUtil = require("../../core/util");
@@ -111342,7 +111333,7 @@ function hasShadow(style) {
 
 var _default = ShadowManager;
 module.exports = _default;
-},{"../../core/util":436,"./Definable":476}],479:[function(require,module,exports){
+},{"../../core/util":434,"./Definable":474}],477:[function(require,module,exports){
 require("./graphic");
 
 var _zrender = require("../zrender");
@@ -111352,7 +111343,7 @@ var registerPainter = _zrender.registerPainter;
 var Painter = require("./Painter");
 
 registerPainter('svg', Painter);
-},{"../zrender":487,"./Painter":472,"./graphic":474}],480:[function(require,module,exports){
+},{"../zrender":485,"./Painter":470,"./graphic":472}],478:[function(require,module,exports){
 var LRU = require("../core/LRU");
 
 var kCSSColorTable = {
@@ -111980,7 +111971,7 @@ exports.mapToColor = mapToColor;
 exports.modifyHSL = modifyHSL;
 exports.modifyAlpha = modifyAlpha;
 exports.stringify = stringify;
-},{"../core/LRU":425}],481:[function(require,module,exports){
+},{"../core/LRU":423}],479:[function(require,module,exports){
 var Path = require("../graphic/Path");
 
 var PathProxy = require("../core/PathProxy");
@@ -112390,7 +112381,7 @@ function mergePath(pathEls, opts) {
 exports.createFromString = createFromString;
 exports.extendFromString = extendFromString;
 exports.mergePath = mergePath;
-},{"../core/PathProxy":426,"../graphic/Path":445,"./transformPath":482}],482:[function(require,module,exports){
+},{"../core/PathProxy":424,"../graphic/Path":443,"./transformPath":480}],480:[function(require,module,exports){
 var PathProxy = require("../core/PathProxy");
 
 var _vector = require("../core/vector");
@@ -112491,7 +112482,7 @@ function _default(path, m) {
 }
 
 module.exports = _default;
-},{"../core/PathProxy":426,"../core/vector":437}],483:[function(require,module,exports){
+},{"../core/PathProxy":424,"../core/vector":435}],481:[function(require,module,exports){
 var zrLog = require("../core/log");
 
 var vmlCore = require("./core");
@@ -112667,7 +112658,7 @@ each(['getLayer', 'insertLayer', 'eachLayer', 'eachBuiltinLayer', 'eachOtherLaye
 });
 var _default = VMLPainter;
 module.exports = _default;
-},{"../core/log":433,"../core/util":436,"./core":484}],484:[function(require,module,exports){
+},{"../core/log":431,"../core/util":434,"./core":482}],482:[function(require,module,exports){
 var env = require("../core/env");
 
 var urn = 'urn:schemas-microsoft-com:vml';
@@ -112716,7 +112707,7 @@ function initVML() {
 exports.doc = doc;
 exports.createNode = createNode;
 exports.initVML = initVML;
-},{"../core/env":430}],485:[function(require,module,exports){
+},{"../core/env":428}],483:[function(require,module,exports){
 var env = require("../core/env");
 
 var _vector = require("../core/vector");
@@ -113730,7 +113721,7 @@ if (!env.canvasSupported) {
     this.appendRectText(vmlRoot);
   };
 }
-},{"../contain/text":419,"../core/BoundingRect":423,"../core/PathProxy":426,"../core/env":430,"../core/vector":437,"../graphic/Displayable":440,"../graphic/Gradient":441,"../graphic/Image":442,"../graphic/Path":445,"../graphic/Text":449,"../graphic/helper/text":457,"../graphic/mixin/RectText":458,"../tool/color":480,"./core":484}],486:[function(require,module,exports){
+},{"../contain/text":417,"../core/BoundingRect":421,"../core/PathProxy":424,"../core/env":428,"../core/vector":435,"../graphic/Displayable":438,"../graphic/Gradient":439,"../graphic/Image":440,"../graphic/Path":443,"../graphic/Text":447,"../graphic/helper/text":455,"../graphic/mixin/RectText":456,"../tool/color":478,"./core":482}],484:[function(require,module,exports){
 require("./graphic");
 
 var _zrender = require("../zrender");
@@ -113740,7 +113731,7 @@ var registerPainter = _zrender.registerPainter;
 var Painter = require("./Painter");
 
 registerPainter('vml', Painter);
-},{"../zrender":487,"./Painter":483,"./graphic":485}],487:[function(require,module,exports){
+},{"../zrender":485,"./Painter":481,"./graphic":483}],485:[function(require,module,exports){
 var guid = require("./core/guid");
 
 var env = require("./core/env");
@@ -114195,4 +114186,13 @@ exports.init = init;
 exports.dispose = dispose;
 exports.getInstance = getInstance;
 exports.registerPainter = registerPainter;
-},{"./Handler":403,"./Painter":405,"./Storage":406,"./animation/Animation":407,"./core/env":430,"./core/guid":432,"./core/util":436,"./dom/HandlerProxy":438}]},{},[2]);
+},{"./Handler":401,"./Painter":403,"./Storage":404,"./animation/Animation":405,"./core/env":428,"./core/guid":430,"./core/util":434,"./dom/HandlerProxy":436}],486:[function(require,module,exports){
+
+},{}],487:[function(require,module,exports){
+const Echarts = require('../../node_modules/echarts/index')
+
+const Angular = require('../../node_modules/angular/index')
+const app = angular.module('minhasFinancas', [])
+
+const controllers = require("./controllers/")
+},{"../../node_modules/angular/index":2,"../../node_modules/echarts/index":3,"./controllers/":486}]},{},[487]);
