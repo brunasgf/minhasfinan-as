@@ -10,16 +10,8 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, label {
 	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-
-label{
-	margin-bottom: 3%;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -87,4 +79,49 @@ table {
     letter-spacing: -2px;
     color: #3c7dbe;
     font-weight: 300;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close:before{
+	color: #F00 !important;
+	font-size: 40px !important;
+    font-weight: 1000 !important;
+}
+
+.add-group{
+	display: flex;
+}
+
+.plus-button{
+	padding: 15px 20px 13px 12px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #000;
+    position: relative;
+    left: -9px;
+    top: 37px;
+    margin-top: -25px;
+}
+
+.plus-button:focus{
+	outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.plus-button-grey {
+	background-color: #ddd;
+}
+
+.plus-button-red > i:before {
+	margin-left: 2px;
+}
+
+.blue-color{
+	background-color:#739ec8;
+	color: #FFF
+}
+
+p > b {
+	color: #3c7dbe;
+    font-weight: 600;
+    letter-spacing: -1px;
 }

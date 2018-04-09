@@ -12,7 +12,7 @@ no caminho raiz do projeto
  
 ao mudar o javascript é necessário rodar o comando na pasta raiz do projeto: 
  
-browserify dist/js/index.js -o dist/app-release.js 
+browserify dist/js/index.js -o dist/app-release.js
  
  
  

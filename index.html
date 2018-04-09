@@ -9,153 +9,124 @@
 		<link href="./node_modules/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet">
 		<link href="./node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="./dist/css/main.css" rel="stylesheet">
+		<link href="./node_modules/ng-dialog/css/ngDialog.min.css" rel="stylesheet">
+		<link href="./node_modules/ng-dialog/css/ngDialog-theme-default.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./node_modules/angular-toastr/dist/angular-toastr.min.css" />
 
 		<script src="./dist/app-release.js"></script>
 	</head>
 
-	<body>
+	<body ng-controller="FinancasCtrl">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container">
 				<a class="navbar-brand" href="#">Minhas finanças</a>
+				<a class="navbar-brand" href="" ng-click="openModalAbout()">Sobre</a>
 			</div>
 		</nav>
 		<div class="container-fluid">
 			<div class="box-container">
 				<div class="row">
-					<div class="col">
+					<div class="col-2">
 						<div class="row">
 							<div class="col-12">
-								<h1 class="main-title">Gastos</h1>
+								<h1 class="main-title">Novo</h1>
 							</div>
+						</div>
 
-							<div class="col-4 form-group">
-								<label>Nome</label>
-								<input type="text" class="form-control">
+						<div>
+							<div class="add-group">
+								<span class="plus-button plus-button-grey blue-color">
+									<i class="fa fa-plus"></i>
+								</span>
 							</div>
+							<button class="btn btn-block blue-color" ng-click="openModalCreate('gastos')">
+								Criar Gasto
+							</button>
+						</div>
 
-							<div class="col-4 form-group">
-								<label>Valor</label>
-								<input type="text" class="form-control">
+						<div>
+							<div class="add-group">
+								<span class="plus-button plus-button-grey blue-color">
+									<i class="fa fa-plus"></i>
+								</span>
 							</div>
+							<button class="btn btn-block blue-color" ng-click="openModalCreate('receitas')">
+								Criar Receita
+							</button>
+						</div>
 
-							<div class="col-4 form-group">
-								<button class="btn btn-success has-label">Adicionar</button>
+						<div>
+							<div class="add-group">
+								<span class="plus-button plus-button-grey blue-color">
+									<i class="fa fa-plus"></i>
+								</span>
+							</div>
+							<button class="btn btn-block blue-color" ng-click="openModalCreate('investimentos')">
+								Criar Investimento
+							</button>
+						</div>
+					</div>
+
+					<div class="col-4s">
+						<div class="row">
+							<div class="col-12 text-center">
+								<h1 class="main-title">Gráfico</h1>
+							</div>
+							<div id="categoryGraph" style="width:320px;height:300px;margin-left: 100px;"></div>
+						</div>
+					</div>	
+
+					<div class="col-6">
+						<div class="row">
+							<div class="col-12">
+								<h1 class="main-title">Lista de Dados</h1>
 							</div>
 
 							<div class="col-12">
-								<h4 class="sub-title">Gastos Cadastrados</h4>
-								<table class="table table-hover table-striped table-sm">
+								<table class="table table-hover table-striped table-bordered">
 									<thead>
 										<tr>
 											<th>Nome</th>
+											<th>Tipo de finança</th>
+											<th>Categoria</th>
+											<th>Tipo</th>
 											<th>Valor</th>
 											<th class="text-center">Ação</th>
 										</tr>
 									</thead>
-									<tbody>
-										<tr>
-											<td></td>
-											<td></td>
+										<tr ng-repeat="data in financeData.list">
+											<td>{{data.name}}</td>
+											<td>{{data.tipo}}</td>
+											<td>{{data.category.nome}}</td>
+											<td>{{data.category.tipo}}</td>
+											<td>{{data.value}}</td>
 											<td class="text-center">
-												<button class="btn btn-danger btn-small">
+												<button class="btn btn-danger btn-small" ng-click="removeFromListFinaces(data)">
 													<i class="fa fa-trash"></i>
 												</button>
 											</td>
+										</tr>
+										<tr ng-if="!financeData.list.length">
+											<td colspan="6">Nenhum Dado Cadastrado</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 						</div>
 					</div>
-
-					<div class="col">
-						<div class="row">
-							<div class="col-12">
-								<h1 class="main-title">Receita</h1>
-							</div>
-
-							<div class="col-4 form-group">
-								<label>Nome</label>
-								<input type="text" class="form-control">
-							</div>
-
-							<div class="col-4 form-group">
-								<label>Valor</label>
-								<input type="text" class="form-control">
-							</div>
-
-							<div class="col-4 form-group">
-								<button class="btn btn-success has-label">Adicionar</button>
-							</div>
-
-							<div class="col-12">
-								<h4 class="sub-title">Gastos Cadastrados</h4>
-								<table class="table table-hover table-striped table-sm">
-									<thead>
-										<tr>
-											<th>Nome</th>
-											<th>Valor</th>
-											<th class="text-center">Ação</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td></td>
-											<td></td>
-											<td class="text-center">
-												<button class="btn btn-danger btn-small">
-													<i class="fa fa-trash"></i>
-												</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
+				</div>
+				<br/><br/>
+				<div class="row">
+					<div class="col-12">
+						<h1 class="main-title">Análise Dos Dados</h1>
 					</div>
 
-					<div class="col">
-						<div class="row">
-							<div class="col-12">
-								<h1 class="main-title">Investimentos</h1>
-							</div>
-
-							<div class="col-4 form-group">
-								<label>Nome</label>
-								<input type="text" class="form-control">
-							</div>
-
-							<div class="col-4 form-group">
-								<label>Valor</label>
-								<input type="text" class="form-control">
-							</div>
-
-							<div class="col-4 form-group">
-								<button class="btn btn-success has-label">Adicionar</button>
-							</div>
-
-							<div class="col-12">
-								<h4 class="sub-title">Gastos Cadastrados</h4>
-								<table class="table table-hover table-striped table-sm">
-									<thead>
-										<tr>
-											<th>Nome</th>
-											<th>Valor</th>
-											<th class="text-center">Ação</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td></td>
-											<td></td>
-											<td class="text-center">
-												<button class="btn btn-danger btn-small">
-													<i class="fa fa-trash"></i>
-												</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+					<div class="col-12">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Titulo</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Sub Titulo</h6>
+								<p class="card-text">TextO Explicativo</p>
 							</div>
 						</div>
 					</div>
