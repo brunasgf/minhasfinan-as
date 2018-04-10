@@ -11,6 +11,8 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
             category: null
         }
 
+        $scope.hasAnalise = false
+
         $scope.financeData = {
             list: [],
             graphData: [
@@ -39,9 +41,8 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
                 {
                     name: "Finanças",
                     type:'pie',
-                    radius : '60%',
+                    radius : '50%',
                     center : ['50%', '50%'],
-                    roseType : 'radius',
                     itemStyle : {
                         normal : {
                             label : {
@@ -53,7 +54,12 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
                         },
                         emphasis : {
                             label : {
-                                show : true
+                                show : true,
+                                position: 'center',
+                                textStyle : {
+                                    fontSize : '10',
+                                    fontWeight : 'bold'
+                                }
                             },
                             labelLine : {
                                 show : true
@@ -63,6 +69,13 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
                     data:[]
                 }
             ]
+        }
+
+        const financasPercent = {
+            total: 0,
+            gastos: 0,
+            investimentos: 0,
+            receitas: 0 
         }
 
         const getData = () =>{
@@ -129,7 +142,7 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
                     <button class="btn btn-danger" ng-click="closeThisDialog(null)">
                         Cancelar
                     </button>
-                    <button class="btn btn-success" ng-click="created.added = true;created.tipo = typeAdd;closeThisDialog(created)">
+                    <button class="btn btn-success" ng-click="validateFields(created)">
                         Adicionar
                     </button>
                 </div>
@@ -143,6 +156,7 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
                     $scope.idFinance++
                     switch(res.value.tipo){
                         case "gastos":
+
                         $scope.financeData.graphData[0].value += res.value.value
                         break
 
@@ -160,6 +174,20 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
                 }
                 generateGraph()
             })
+        }
+
+        const validateFields = (finance) => {
+            if (!finance.name){
+                toastr.error(`Por Favor, digite o campo nome`, 'Problema nos campos')
+            } else if (!finance.value){
+                toastr.error(`Por Favor, digite o campo valor`, 'Problema nos campos')
+            } else if (!finance.category){
+                toastr.error(`Por Favor, selecione uma categoria`, 'Problema nos campos')
+            } else {
+                finance.added = true
+                finance.tipo = $scope.typeAdd
+                $scope.closeThisDialog(finance)
+            }
         }
 
         const removeFromListFinaces = (finance) => {
@@ -235,23 +263,63 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
                     <p>Então vamos logo cadastrar as suas finanças para <b>melhorar sua gestão de gastos??? :)</b></p>
                     <br><br>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <button class="btn btn-success btn-block" ng-click="closeThisDialog()">
-                        VAMOS LÁ!!
-                    </button>
-                </div>
             </div>
             `
 
-            Notify.openModalTemplate(template)
+            return Notify.openModalTemplate(template)
+            .closePromise.then((res)=>{
+                generateGraph()
+            })
         }
-        
+
+        const makeAnalisis = () => {
+            let totalRenda = 0
+            let totalBasico = 0
+            let totalEstiloDeVida = 0
+            let totalInvestimentos = 0
+            $scope.gastoAnormalList = []
+            for(var i = 0; i < $scope.financeData.list.length; i++){
+                if($scope.financeData.list[i].category.tipo === 'básica'){
+                    totalBasico += $scope.financeData.list[i].value
+                }
+
+                if($scope.financeData.list[i].category.tipo === 'dinheiro do mês'){
+                    totalRenda += $scope.financeData.list[i].value
+                }
+
+                if($scope.financeData.list[i].category.tipo === 'estilo de vida'){
+                    totalEstiloDeVida += $scope.financeData.list[i].value
+                }
+
+                if($scope.financeData.list[i].category.tipo === 'despesa investimento'){
+                    totalInvestimentos += $scope.financeData.list[i].value
+                }
+            }
+
+
+
+            if((totalBasico / totalRenda) > 0.5){
+                $scope.gastoAnormalList.push("Gastos Basicos")
+            }
+
+            if((totalEstiloDeVida / totalRenda) > 0.35){
+                $scope.gastoAnormalList.push("Estilo de Vida")
+            }
+
+            if((totalInvestimentos / totalRenda) > 0.15){
+                $scope.gastoAnormalList.push("Investimentos")
+            }
+
+            $scope.hasAnalise = true
+        }
+
         generateGraph()
 
         $scope.getData = getData
         $scope.openModalCreate = openModalCreate
         $scope.removeFromListFinaces = removeFromListFinaces
         $scope.openModalAbout = openModalAbout
-    }
+        $scope.makeAnalisis = makeAnalisis
+        $scope.validateFields = validateFields
+    }   
 ])

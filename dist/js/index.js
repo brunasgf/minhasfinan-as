@@ -2,7 +2,6 @@ require('../../node_modules/angular/index')
 require('../../node_modules/echarts/dist/echarts.js')
 require('../../node_modules/ng-dialog/js/ngDialog.min.js')
 require('angular-input-masks')
-require('bluebird')
 require('../../node_modules/angular-toastr/index.js')
 require('../../node_modules/angular-animate/index.js')
 
