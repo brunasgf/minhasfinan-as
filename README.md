@@ -1,5 +1,7 @@
 # minhasfinan-as 
 Aplicativo Web de finanças pessoais para a matéria de Interação Humano-Computador com base no método 50-35-15.
+</br> 
+Feito por: Bruna da Silva Gonçalves, Luiz Henrique Silva Jesus
 </br></br></br>
 Caso de uso 1: Adicionar gastos mensais </br>
 Caso de uso 2: Adicionar receita mensais </br>
