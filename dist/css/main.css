@@ -128,3 +128,9 @@ p > b {
 .overflow-component {
     overflow-y: scroll;
 }
+
+.atencoius-text {
+	padding: 23px 0px 35px 40px;
+    font-size: 20px;
+    font-weight: 600;
+}

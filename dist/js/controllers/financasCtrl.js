@@ -313,13 +313,23 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
             $scope.hasAnalise = true
         }
 
+        const openModalConfirm = (finance) => {
+            return Notify.openConfirm()
+            .then((res)=>{
+                removeFromListFinaces(finance)
+            })
+            .catch((err)=>{
+                toastr.info(`Sua finança esta sã e salva`, 'Não se preocupe :)')
+            })
+        } 
+
         generateGraph()
 
         $scope.getData = getData
         $scope.openModalCreate = openModalCreate
-        $scope.removeFromListFinaces = removeFromListFinaces
         $scope.openModalAbout = openModalAbout
         $scope.makeAnalisis = makeAnalisis
         $scope.validateFields = validateFields
+        $scope.openModalConfirm = openModalConfirm
     }   
 ])
