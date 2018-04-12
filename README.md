@@ -1,4 +1,4 @@
-# minhasfinan-as 
+# minhasfinanças 
 Aplicativo Web de finanças pessoais para a matéria de Interação Humano-Computador com base no método 50-35-15.
 </br> 
 Feito por: Bruna da Silva Gonçalves, Luiz Henrique Silva Jesus
