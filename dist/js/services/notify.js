@@ -36,7 +36,7 @@ app.service("Notify", ['ngDialog', function (ngDialog) {
                     </div>
 
                     <div class="col-12 atencoius-text">
-                        Deseja realmente excluir essa finança???
+                        Confirma a exclusão dessa finança?
                     </div>
 
                     <div class="col-12 text-right">

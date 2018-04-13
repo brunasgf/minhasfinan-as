@@ -81,36 +81,36 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
         const getData = () =>{
             $scope.categList = {
                 gastos: [
-                    {nome:"alimentação", tipo:"básica"},
-                    {nome:"automóvel", tipo:"estilo de vida"},
-                    {nome:"beleza", tipo:"estilo de vida"},
-                    {nome:"bem estar", tipo:"estilo de vida"},
-                    {nome:"educação", tipo:"básica"},
-                    {nome:"empregados", tipo:"estilo de vida"},
-                    {nome:"familiares", tipo:"básica"},
-                    {nome:"impostos e tarifas", tipo:"básica"},
-                    {nome:"lazer", tipo:"estilo de vida"},
-                    {nome:"moradia", tipo:"básica"},
-                    {nome:"outras", tipo:"estilo de vida"},
-                    {nome:"pessoais", tipo:"estilo de vida"},
-                    {nome:"previdência", tipo:"básica"},
-                    {nome:"saúde", tipo:"básica"},
-                    {nome:"seguro", tipo:"básica"},
-                    {nome:"telefonia/tv/internet", tipo:"estilo de vida"},
-                    {nome:"transporte", tipo:"básica"},
-                    {nome:"vestuário", tipo:"estilo de vida"}
+                    {nome:"Alimentação", tipo:"básica"},
+                    {nome:"Automóvel", tipo:"estilo de vida"},
+                    {nome:"Beleza", tipo:"estilo de vida"},
+                    {nome:"Bem estar", tipo:"estilo de vida"},
+                    {nome:"Educação", tipo:"básica"},
+                    {nome:"Empregados", tipo:"estilo de vida"},
+                    {nome:"Familiares", tipo:"básica"},
+                    {nome:"Impostos e tarifas", tipo:"básica"},
+                    {nome:"Lazer", tipo:"estilo de vida"},
+                    {nome:"Moradia", tipo:"básica"},
+                    {nome:"Outras", tipo:"estilo de vida"},
+                    {nome:"Pessoais", tipo:"estilo de vida"},
+                    {nome:"Previdência", tipo:"básica"},
+                    {nome:"Saúde", tipo:"básica"},
+                    {nome:"Seguro", tipo:"básica"},
+                    {nome:"Telefonia/tv/internet", tipo:"estilo de vida"},
+                    {nome:"Transporte", tipo:"básica"},
+                    {nome:"Vestuário", tipo:"estilo de vida"}
                 ],
                 receitas: [
-                    {nome:"aluguel", tipo:"dinheiro do mês"},
-                    {nome:"lucros", tipo:"dinheiro do mês"},
-                    {nome:"pró-labore", tipo:"dinheiro do mês"},
-                    {nome:"rendimentos", tipo:"dinheiro do mês"},
-                    {nome:"salário", tipo:"dinheiro do mês"}
+                    {nome:"Aluguel", tipo:"dinheiro do mês"},
+                    {nome:"Lucros", tipo:"dinheiro do mês"},
+                    {nome:"Pró-labore", tipo:"dinheiro do mês"},
+                    {nome:"Rendimentos", tipo:"dinheiro do mês"},
+                    {nome:"Salário", tipo:"dinheiro do mês"}
                 ],
                 investimentos:[
-                    {nome:"investimento/consórcio", tipo:"despesa investimento"},
-                    {nome:"investimento/poupança", tipo:"despesa investimento"},
-                    {nome:"quitação de dívidas", tipo:"despesa investimento"}
+                    {nome:"Investimento/consórcio", tipo:"despesa investimento"},
+                    {nome:"Investimento/poupança", tipo:"despesa investimento"},
+                    {nome:"Quitação de dívidas", tipo:"despesa investimento"}
                 ]
             }
         }
@@ -299,7 +299,7 @@ app.controller("FinancasCtrl", ['$scope', 'Notify', 'toastr',
 
 
             if((totalBasico / totalRenda) > 0.5){
-                $scope.gastoAnormalList.push("Gastos Basicos")
+                $scope.gastoAnormalList.push("Gastos Básicos")
             }
 
             if((totalEstiloDeVida / totalRenda) > 0.35){
