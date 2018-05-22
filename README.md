@@ -3,7 +3,7 @@
 
 Aplicativo Web de finanças pessoais para a matéria de Interação Humano-Computador com base no método 50-35-15.
 </br> 
-Você pode conhecer mais sobre esse metódo <a> aqui. <href="https://blog.guiabolso.com.br/2014/06/10/voce-conhece-regra-50-15-35/"> </a>  
+Você pode conhecer mais sobre esse metódo <a  href="https://blog.guiabolso.com.br/2014/06/10/voce-conhece-regra-50-15-35/"> aqui </a>  
 Curso de Engenharia de Software, 4º Período. 
 <br> 
 
